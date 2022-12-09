@@ -11,10 +11,14 @@ const numbersArray = [
     ["hyaku", "-hyaku", "-byaku", "roppyaku", "happyaku"], // -hyaku
     ["juu", "-juu"], // -juu
     [] // ""
-]
+];
+
+// Generate random number
+let randomNumber = Math.floor(Math.random() * 99999) + 1;
 
 // Test number
-let testNumber = 8421;
+// let testNumber = 8621;
+let testNumber = randomNumber;
 
 // Split into an array and pass into what will become formatNumber() method as argument
 let argsArray = (""+testNumber).split("");
@@ -41,11 +45,9 @@ for (let i = 0; i < argsArray.length; i++) {
     if (argsArray[i] == 0) {
         console.log("Nothing in the "+i+" digit...\n");
     }
+
     else {
         let digit = "";
-        console.log("i: "+i);
-        console.log("argsArray["+i+"]: "+argsArray[i]);
-        console.log("baseNumbers["+argsArray[i]+"]: "+baseNumbers[argsArray[i]]);
         // switch case
         switch (i) {
             case 0: // ten-thousands are simple
@@ -56,20 +58,42 @@ for (let i = 0; i < argsArray.length; i++) {
                 if (argsArray[i] === 3) {
                     digit = baseNumbers[argsArray[i]-1]+numbersArray[i][2];
                 }
+                else if (argsArray[i] === 1) {
+                    digit = numbersArray[i][0];
+                }
                 else if (argsArray[i] === 8) {
-                    digit = "hassen";
+                    digit = numbersArray[i][3];
                 }
                 else {
-                    digit = baseNumbers[argsArray[i]-1]+numbersArray[i][1] // The 1 here would conditionally change
+                    digit = baseNumbers[argsArray[i]-1]+numbersArray[i][1];
                 }
                 break;
             case 2: // hundreds
                 // if/else for checking unique variations in the hundreds place
-                digit = baseNumbers[argsArray[i]-1]+numbersArray[i][1] // The 1 here would conditionally change
+                if (argsArray[i] === 3) {
+                    digit = baseNumbers[argsArray[i]-1]+numbersArray[i][2];
+                }
+                else if (argsArray[i] === 1) {
+                    digit = numbersArray[i][0]
+                }
+                else if(argsArray[i] === 6) {
+                    digit = numbersArray[i][3]
+                }
+                else if(argsArray[i] === 8) {
+                    digit = numbersArray[i][4]
+                }
+                else {
+                    digit = baseNumbers[argsArray[i]-1]+numbersArray[i][1];
+                }
                 break;
             case 3: // tens only has 2 variations: one for 10 and another for tens.
                 // if/else for checking whether this is 10 or a multiple in the tens place
-                digit = baseNumbers[argsArray[i]-1]+numbersArray[i][1] // The 1 here would conditionally change
+                if (argsArray[i] === 1) {
+                    digit = numbersArray[i][0];
+                }
+                else {
+                    digit = baseNumbers[argsArray[i]-1]+numbersArray[i][1];
+                }
                 break;
             case 4: // ones are again simple
                 digit = baseNumbers[argsArray[i]-1];
