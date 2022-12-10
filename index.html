@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Japanese Flashcards</title>
+</head>
+<body class="h-screen w-screen">
+
+    <div class="w-full h-full flex flex-col items-center justify-evenly bg-cyan-500">
+        <div id="category-prompt">
+            <p>Category</p>
+        </div>
+        <div id="english-field" class="mb-4">
+            <p id="english-text">English prompt goes here</p>
+        </div>
+        <div id="japanese-field" class="my-4">
+            <p id="japanese-text">
+                Japanese goes here
+            </p>
+        </div>
+        <div class="mt-4 flex w-full items-center justify-evenly">
+            <button class="rounded border-slate-900 border bg-slate-200 px-3 py-2">
+                Show
+            </button>
+            <button class="rounded border-slate-900 border bg-slate-200 px-3 py-2">
+                Next
+            </button>
+        </div>
+    </div>
+
+    
+</body>
+<script src="./numbers.js"></script>
+<script src="./time.js"></script>
+</html>
