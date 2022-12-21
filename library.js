@@ -73,9 +73,21 @@ const library = [
     [
         "\"-na\" Adjectives",
         {
-            englishText: "Water",
-            romaji: "Mizu",
-            kanaText: kana_mi+kana_zu,
+            englishText: "Well/Fine",
+            romaji: "Genki",
+            kanaText: kana_ge+kana_n+kana_ki,
+            kanjiText: ""
+        },
+        {
+            englishText: "Expensive/Tall",
+            romaji: "Takai",
+            kanaText: kana_ta+kana_ka+kana_i,
+            kanjiText: ""
+        },
+        {
+            englishText: "Beautiful/Clean",
+            romaji: "Kirei",
+            kanaText: kana_ki+kana_re+kana_i,
             kanjiText: ""
         },
 
@@ -85,9 +97,45 @@ const library = [
     [
         "\"-i\" Adjectives",
         {
-            englishText: "Water",
-            romaji: "Mizu",
-            kanaText: "",
+            englishText: "Happy/Glad",
+            romaji: "Ureshii",
+            kanaText: kana_u+kana_re+kana_shi+kana_i,
+            kanjiText: ""
+        },
+        {
+            englishText: "Cool (weather)",
+            romaji: "Suzushii",
+            kanaText: kana_su+kana_zu+kana_shi+kana_i,
+            kanjiText: ""
+        },
+        {
+            englishText: "Short",
+            romaji: "Mijikai",
+            kanaText: kana_mi+kana_ji+kana_ka+kana_i,
+            kanjiText: ""
+        },
+        {
+            englishText: "Large",
+            romaji: "Ookii",
+            kanaText: kana_o+kana_o+kana_ki+kana_i,
+            kanjiText: ""
+        },
+        {
+            englishText: "Interesting",
+            romaji: "Omoshiroi",
+            kanaText: kana_o+kana_mo+kana_shi+kana_ro+kana_i,
+            kanjiText: ""
+        },
+        {
+            englishText: "Heavy",
+            romaji: "Omoi",
+            kanaText: kana_o+kana_mo+kana_i,
+            kanjiText: ""
+        },
+        {
+            englishText: "Slow/Late",
+            romaji: "Osoi",
+            kanaText: kana_o+kana_so+kana_i,
             kanjiText: ""
         },
     ],
@@ -96,9 +144,21 @@ const library = [
     [
         "Nouns",
         {
-            englishText: "Water",
-            romaji: "Mizu",
-            kanaText: "",
+            englishText: "Car",
+            romaji: "Kuruma",
+            kanaText: kana_ku+kana_ru+kana_ma,
+            kanjiText: ""
+        },
+        {
+            englishText: "Wallet",
+            romaji: "Saifu",
+            kanaText: kana_sa+kana_i+kana_fu,
+            kanjiText: ""
+        },
+        {
+            englishText: "Money",
+            romaji: "Okane",
+            kanaText: kana_o+kana_ka+kana_ne,
             kanjiText: ""
         },
     ],
@@ -107,9 +167,9 @@ const library = [
     [
         "Verbs",
         {
-            englishText: "Water",
-            romaji: "Mizu",
-            kanaText: "",
+            englishText: "Drink",
+            romaji: "Nomimasu",
+            kanaText: kana_no+kana_mi+kana_ma+kana_su,
             kanjiText: ""
         },
     ],
@@ -118,9 +178,21 @@ const library = [
     [
         "Phrases",
         {
-            englishText: "Water",
-            romaji: "Mizu",
-            kanaText: "",
+            englishText: "Maybe",
+            romaji: "Tabun",
+            kanaText: kana_ta+kana_bu+kana_n,
+            kanjiText: ""
+        },
+        {
+            englishText: "Of Course/Naturally",
+            romaji: "Mochiron",
+            kanaText: kana_mo+kana_chi+kana_ro+kana_n,
+            kanjiText: ""
+        },
+        {
+            englishText: "Always/Usually",
+            romaji: "Itsumo",
+            kanaText: kana_i+kana_tsu+kana_mo,
             kanjiText: ""
         },
     ]
