@@ -1,3 +1,4 @@
+import {library} from "./library.js";
 
 // Define elements
 const englishTextEl = document.querySelector("#english-text");
@@ -251,3 +252,5 @@ document.addEventListener("click", (event) => {
         }
     }
 });
+
+console.log(library[0][1].kanaText);
