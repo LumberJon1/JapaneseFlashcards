@@ -1,5 +1,15 @@
 import {library} from "./library.js";
 
+// Global to store current category
+let category = "";
+
+// globals for the English and Japanese words that get updated when the "next" button is clicked
+let englishWord = "";
+let romajiWord = "";
+let kanaWord = "";
+let kanjiWord = "";
+
+
 // Define elements
 const englishTextEl = document.querySelector("#english-text");
 const japaneseTextEl = document.querySelector("#japanese-text");
@@ -7,8 +17,6 @@ const showButtonEl = document.querySelector("#show-button");
 const nextButtonEl = document.querySelector("#next-button");
 const categoryEl = document.querySelector("#category");
 
-// global english word that gets updated when the "next" button is clicked
-let englishWord = "";
 
 // Function that creates a timestamp to pass as an argument to generateTime
 const generateTimestamp = () => {
@@ -212,45 +220,98 @@ const convertNumber = (number) => {
     return outputArray;
 };
 
+// Generate a random word from the library array
+const generateWord = () => {
+    let subArrayIndex = Math.floor(Math.random() * library.length);
+    // Store the first element of the sub-array (category) for later use
+    console.log("subArray Index: "+subArrayIndex);
+
+    let category = library[subArrayIndex][0];
+
+    // Select a random word from the subArray
+    let randomWordIndex = Math.floor(Math.random() * (library[subArrayIndex].length - 1)) + 1;
+    console.log("subArray word index: "+randomWordIndex);
+    let word = library[subArrayIndex][randomWordIndex];
+    console.log("Word: "+word.englishText);
+
+    let wordEnglish = word.englishText;
+    let wordKana = word.kanaText;
+    let wordKanji = word.kanjiText;
+    let wordRomaji = word.romaji;
+
+}
+
+// Flags to change styling and remove the start button once beginning a quiz
+
+
 // Create listeners/handlers
+document.addEventListener("click", (event) => {
+
+    // Event handlers for words
+    if (event.target.getAttribute("id") === "words-button") {
+        // Set category to "words"
+        category = "words";
+
+        // Clear any previously-displayed word and append a new start button
+
+        // TODO: Display sub-categories
+
+        // Highlight the start button and the "words" button
+
+    }
+    else if (event.target.getAttribute("id") === "time-button") {
+        // Set category to "time"
+        category = "time";
+    }
+    else if (event.target.getAttribute("id") === "numbers-button") {
+        // Set category to "numbers"
+        category = "numbers";
+    }
+
+    // Event handler for the start button
+    else if (event.target.getAttribute("id") === "start-button") {
+        // Remove the start button
+
+    }
+});
+
+// Show button listener and handler
 document.addEventListener("click", (event) => {
     // Show button handler
     if (event.target.getAttribute("id") === "show-button") {
 
         // Evaluate the category and run the proper conversion function
-        if (categoryEl.textContent === "Time") {
+        if (category === "time") {
             japaneseTextEl.textContent = convertTime(englishWord);
         }
         else {
             console.log("Showing Japanese Translation...");
             japaneseTextEl.textContent = convertNumber(englishWord);
         }
-    }
-    // Next button handler
-    else if (event.target.getAttribute("id") === "next-button") {
-        console.log("Randomly generating another card...");
-        if (categoryEl.textContent === "Numbers") {
+    }  
+});
+
+// Next button listener and handler
+document.addEventListener("click", (event) => {
+    if (event.target.getAttribute("id") === "next-button") {
+        // Conditionally determine what the next and show buttons reference
+        if (category === "words") {
+
+        }
+        else if (category === "numbers") {
             let number = generateNumber();
             englishWord = number;
             englishTextEl.textContent = englishWord;
             japaneseTextEl.textContent = "";
         }
-        else {
+        else if (category === "time") {
             let time = generateTimestamp();
             englishWord = time;
             englishTextEl.textContent = englishWord;
             japaneseTextEl.textContent = "";
         }
     }
-    // Category button handler
-    else if (event.target.getAttribute("id") === "category") {
-        if (categoryEl.textContent === "Numbers") {
-            categoryEl.textContent = "Time";
-        }
-        else {
-            categoryEl.textContent = "Numbers";
-        }
-    }
 });
 
-console.log(library[0][1].kanaText);
+generateWord();
+console.log();
