@@ -1,6 +1,6 @@
 
 // Hiragana Unicode Table
-const kana_a = "\u3041";
+const kana_a = "\u3042";
 const kana_i = "\u3044";
 const kana_u = "\u3046";
 const kana_e = "\u3048";
@@ -69,6 +69,7 @@ const kana_do = "\u3069";
 const kana_ba = "\u3070";
 const kana_bi = "\u3073";
 const kana_bu = "\u3076";
+const kana_be = "\u3079";
 
 
 const library = [
@@ -96,9 +97,63 @@ const library = [
             kanjiText: ""
         },
         {
+            englishText: "Inconvenient",
+            romaji: "Fuben",
+            kanaText: kana_fu+kana_be+kana_n,
+            kanjiText: ""
+        },
+        {
             englishText: "Honest/Truthful",
             romaji: "Shoujiki",
             kanaText: kana_shi+kana_yo+kana_u+kana_ji+kana_ki,
+            kanjiText: ""
+        },
+        {
+            englishText: "Kind",
+            romaji: "Shinsetsu",
+            kanaText: kana_shi+kana_n+kana_se+kana_tsu,
+            kanjiText: ""
+        },
+        {
+            englishText: "Rude",
+            romaji: "Shitsurei",
+            kanaText: kana_shi+kana_tsu+kana_re+kana_i,
+            kanjiText: ""
+        },
+        {
+            englishText: "Safe",
+            romaji: "Anzen",
+            kanaText: kana_a+kana_n+kana_ze+kana_n,
+            kanjiText: ""
+        },
+        {
+            englishText: "Convenient",
+            romaji: "Benri",
+            kanaText: kana_be+kana_n+kana_ri,
+            kanjiText: ""
+        },
+        {
+            englishText: "Important",
+            romaji: "Daiji",
+            kanaText: kana_da+kana_i+kana_ji,
+            kanjiText: ""
+        },
+        {
+            englishText: "Easy",
+            romaji: "Kantan",
+            kanaText: kana_ka+kana_n+kana_ta+kana_n,
+            kanjiText: ""
+        },
+        {
+            englishText: "Fresh",
+            romaji: "Shinsen",
+            kanaText: kana_shi+kana_n+kana_se+kana_n,
+            kanjiText: ""
+        },
+        {
+            englishText: "Quiet",
+            romaji: "Shizuka",
+            kanaText: kana_shi+kana_zu+kana_ka,
             kanjiText: ""
         },
 
@@ -209,7 +264,6 @@ const library = [
             kanaText: kana_o+kana_na+kana_ka,
             kanjiText: ""
         },
-
     ],
 
     // Category 2: "-i adjectives"
@@ -234,9 +288,87 @@ const library = [
             kanjiText: ""
         },
         {
+            englishText: "Early",
+            romaji: "Hayai",
+            kanaText: kana_ha+kana_ya+kana_i,
+            kanjiText: ""
+        },
+        {
+            englishText: "Difficult",
+            romaji: "Muzukashi",
+            kanaText: kana_mu+kana_zu+kana_ka+kana_shi+kana_i,
+            kanjiText: ""
+        },
+        {
+            englishText: "Sweet",
+            romaji: "Amai",
+            kanaText: kana_a+kana_ma+kana_i,
+            kanjiText: ""
+        },
+        {
+            englishText: "Lightweight",
+            romaji: "Karui",
+            kanaText: kana_ka+kana_ra+kana_i,
+            kanjiText: ""
+        },
+        {
+            englishText: "Wide",
+            romaji: "Hiroi",
+            kanaText: kana_hi+kana_ro+kana_i,
+            kanjiText: ""
+        },
+        {
+            englishText: "Spicy",
+            romaji: "Karai",
+            kanaText: kana_ka+kana_ra+kana_i,
+            kanjiText: ""
+        },
+        {
+            englishText: "Dirty",
+            romaji: "Kitanai",
+            kanaText: kana_ki+kana_ta+kana_na+kana_i,
+            kanjiText: ""
+        },
+        {
+            englishText: "Dangerous",
+            romaji: "Abunai",
+            kanaText: kana_a+kana_bu+kana_na+kana_i,
+            kanjiText: ""
+        },
+        {
+            englishText: "Hot (weather)",
+            romaji: "Atsui",
+            kanaText: kana_a+kana_tsu+kana_i,
+            kanjiText: ""
+        },
+        {
+            englishText: "Dark",
+            romaji: "Kurai",
+            kanaText: kana_ku+kana_ra+kana_i,
+            kanjiText: ""
+        },
+        {
             englishText: "Cool (weather)",
             romaji: "Suzushii",
             kanaText: kana_su+kana_zu+kana_shi+kana_i,
+            kanjiText: ""
+        },
+        {
+            englishText: "Small",
+            romaji: "Chiisai",
+            kanaText: kana_chi+kana_i+kana_sa+kana_i,
+            kanjiText: ""
+        },
+        {
+            englishText: "Busy",
+            romaji: "Isogashii",
+            kanaText: kana_i+kana_so+kana_ga+kana_shi+kana_i,
+            kanjiText: ""
+        },
+        {
+            englishText: "Old",
+            romaji: "Furui",
+            kanaText: kana_fu+kana_ru+kana_i,
             kanjiText: ""
         },
         {
@@ -264,9 +396,21 @@ const library = [
             kanjiText: ""
         },
         {
+            englishText: "New",
+            romaji: "Atarashi",
+            kanaText: kana_a+kana_ta+kana_ra+kana_shi+kana_i,
+            kanjiText: ""
+        },
+        {
             englishText: "Slow/Late",
             romaji: "Osoi",
             kanaText: kana_o+kana_so+kana_i,
+            kanjiText: ""
+        },
+        {
+            englishText: "Bright",
+            romaji: "Akarui",
+            kanaText: kana_a+kana_ka+kana_ru+kana_i,
             kanjiText: ""
         },
         {
@@ -294,6 +438,12 @@ const library = [
             kanjiText: ""
         },
         {
+            englishText: "Sour",
+            romaji: "Suppai",
+            kanaText: kana_su+kana_small_tsu+kana_pa+kana_i,
+            kanjiText: ""
+        },
+        {
             englishText: "Strong/Powerful",
             romaji: "Tsuyoi",
             kanaText: kana_tsu+kana_yo+kana_i,
@@ -317,15 +467,75 @@ const library = [
             kanjiText: ""
         },
         {
+            englishText: "Dream",
+            romaji: "Yume",
+            kanaText: kana_yu+kana_me,
+            kanjiText: ""
+        },
+        {
+            englishText: "Family",
+            romaji: "Kazoku",
+            kanaText: kana_ka+kana_zo+kana_ku,
+            kanjiText: ""
+        },
+        {
+            englishText: "Animal",
+            romaji: "Doubutsu",
+            kanaText: kana_do+kana_u+kana_bu+kana_tsu,
+            kanjiText: ""
+        },
+        {
+            englishText: "Address",
+            romaji: "Juusho",
+            kanaText: kana_ji+kana_yu+kana_u+kana_shi+kana_yo,
+            kanjiText: ""
+        },
+        {
+            englishText: "Name",
+            romaji: "Namae",
+            kanaText: kana_na+kana_ma+kana_e,
+            kanjiText: ""
+        },
+        {
+            englishText: "Cash",
+            romaji: "Genkin",
+            kanaText: kana_ge+kana_n+kana_ki+kana_n,
+            kanjiText: ""
+        },
+        {
             englishText: "Money",
             romaji: "Okane",
             kanaText: kana_o+kana_ka+kana_ne,
             kanjiText: ""
         },
         {
+            englishText: "Leather",
+            romaji: "Kawa",
+            kanaText: kana_ka+kana_wa,
+            kanjiText: ""
+        },
+        {
+            englishText: "Train Station",
+            romaji: "Eki",
+            kanaText: kana_e+kana_ki,
+            kanjiText: ""
+        },
+        {
+            englishText: "Umbrella",
+            romaji: "Kasa",
+            kanaText: kana_ka+kana_sa,
+            kanjiText: ""
+        },
+        {
             englishText: "Entrance",
             romaji: "Iriguchi",
             kanaText: kana_i+kana_ri+kana_gu+kana_chi,
+            kanjiText: ""
+        },
+        {
+            englishText: "Police Officer",
+            romaji: "Keisatsukan",
+            kanaText: kana_ke+kana_i+kana_sa+kana_tsu+kana_ka+kana_n,
             kanjiText: ""
         },
         {
@@ -502,6 +712,78 @@ const library = [
             kanaText: kana_me+kana_n+kana_ki+kana_yo,
             kanjiText: ""
         },
+        {
+            englishText: "Tomorrow",
+            romaji: "Ashita",
+            kanaText: kana_a+kana_shi+kana_ta,
+            kanjiText: ""
+        },
+        {
+            englishText: "Yesterday",
+            romaji: "Kinou",
+            kanaText: kana_ki+kana_no+kana_u,
+            kanjiText: ""
+        },
+        {
+            englishText: "Departure",
+            romaji: "Shuppatsu",
+            kanaText: kana_shi+kana_yu+kana_small_tsu+kana_pa+kana_tsu,
+            kanjiText: ""
+        },
+        {
+            englishText: "Today",
+            romaji: "Kyou",
+            kanaText: kana_ki+kana_yo+kana_u,
+            kanjiText: ""
+        },
+        {
+            englishText: "Rain",
+            romaji: "Ame",
+            kanaText: kana_a+kana_me,
+            kanjiText: ""
+        },
+        {
+            englishText: "Customer",
+            romaji: "Kyaku-san",
+            kanaText: "("+kana_o+") "+kana_ki+kana_ya+kana_ku+"-"+kana_sa+kana_n,
+            kanjiText: ""
+        },
+        {
+            englishText: "Now",
+            romaji: "Ima",
+            kanaText: kana_i+kana_ma,
+            kanjiText: ""
+        },
+        {
+            englishText: "Crab",
+            romaji: "Kani",
+            kanaText: kana_ka+kana_ni,
+            kanjiText: ""
+        },
+        {
+            englishText: "Bag",
+            romaji: "Kaban",
+            kanaText: kana_ka+kana_ba+kana_n,
+            kanjiText: ""
+        },
+        {
+            englishText: "Tea",
+            romaji: "Ocha",
+            kanaText: kana_o+kana_chi+kana_ya,
+            kanjiText: ""
+        },
+        {
+            englishText: "Traffic",
+            romaji: "Juutai",
+            kanaText: kana_ji+kana_yu+kana_u+kana_ta+kana_i,
+            kanjiText: ""
+        },
+        {
+            englishText: "Medicine",
+            romaji: "Kusuri",
+            kanaText: kana_ku+kana_su+kana_ri,
+            kanjiText: ""
+        },
     ],
 
     // Category 4: verbs
@@ -526,9 +808,39 @@ const library = [
             kanjiText: ""
         },
         {
+            englishText: "To Read",
+            romaji: "Yomimasu",
+            kanaText: kana_yo+kana_mi+kana_ma+kana_su,
+            kanjiText: ""
+        },
+        {
             englishText: "To Speak",
             romaji: "Hanashimasu",
             kanaText: kana_ha+kana_na+kana_shi+kana_ma+kana_su,
+            kanjiText: ""
+        },
+        {
+            englishText: "To Make",
+            romaji: "Tsukurimasu",
+            kanaText: kana_tsu+kana_ku+kana_ri+kana_ma+kana_su,
+            kanjiText: ""
+        },
+        {
+            englishText: "To Use",
+            romaji: "Tsukaimasu",
+            kanaText: kana_tsu+kana_ka+kana_i+kana_ma+kana_su,
+            kanjiText: ""
+        },
+        {
+            englishText: "To Drop",
+            romaji: "Otoshimasu",
+            kanaText: kana_o+kana_to+kana_shi+kana_ma+kana_su,
+            kanjiText: ""
+        },
+        {
+            englishText: "To Get Tired",
+            romaji: "Tsukaremasu",
+            kanaText: kana_tsu+kana_ka+kana_re+kana_ma+kana_su,
             kanjiText: ""
         },
     ],
@@ -543,9 +855,39 @@ const library = [
             kanjiText: ""
         },
         {
+            englishText: "What time is it?",
+            romaji: "Nanki desu ka",
+            kanaText: kana_na+kana_n+kana_ji+" "+kana_de+kana_su+" "+kana_ka,
+            kanjiText: ""
+        },
+        {
             englishText: "Only",
             romaji: "Dake",
             kanaText: kana_da+kana_ke,
+            kanjiText: ""
+        },
+        {
+            englishText: "And",
+            romaji: "Sorekara",
+            kanaText: kana_so+kana_re+kana_ka+kana_ra,
+            kanjiText: ""
+        },
+        {
+            englishText: "A little/Slightly",
+            romaji: "Chotto",
+            kanaText: kana_chi+kana_yo+kana_small_tsu+kana_to,
+            kanjiText: ""
+        },
+        {
+            englishText: "Sorry/Excuse me",
+            romaji: "Sumimasen",
+            kanaText: kana_su+kana_mi+kana_ma+kana_se+kana_n,
+            kanjiText: ""
+        },
+        {
+            englishText: "That's great/How nice",
+            romaji: "Ii desu ne",
+            kanaText: kana_i+kana_i+" "+kana_de+kana_su+kana_ne,
             kanjiText: ""
         },
         {
@@ -582,6 +924,12 @@ const library = [
             englishText: "Every day",
             romaji: "Mainichi",
             kanaText: kana_ma+kana_i+kana_ni+kana_chi,
+            kanjiText: ""
+        },
+        {
+            englishText: "My ___ hurts",
+            romaji: "Watashi no ___ ga itai desu",
+            kanaText: kana_wa+kana_ta+kana_shi+" "+kana_no+" ___ "+kana_ga+" "+kana_i+kana_ta+kana_i+" "+kana_de+kana_su,
             kanjiText: ""
         },
         {
@@ -663,6 +1011,42 @@ const library = [
             kanjiText: ""
         },
         {
+            englishText: "Very/Extremely",
+            romaji: "Totemo",
+            kanaText: kana_to+kana_te+kana_mo,
+            kanjiText: ""
+        },
+        {
+            englishText: "There is/are (animate objects)",
+            romaji: "___ ga imasu",
+            kanaText: "___ "+kana_ga+" "+kana_i+kana_ma+kana_su,
+            kanjiText: ""
+        },
+        {
+            englishText: "There is/are (inanimate objects)",
+            romaji: "___ ga arimasu",
+            kanaText: "___ "+kana_ga+" "+kana_a+kana_ri+kana_ma+kana_su,
+            kanjiText: ""
+        },
+        {
+            englishText: "But/However",
+            romaji: "Demo",
+            kanaText: kana_de+kana_mo,
+            kanjiText: ""
+        },
+        {
+            englishText: "Slowly",
+            romaji: "Yukkuri",
+            kanaText: kana_yu+kana_small_tsu+kana_ku+kana_ri,
+            kanjiText: ""
+        },
+        {
+            englishText: "Welcome",
+            romaji: "Irasshai(mase)",
+            kanaText: kana_i+kana_ra+kana_small_tsu+kana_shi+kana_ya+kana_i+"("+kana_ma+kana_se+")",
+            kanjiText: ""
+        },
+        {
             englishText: "What kind of ___",
             romaji: "Donna ___",
             kanaText: kana_do+kana_n+kana_na+" ___",
@@ -672,6 +1056,18 @@ const library = [
             englishText: "Who",
             romaji: "Dare",
             kanaText: kana_da+kana_re,
+            kanjiText: ""
+        },
+        {
+            englishText: "This way",
+            romaji: "Kochira",
+            kanaText: kana_ko+kana_chi+kana_ra,
+            kanjiText: ""
+        },
+        {
+            englishText: "Congratulations",
+            romaji: "Omedetou Gozaimasu",
+            kanaText: kana_o+kana_me+kana_de+kana_to+kana_u+" "+kana_go+kana_za+kana_i+kana_ma+kana_su,
             kanjiText: ""
         },
         {
