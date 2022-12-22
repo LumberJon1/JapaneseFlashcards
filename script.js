@@ -17,6 +17,7 @@ const showButtonEl = document.querySelector("#show-button");
 const nextButtonEl = document.querySelector("#next-button");
 const categoryEl = document.querySelector("#category");
 const startButtonEl = document.querySelector("#start-button");
+const cardDivEl = document.querySelector("#card-div");
 
 
 // Function that creates a timestamp to pass as an argument to generateTime
@@ -258,9 +259,18 @@ document.addEventListener("click", (event) => {
         japaneseTextEl.textContent = "";
         englishTextEl.textContent = "";
 
-        startButtonEl.classList.replace("bg-indigo-100", "bg-indigo-600");
-        startButtonEl.classList.replace("text-zinc-300", "text-zinc-200");
-        startButtonEl.classList.replace("border-slate-300", "border-slate-800");
+        if (startButtonEl) {
+            startButtonEl.classList.replace("bg-indigo-100", "bg-indigo-600");
+            startButtonEl.classList.replace("text-zinc-300", "text-zinc-200");
+            startButtonEl.classList.replace("border-slate-300", "border-slate-800");
+        }
+        else {
+            let startButton = document.createElement("button");
+            startButton.classList = "text-lg border rounded font-bold p-3 bg-indigo-100 text-zinc-300 border-slate-300";
+            startButton.textContent = "Start";
+            startButton.setAttribute("id", "start-button");
+            cardDivEl.append(startButton);
+        }
 
     }
 
@@ -290,6 +300,7 @@ document.addEventListener("click", (event) => {
     // Event handler for the start button
     else if (event.target.getAttribute("id") === "start-button") {
         // Remove the start button
+        startButtonEl.remove();
 
     }
 });
@@ -316,7 +327,7 @@ document.addEventListener("click", (event) => {
 
 // Next button listener and handler
 document.addEventListener("click", (event) => {
-    if (event.target.getAttribute("id") === "next-button") {
+    if (event.target.getAttribute("id") === "next-button" || event.target.getAttribute("id") === "start-button") {
         console.log("Clicked Next button.");
         // Conditionally determine what the next and show buttons reference
         if (category === "words") {
