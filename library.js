@@ -1138,4 +1138,4 @@ const library = [
     ]
 ];
 
-export {library};
+module.exports = library;
