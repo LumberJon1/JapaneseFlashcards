@@ -1,10 +1,22 @@
 import React from "react";
+import library from "../../library";
 
-function Flashcard() {
+function Flashcard(props) {
+
+    // Unpack props for use in the functions
+    const {
+        currentQuizCategory,
+        currentMenuItem
+    } = props;
+
+
+    // Generate a random card from the library based on whichever quiz type is set to active
+
+
+
 
     return (
 
-        // Generate a random card from the library based on whichever quiz type is set to active
 
         <div className="w-full flex flex-col items-center justify-center h-3/5">
 
