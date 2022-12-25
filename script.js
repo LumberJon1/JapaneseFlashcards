@@ -1,4 +1,4 @@
-const library = require("./library");
+const library = require("./src/library");
 
 // // Global to store current category
 // let category = "";
