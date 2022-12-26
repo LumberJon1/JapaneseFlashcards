@@ -4,6 +4,7 @@ import './App.css';
 import Navbar from "./components/Navbar";
 import QuizCategories from './components/QuizCategories';
 import Flashcard from './components/Flashcard';
+import QuizButtons from './components/QuizButtons';
 
 function App() {
 
@@ -52,6 +53,9 @@ useEffect(() => {
 // Function handler for category items being clicked
 const [currentQuizCategory, setQuizCategory] = useState("");
 
+// state object to handle whether the quiz has been started
+const [quizBegun, setQuizBegun] = useState(false);
+
 
 // Conponent return...
 
@@ -73,12 +77,21 @@ const [currentQuizCategory, setQuizCategory] = useState("");
         currentQuizCategory={currentQuizCategory}
       ></QuizCategories>
 
-      {/* Flashcard */}
-      <Flashcard
-        currentMenuItem={currentMenuItem}
-        currentQuizCategory={currentQuizCategory}
-      ></Flashcard>
-      {/* Bottom Buttons */}
+      {/* Conditionally render either quiz buttons or flashcards depending on whether
+      the user has selected a subcategory and pressed "start" yet */}
+
+      {quizBegun 
+        ? <Flashcard
+            currentMenuItem={currentMenuItem}
+            currentQuizCategory={currentQuizCategory}
+          ></Flashcard>      
+        : <QuizButtons
+            currentQuizCategory={currentQuizCategory}
+            quizBegun={quizBegun}
+            setQuizBegun={setQuizBegun}
+          ></QuizButtons>
+      }
+
     </div>
   );
 }
