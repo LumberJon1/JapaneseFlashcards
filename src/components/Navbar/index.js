@@ -11,9 +11,8 @@ function Navbar(props) {
     } = props;
 
     return (
-        <div className="w-full">
-            "Here are some words"
-            <ul className="flex items-center">
+        <div className="w-full sticky top-0">
+            <ul className="flex items-center justify-center">
                 {menuItems.map((item) => (
                     <li
                         onClick={() => {setCurrMenuItem(item.name)
@@ -21,7 +20,7 @@ function Navbar(props) {
                             console.log("current category: "+currentMenuItem);
                         }}
                         /* Conditionally add the "Active" class so long as the item name matches currentCategory.*/
-                        className={`flex bg-slate-700 items-center justify-center p-2 border rounded shadow text-zinc-100 w-1/${buttonWidth} ${currentMenuItem.name === item.name && "navActive"}`}
+                        className={`flex bg-slate-700 mx-1 items-center justify-center p-2 border rounded shadow text-zinc-100 w-1/${buttonWidth} ${currentMenuItem.name === item.name && "navActive"}`}
                         key={item.name}
                         >
                         {item.name}

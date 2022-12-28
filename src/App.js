@@ -5,6 +5,8 @@ import Navbar from "./components/Navbar";
 import QuizCategories from './components/QuizCategories';
 import Flashcard from './components/Flashcard';
 import QuizButtons from './components/QuizButtons';
+import Library from './components/Library';
+import library from './library';
 
 function App() {
 
@@ -123,14 +125,13 @@ const [quizCategoryItems] = useState([
   
   
   useEffect(() => {
-    document.getElementById("root").render();
-  }, [currentSubCategory]);
 
+  }, [currentSubCategory]);
 
   // Conponent return...
   
   return (
-    <div className="App w-screen h-screen flex flex-col items-center p-2">
+    <div className="App w-screen h-full flex flex-col items-center p-2">
       {/* Navbar and hamburger menu */}
       <Navbar
         className="w-full"
@@ -140,18 +141,41 @@ const [quizCategoryItems] = useState([
         buttonWidth={buttonWidth}
       ></Navbar>
 
+      {currentMenuItem === "Quiz" ? 
+        <div>
+          <QuizCategories
+            quizCategoryItems={quizCategoryItems}
+            setQuizCategory={setQuizCategory}
+            currentQuizCategory={currentQuizCategory}
+            currentSubCategory={currentSubCategory}
+            setSubCategory={setSubCategory}
+            wordsSubCategories={wordsSubCategories}
+            timeSubCategories={timeSubCategories}
+            numbersSubCategories={numbersSubCategories}
+            phrasesSubCategories={phrasesSubCategories}
+          ></QuizCategories>
+          <QuizButtons
+              currentQuizCategory={currentQuizCategory}
+              quizBegun={quizBegun}
+              setQuizBegun={setQuizBegun}
+              currentSubCategory={currentSubCategory}
+              setQuizCategory={setQuizCategory}
+              setSubCategory={setSubCategory}
+            ></QuizButtons>
+        </div>
+      : <div></div>
+      }
+      {currentMenuItem === "Library" ?
+
+        <div>
+          <Library>
+
+          </Library>
+        </div>
+        : <div></div>
+
+      }
       {/* Flashcard Categories */}
-      <QuizCategories
-        quizCategoryItems={quizCategoryItems}
-        setQuizCategory={setQuizCategory}
-        currentQuizCategory={currentQuizCategory}
-        currentSubCategory={currentSubCategory}
-        setSubCategory={setSubCategory}
-        wordsSubCategories={wordsSubCategories}
-        timeSubCategories={timeSubCategories}
-        numbersSubCategories={numbersSubCategories}
-        phrasesSubCategories={phrasesSubCategories}
-      ></QuizCategories>
 
       {/* Conditionally render either quiz buttons or flashcards depending on whether
       the user has selected a subcategory and pressed "start" yet */}
@@ -161,14 +185,7 @@ const [quizCategoryItems] = useState([
             currentMenuItem={currentMenuItem}
             currentQuizCategory={currentQuizCategory}
           ></Flashcard>      
-        : <QuizButtons
-            currentQuizCategory={currentQuizCategory}
-            quizBegun={quizBegun}
-            setQuizBegun={setQuizBegun}
-            currentSubCategory={currentSubCategory}
-            setQuizCategory={setQuizCategory}
-            setSubCategory={setSubCategory}
-          ></QuizButtons>
+        : <div></div>
       }
 
     </div>
