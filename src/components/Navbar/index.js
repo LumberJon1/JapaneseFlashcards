@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import QuizCategories from "../QuizCategories";
 
 function Navbar(props) {
@@ -9,6 +9,8 @@ function Navbar(props) {
         currentMenuItem,
         buttonWidth
     } = props;
+
+    console.log(menuItems);
 
     return (
         <div className="w-full sticky top-0">

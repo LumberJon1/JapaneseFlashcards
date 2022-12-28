@@ -25,45 +25,45 @@ function App() {
         name: "Home", 
         link: ""
     }
-]);
+  ]);
 
-// Define number to dynamically adjust category button sizes
-const buttonWidth = menuItems.length;
+  // Define number to dynamically adjust category button sizes
+  const buttonWidth = menuItems.length;
 
-// Direct vDOM to re-render changes to selected category
-const [currentMenuItem, setCurrMenuItem] = useState(menuItems[0]);
+  // Direct vDOM to re-render changes to selected category
+  const [currentMenuItem, setCurrMenuItem] = useState(menuItems[2].name);
 
-// Quiz Categories...
-const [quizCategoryItems] = useState([
-    {
-        name: "Words", 
-        link: ""
-      },
+  // Quiz Categories...
+  const [quizCategoryItems] = useState([
       {
-        name: "Time", 
-        link: ""
-      },
-      {
-        name: "Numbers", 
-        link: ""
-      },
-      {
-        name: "Phrases", 
-        link: ""
-      },
-    ]);
+          name: "Words", 
+          link: ""
+        },
+        {
+          name: "Time", 
+          link: ""
+        },
+        {
+          name: "Numbers", 
+          link: ""
+        },
+        {
+          name: "Phrases", 
+          link: ""
+        },
+      ]);
     
-    // Quiz Subcategories
-    // Define the lists of possible subcategories and UI buttons to conditionally render
-    const [wordsSubCategories] = useState([
-      {
-        name: "Verbs"
-      },
-      {
-        name: "-i Adjectives"
-      },
-      {
-        name: "-na Adjectives"
+  // Quiz Subcategories
+  // Define the lists of possible subcategories and UI buttons to conditionally render
+  const [wordsSubCategories] = useState([
+    {
+      name: "Verbs"
+    },
+    {
+      name: "-i Adjectives"
+    },
+    {
+      name: "-na Adjectives"
     },
     {
       name: "Nouns"
@@ -113,15 +113,21 @@ const [quizCategoryItems] = useState([
     }   
   ]);
   
-  // State variable for setting the array of subcategories
-  const [currentSubCategory, setSubCategory] = useState(wordsSubCategories);
-  
-  
+    
   // Function handler for category items being clicked
-  const [currentQuizCategory, setQuizCategory] = useState("");
+  const [currentQuizCategory, setQuizCategory] = useState(quizCategoryItems[0].name);
+  
+  // State variable for setting the array of subcategories
+  const [currentSubCategory, setSubCategory] = useState(wordsSubCategories[0].name);
   
   // state object to handle whether the quiz has been started
   const [quizBegun, setQuizBegun] = useState(false);
+
+  console.log("Current menu item: "+currentMenuItem);
+  console.log("Current subcategory: "+currentSubCategory);
+  console.log("Passing menuItems array to props as "+[menuItems]);
+  console.log("Passing quizCategoryItems array to props as "+[quizCategoryItems]);
+  console.log("Current quiz category: "+currentQuizCategory);
   
   
   useEffect(() => {
@@ -149,11 +155,7 @@ const [quizCategoryItems] = useState([
             currentQuizCategory={currentQuizCategory}
             currentSubCategory={currentSubCategory}
             setSubCategory={setSubCategory}
-            wordsSubCategories={wordsSubCategories}
-            timeSubCategories={timeSubCategories}
-            numbersSubCategories={numbersSubCategories}
-            phrasesSubCategories={phrasesSubCategories}
-          ></QuizCategories>
+            ></QuizCategories>
           <QuizButtons
               currentQuizCategory={currentQuizCategory}
               quizBegun={quizBegun}
@@ -161,6 +163,10 @@ const [quizCategoryItems] = useState([
               currentSubCategory={currentSubCategory}
               setQuizCategory={setQuizCategory}
               setSubCategory={setSubCategory}
+              wordsSubCategories={wordsSubCategories}
+              timeSubCategories={timeSubCategories}
+              numbersSubCategories={numbersSubCategories}
+              phrasesSubCategories={phrasesSubCategories}
             ></QuizButtons>
         </div>
       : <div></div>
