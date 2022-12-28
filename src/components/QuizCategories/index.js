@@ -1,14 +1,34 @@
-import React from "react";
+import React, {useEffect} from "react";
 
 function QuizCategories(props) {
-
+    
     // Unpack props
     const {
         quizCategoryItems = [],
         setQuizCategory,
-        currentQuizCategory
+        currentQuizCategory,
+        currentSubCategory,
+        setSubCategory,
+        wordsSubCategories,
+        timeSubCategories,
+        numbersSubCategories,
+        phrasesSubCategories
     } = props
 
+    // useEffect(() => {
+    // }, [
+    //     currentQuizCategory,
+    //     currentSubCategory,
+    //     setQuizCategory,
+    //     setSubCategory,
+    //     wordsSubCategories,
+    //     timeSubCategories,
+    //     numbersSubCategories,
+    //     phrasesSubCategories
+    // ]);
+
+    console.log("currentSubCategory: "+currentSubCategory);
+    
     return (
         <div className="w-full">
             "Here are some words"
@@ -21,7 +41,22 @@ function QuizCategories(props) {
                         <span onClick={() =>  {
                             setQuizCategory(item.name);
                             console.log("Current quiz category: "+currentQuizCategory);
-                        }}>
+                            if (currentQuizCategory === "Words") {
+                                setSubCategory(wordsSubCategories);
+                            }
+                            else if (currentQuizCategory === "Time") {
+                                setSubCategory(timeSubCategories);
+                            }
+                            else if (currentQuizCategory === "Numbers") {
+                                setSubCategory(numbersSubCategories);
+                            }
+                            else if (currentQuizCategory === "Phrases") {
+                                setSubCategory(phrasesSubCategories);
+                            }
+                            console.log("Set subCategory to "+currentSubCategory);
+                        }
+                            
+                        }>
                             {item.name}
                         </span>
                     </li>

@@ -1,8 +1,7 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import QuizCategories from "../QuizCategories";
 
 function Navbar(props) {
-
     // Unpack props
     const {
         menuItems = [],

@@ -1,7 +1,10 @@
-import React from "react";
+import React, {useEffect} from "react";
 import library from "../../library";
 
 function Flashcard(props) {
+
+    // useEffect(() => {
+    // });
 
     // Unpack props for use in the functions
     const {

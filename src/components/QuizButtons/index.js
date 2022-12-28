@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 
 function QuizButtons(props) {
 
@@ -6,39 +6,16 @@ function QuizButtons(props) {
     const {
         currentQuizCategory,
         quizBegun,
-        setQuizBegun
+        setQuizBegun,
+        currentSubCategory,
+        setQuizCategory,
+        setSubCategory
     } = props
-
-    // Define the lists of possible subcategories and UI buttons to conditionally render
-    const wordsSubCategories = [
-
-    ];
-
-    const timeSubCategories = [
-
-    ];
-
-    const phrasesSubCategories = [
-
-    ];
-
-    const numbersSubCategories = [
-
-    ];
-
-    let currentSubCategory;
-    if (currentQuizCategory === "") {
-        currentSubCategory = "";
-    }
-    else if (currentQuizCategory === "") {
-        currentQuizCategory = "";
-    }
-    else if (currentQuizCategory === "") {
-        currentQuizCategory = "";
-    }
-    else if (currentQuizCategory === "") {
-        currentQuizCategory = "";
-    }
+    
+    // useEffect(() => {
+    // }, [
+    //     currentQuizCategory, currentSubCategory, setSubCategory, setQuizCategory
+    // ]);
 
     return (
         <div className="w-full flex flex-col items-center border border-slate-900 h-1/2">
@@ -50,6 +27,19 @@ function QuizButtons(props) {
             <ul className="flex flex-col my-2">
                 {/* Conditionally render choices of sub-categories based on the active 
                 current quiz category */}
+                {currentSubCategory.map((item) => (
+                    <li
+                        className="w-full bg-emerald-300 border border-emerald-700 rounded-lg my-1 p-2 text-center font-bold"
+                        onClick={() => {
+                            console.log("Clicked "+item.name)
+                        }}
+                        key={item.name}
+                    >
+                        {item.name}
+                    </li>
+                )
+
+                )}
 
             </ul>
 
