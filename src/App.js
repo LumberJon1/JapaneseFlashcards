@@ -7,7 +7,7 @@ import Flashcard from './components/Flashcard';
 import QuizButtons from './components/QuizButtons';
 import Library from './components/Library';
 import Homepage from './components/Homepage';
-import library from './library';
+import bgImage from "./fushimiInari_2.jpeg";
 
 function App() {
 
@@ -134,7 +134,12 @@ function App() {
   // Conponent return...
   
   return (
-    <div className="App w-screen h-full flex flex-col items-center p-2">
+    <div className="App w-screen h-screen flex flex-col items-center p-2"
+    // style={{
+    //   backgroundImage: `url(${bgImage})`
+    //   backgroundSize: `cover`
+    //   }}
+    >
       {/* Navbar and hamburger menu */}
       <Navbar
         className="w-full"
@@ -155,7 +160,7 @@ function App() {
 
       {quizBegun 
         ? <Flashcard
-            className="h-full"
+            className="h-full bg-zinc-50"
             currentMenuItem={currentMenuItem}
             currentQuizCategory={currentQuizCategory}
             selectedFlashcards={selectedFlashcards}
@@ -167,6 +172,7 @@ function App() {
             {currentMenuItem === "Quiz" ? 
             <div>
               <QuizCategories
+                className="bg-zinc-50"
                 quizCategoryItems={quizCategoryItems}
                 setQuizCategory={setQuizCategory}
                 currentQuizCategory={currentQuizCategory}
@@ -175,6 +181,7 @@ function App() {
                 setQuizBegun={setQuizBegun}
                 ></QuizCategories>
               <QuizButtons
+                className="bg-zinc-50"
                   currentQuizCategory={currentQuizCategory}
                   quizBegun={quizBegun}
                   setQuizBegun={setQuizBegun}
@@ -194,7 +201,7 @@ function App() {
           {currentMenuItem === "Library" ?
 
             <div>
-              <Library>
+              <Library className="bg-zinc-50">
 
               </Library>
             </div>
@@ -203,7 +210,7 @@ function App() {
           }
           {currentMenuItem === "Home" ?
           
-            <Homepage>
+            <Homepage className="fullBackground">
 
             </Homepage>
           :
