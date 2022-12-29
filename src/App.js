@@ -112,6 +112,9 @@ function App() {
       name: "All Phrases"
     }   
   ]);
+
+  // State variable to control which card categories the user selected to have loaded and randomized
+  const [selectedFlashcards, setSelectedFlashcards] = useState([]);
   
     
   // Function handler for category items being clicked
@@ -144,43 +147,13 @@ function App() {
         menuItems={menuItems}
         setCurrMenuItem={setCurrMenuItem}
         currentMenuItem={currentMenuItem}
+        setQuizBegun={setQuizBegun}
         buttonWidth={buttonWidth}
+        // onClick={() => {
+        //     setQuizBegun(false);
+        //   }
+        // }
       ></Navbar>
-
-      {currentMenuItem === "Quiz" ? 
-        <div>
-          <QuizCategories
-            quizCategoryItems={quizCategoryItems}
-            setQuizCategory={setQuizCategory}
-            currentQuizCategory={currentQuizCategory}
-            currentSubCategory={currentSubCategory}
-            setSubCategory={setSubCategory}
-            ></QuizCategories>
-          <QuizButtons
-              currentQuizCategory={currentQuizCategory}
-              quizBegun={quizBegun}
-              setQuizBegun={setQuizBegun}
-              currentSubCategory={currentSubCategory}
-              setQuizCategory={setQuizCategory}
-              setSubCategory={setSubCategory}
-              wordsSubCategories={wordsSubCategories}
-              timeSubCategories={timeSubCategories}
-              numbersSubCategories={numbersSubCategories}
-              phrasesSubCategories={phrasesSubCategories}
-            ></QuizButtons>
-        </div>
-      : <div></div>
-      }
-      {currentMenuItem === "Library" ?
-
-        <div>
-          <Library>
-
-          </Library>
-        </div>
-        : <div></div>
-
-      }
       {/* Flashcard Categories */}
 
       {/* Conditionally render either quiz buttons or flashcards depending on whether
@@ -191,9 +164,53 @@ function App() {
             currentMenuItem={currentMenuItem}
             currentQuizCategory={currentQuizCategory}
           ></Flashcard>      
-        : <div></div>
+        
+        : 
+        
+          <>      
+            {currentMenuItem === "Quiz" ? 
+            <div>
+              <QuizCategories
+                quizCategoryItems={quizCategoryItems}
+                setQuizCategory={setQuizCategory}
+                currentQuizCategory={currentQuizCategory}
+                currentSubCategory={currentSubCategory}
+                setSubCategory={setSubCategory}
+                setQuizBegun={setQuizBegun}
+                ></QuizCategories>
+              <QuizButtons
+                  currentQuizCategory={currentQuizCategory}
+                  quizBegun={quizBegun}
+                  setQuizBegun={setQuizBegun}
+                  currentSubCategory={currentSubCategory}
+                  setQuizCategory={setQuizCategory}
+                  setSubCategory={setSubCategory}
+                  wordsSubCategories={wordsSubCategories}
+                  timeSubCategories={timeSubCategories}
+                  numbersSubCategories={numbersSubCategories}
+                  phrasesSubCategories={phrasesSubCategories}
+                  setSelectedFlashcards={setSelectedFlashcards}
+                  selectedFlashcards={selectedFlashcards}
+                ></QuizButtons>
+            </div>
+          : <></>
+          }
+          {currentMenuItem === "Library" ?
+
+            <div>
+              <Library>
+
+              </Library>
+            </div>
+            : <></>
+
+          }
+          </>
       }
 
+    {console.log("quizBegun: ")}
+    {console.log(quizBegun)}
+    {console.log("Current menu item: "+currentMenuItem)}
     </div>
   );
 }

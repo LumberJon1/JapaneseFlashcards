@@ -7,17 +7,24 @@ function Navbar(props) {
         menuItems = [],
         setCurrMenuItem,
         currentMenuItem,
-        buttonWidth
+        buttonWidth,
+        setQuizBegun
     } = props;
 
     console.log(menuItems);
+
+    function handleCategoryClick() {
+        setQuizBegun(false);
+    }
 
     return (
         <div className="w-full sticky top-0">
             <ul className="flex items-center justify-center">
                 {menuItems.map((item) => (
                     <li
-                        onClick={() => {setCurrMenuItem(item.name)
+                        onClick={() => {
+                            setCurrMenuItem(item.name);
+                            handleCategoryClick();
                             console.log("name: "+item.name);
                             console.log("current category: "+currentMenuItem);
                         }}

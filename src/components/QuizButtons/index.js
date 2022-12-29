@@ -13,8 +13,16 @@ function QuizButtons(props) {
         wordsSubCategories = [],
         timeSubCategories = [],
         numbersSubCategories = [],
-        phrasesSubCategories = []
+        phrasesSubCategories = [],
+        setSelectedFlashcards,
+        selectedFlashcards
     } = props
+
+
+    function handleStartButton() {
+        storeCategories();
+        setQuizBegun(true);
+    }
     
 
     function evaluateSubCategory() {
@@ -39,10 +47,23 @@ function QuizButtons(props) {
 
     evaluateSubCategory();
 
+    // // Handle clicked state for subcategories
+    // const [clicked, setClicked] = useState(false);
+
+    // const handleClicked =  (event) => {
+    //     setClicked(current => !current);
+    //     console.log(clicked);
+    // }
+
 
     // Store user's selected subcategories
     let selectedCategories = [];
 
+    // Set the state at App level for the array of subCategories to load flashcards from
+    function storeCategories() {
+        setSelectedFlashcards(selectedCategories);
+        console.log(selectedFlashcards)
+    }
 
     return (
         <div className="w-full flex flex-col items-center my-4 h-1/2">
@@ -56,18 +77,21 @@ function QuizButtons(props) {
                 current quiz category */}
                 {currentSubCategory.map((item) => (
                     <li
-                        className={`my-1 w-3/4 border border-slate-500 bg-zinc-100 shadow rounded-lg p-2 font-bold ${selectedCategories.includes(item.name) && "subCategoryActive"}`}
-                        onClick={() => {
+                        className={`my-1 w-3/4 border border-slate-500 bg-zinc-100 shadow rounded-lg p-2 font-bold`}
+                        onClick={(event) => {
                             if (selectedCategories.includes(item.name)) {
                                 console.log("Array already contains "+item.name);
                                 // remove
                                 console.log("removing "+item.name+"...");
                                 selectedCategories.splice(selectedCategories.indexOf([item.name]), 1);
+                                event.currentTarget.classList = "my-1 w-3/4 border border-slate-500 bg-zinc-100 shadow rounded-lg p-2 font-bold";
                             }
                             else {
                                 selectedCategories.push(item.name);
+                                event.currentTarget.classList = "my-1 w-3/4 border border-indigo-600 bg-sky-300 shadow rounded-lg p-2 font-bold";
                             }
                             console.log("selectedCategories now contains: "+selectedCategories);
+                            
                         }}
                         key={item.name}
                     >
@@ -80,13 +104,12 @@ function QuizButtons(props) {
             <button
                 className="rounded bg-emerald-600 border border-emerald-400 shadow-lg font-bold w-1/3 text-zinc-200 text-lg p-2"
                 onClick={ () => {
-                        setQuizBegun(true);
+                        handleStartButton();
                     }
                 }
             >
                 Start
             </button>
-
         </div>
     );
 }
