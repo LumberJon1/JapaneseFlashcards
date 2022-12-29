@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/JapaneseFlashcards/static/css/main.3f596d8b.css",
+    "main.js": "/JapaneseFlashcards/static/js/main.b279b4a3.js",
+    "static/js/787.9dd0dd9e.chunk.js": "/JapaneseFlashcards/static/js/787.9dd0dd9e.chunk.js",
+    "static/media/logo.svg": "/JapaneseFlashcards/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/JapaneseFlashcards/index.html",
+    "main.3f596d8b.css.map": "/JapaneseFlashcards/static/css/main.3f596d8b.css.map",
+    "main.b279b4a3.js.map": "/JapaneseFlashcards/static/js/main.b279b4a3.js.map",
+    "787.9dd0dd9e.chunk.js.map": "/JapaneseFlashcards/static/js/787.9dd0dd9e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3f596d8b.css",
+    "static/js/main.b279b4a3.js"
+  ]
+}
