@@ -154,6 +154,7 @@ function App() {
 
       {quizBegun 
         ? <Flashcard
+            className="h-full"
             currentMenuItem={currentMenuItem}
             currentQuizCategory={currentQuizCategory}
             selectedFlashcards={selectedFlashcards}
