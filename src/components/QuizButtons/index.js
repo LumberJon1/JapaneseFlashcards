@@ -62,7 +62,6 @@ function QuizButtons(props) {
     // Set the state at App level for the array of subCategories to load flashcards from
     function storeCategories() {
         setSelectedFlashcards(selectedCategories);
-        console.log(selectedFlashcards)
     }
 
     return (
@@ -80,9 +79,7 @@ function QuizButtons(props) {
                         className={`my-1 w-3/4 border border-slate-500 bg-zinc-100 shadow rounded-lg p-2 font-bold`}
                         onClick={(event) => {
                             if (selectedCategories.includes(item.name)) {
-                                console.log("Array already contains "+item.name);
                                 // remove
-                                console.log("removing "+item.name+"...");
                                 selectedCategories.splice(selectedCategories.indexOf([item.name]), 1);
                                 event.currentTarget.classList = "my-1 w-3/4 border border-slate-500 bg-zinc-100 shadow rounded-lg p-2 font-bold";
                             }
@@ -90,7 +87,6 @@ function QuizButtons(props) {
                                 selectedCategories.push(item.name);
                                 event.currentTarget.classList = "my-1 w-3/4 border border-indigo-600 bg-sky-300 shadow rounded-lg p-2 font-bold";
                             }
-                            console.log("selectedCategories now contains: "+selectedCategories);
                             
                         }}
                         key={item.name}

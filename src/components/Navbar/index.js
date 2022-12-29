@@ -11,8 +11,6 @@ function Navbar(props) {
         setQuizBegun
     } = props;
 
-    console.log(menuItems);
-
     function handleCategoryClick() {
         setQuizBegun(false);
     }
@@ -25,8 +23,6 @@ function Navbar(props) {
                         onClick={() => {
                             setCurrMenuItem(item.name);
                             handleCategoryClick();
-                            console.log("name: "+item.name);
-                            console.log("current category: "+currentMenuItem);
                         }}
                         /* Conditionally add the "Active" class so long as the item name matches currentCategory.*/
                         className={`flex bg-slate-700 mx-1 items-center justify-center p-2 border rounded shadow text-zinc-100 w-1/${buttonWidth} ${currentMenuItem.name === item.name && "navActive"}`}

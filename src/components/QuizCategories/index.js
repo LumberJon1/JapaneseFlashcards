@@ -22,8 +22,6 @@ function QuizCategories(props) {
     //     numbersSubCategories,
     //     phrasesSubCategories
     // ]);
-
-    console.log(quizCategoryItems);
     
     return (
         <div className="w-full">

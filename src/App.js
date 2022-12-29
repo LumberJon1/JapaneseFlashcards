@@ -124,14 +124,7 @@ function App() {
   const [currentSubCategory, setSubCategory] = useState(wordsSubCategories[0].name);
   
   // state object to handle whether the quiz has been started
-  const [quizBegun, setQuizBegun] = useState(false);
-
-  console.log("Current menu item: "+currentMenuItem);
-  console.log("Current subcategory: "+currentSubCategory);
-  console.log("Passing menuItems array to props as "+[menuItems]);
-  console.log("Passing quizCategoryItems array to props as "+[quizCategoryItems]);
-  console.log("Current quiz category: "+currentQuizCategory);
-  
+  const [quizBegun, setQuizBegun] = useState(false);  
   
   useEffect(() => {
 
@@ -163,6 +156,7 @@ function App() {
         ? <Flashcard
             currentMenuItem={currentMenuItem}
             currentQuizCategory={currentQuizCategory}
+            selectedFlashcards={selectedFlashcards}
           ></Flashcard>      
         
         : 
@@ -207,10 +201,6 @@ function App() {
           }
           </>
       }
-
-    {console.log("quizBegun: ")}
-    {console.log(quizBegun)}
-    {console.log("Current menu item: "+currentMenuItem)}
     </div>
   );
 }
