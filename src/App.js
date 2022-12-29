@@ -6,6 +6,7 @@ import QuizCategories from './components/QuizCategories';
 import Flashcard from './components/Flashcard';
 import QuizButtons from './components/QuizButtons';
 import Library from './components/Library';
+import Homepage from './components/Homepage';
 import library from './library';
 
 function App() {
@@ -199,6 +200,15 @@ function App() {
             </div>
             : <></>
 
+          }
+          {currentMenuItem === "Home" ?
+          
+            <Homepage>
+
+            </Homepage>
+          :
+          
+            <></>
           }
           </>
       }
