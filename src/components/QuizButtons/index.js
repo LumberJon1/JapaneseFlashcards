@@ -35,9 +35,6 @@ function QuizButtons(props) {
         else if (currentQuizCategory === "Time") {
             subCategoryArray = timeSubCategories;
         }
-        else if (currentQuizCategory === "Numbers") {
-            subCategoryArray = numbersSubCategories;
-        }
         else if (currentQuizCategory === "Phrases") {
             subCategoryArray = phrasesSubCategories;
         }
@@ -72,8 +69,6 @@ function QuizButtons(props) {
             </p>
             
             <ul className="flex flex-col my-4 w-full items-center justify-center">
-                {/* Conditionally render choices of sub-categories based on the active 
-                current quiz category */}
                 {currentSubCategory.map((item) => (
                     <li
                         className={`my-1 w-3/4 border border-slate-500 bg-zinc-100 shadow rounded-lg p-2 font-bold`}

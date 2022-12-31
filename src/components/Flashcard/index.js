@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import library from "../../library";
+import {generateTimestamp, convertTime} from "../../utils/Time";
 
 function Flashcard(props) {
 
@@ -28,12 +29,41 @@ function Flashcard(props) {
     const [category, setCategory] = useState("");
 
     function evaluateCategories() {
-        for(let i = 0; i < library.length; i++) {
-            if (selectedFlashcards.includes(library[i][0])) {
-                console.log("Including subArray "+library[i][0]);
-                selectedSubArrays.push(library[i].slice(1,library[i].length));
-                subArrayCategories.push(library[i][0]);
+
+        // If the selected flashcards category is "all ___", drop the all and the ending "s"
+        if (selectedFlashcards.includes("All Numbers")) {
+            selectedFlashcards[selectedFlashcards.indexOf("All Numbers")] = "Numbers";
+            console.log("Updated entry for All category.  Selected Flashcards now includes "+selectedFlashcards);
+        }
+        else if (selectedFlashcards.includes("All Phrases")) {
+            selectedFlashcards[selectedFlashcards.indexOf("All Phrases")] = "Phrases";
+            console.log("Updated entry for All category.  Selected Flashcards now includes "+selectedFlashcards);
+            // The regular generateCard() method can now be called
+            generateCard(selectedSubArrays);
+        }
+        else if (selectedFlashcards.includes("All Times") || selectedFlashcards.includes("Time")) {
+            selectedFlashcards[selectedFlashcards.indexOf("All Times")] = "Time";
+            console.log("Updated entry for All category.  Selected Flashcards now includes "+selectedFlashcards);
+            let timestamp = generateTimestamp();
+            let convertedTime = convertTime(timestamp);
+
+            // split into returned variables
+            setEnglishText(timestamp);
+            setRomaji(convertedTime);
+            setKanaText("");
+            setCategory("Time");
+
+        }
+        else {            
+            for(let i = 0; i < library.length; i++) {
+                if (selectedFlashcards.includes(library[i][0])) {
+                    console.log("Including subArray "+library[i][0]);
+                    selectedSubArrays.push(library[i].slice(1,library[i].length));
+                    subArrayCategories.push(library[i][0]);
+                }
             }
+            // Use the general method for generating a card from a random word
+            generateCard(selectedSubArrays);
         }
         console.log("Finished matching.\nSelected Subarrays: "+selectedSubArrays);
     }
@@ -41,35 +71,30 @@ function Flashcard(props) {
     
     // Generate a random card from the library based on whichever quiz type is set to active
     function generateCard(array) {
-        
-        console.log("Array: "+array);
-        for (let i = 0; i < array.length; i++) {
-            console.log(array[i]);
-        }
-        // Select one of the arrays at random (i.e. verbs, nouns, etc.)
-        let cardArrayIndex = Math.floor(Math.random() * array.length);
-        console.log(cardArrayIndex);
-        
-        // Select from that array a random card
-        let chosenSubArray = array[cardArrayIndex];
-        let randomCard = Math.floor(Math.random() * chosenSubArray.length);
-        let chosenCard = chosenSubArray[randomCard];
-        
-        // Split its properties into variables to be used
-        // englishText = chosenCard.englishText;
-        // romaji = chosenCard.romaji;
-        // kanaText = chosenCard.kanaText;
-        // category = subArrayCategories[cardArrayIndex];
 
-        setEnglishText(chosenCard.englishText);
-        setRomaji(chosenCard.romaji);
-        setKanaText(chosenCard.kanaText);
-        setCategory(subArrayCategories[cardArrayIndex]);
-        console.log("Example card from chosen subArray: ");
-        console.log(englishText);
-        console.log(kanaText);
-        console.log(romaji);
-        console.log(category);
+        // Only generate the card if the categories are standard words
+        if (
+            !selectedFlashcards.includes("Time") &&
+            !selectedFlashcards.includes("All Numbers")
+            ) {
+                console.log("Array: "+array);
+                for (let i = 0; i < array.length; i++) {
+                }
+                // Select one of the arrays at random (i.e. verbs, nouns, etc.)
+                let cardArrayIndex = Math.floor(Math.random() * array.length);
+                
+                // Select from that array a random card
+                let chosenSubArray = array[cardArrayIndex];
+                let randomCard = Math.floor(Math.random() * chosenSubArray.length);
+                let chosenCard = chosenSubArray[randomCard];
+                
+                // Split its properties into variables to be used
+                setEnglishText(chosenCard.englishText);
+                setRomaji(chosenCard.romaji);
+                setKanaText(chosenCard.kanaText);
+                setCategory(subArrayCategories[cardArrayIndex]);
+            }
+        
     }
     
     
@@ -89,7 +114,6 @@ function Flashcard(props) {
     
     function handleNext() {
         evaluateCategories();
-        generateCard(selectedSubArrays);
     }
     
     

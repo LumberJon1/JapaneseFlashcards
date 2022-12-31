@@ -24,8 +24,7 @@ function QuizCategories(props) {
     // ]);
     
     return (
-        <div className="w-full">
-            "Here are some words"
+        <div className="w-full mt-4">
             <ul className="flex items-center justify-center">
                 {quizCategoryItems.map((item) => (
                     <li
