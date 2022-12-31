@@ -98,14 +98,7 @@ function App() {
     },
     {
       name: "Ten-thousands"
-    },
-    {
-      name: "Counters (General)"
-    },
-    {
-      name: "Counters (People)"
-    },
-    
+    }    
   ]);
   
   const [phrasesSubCategories] = useState([

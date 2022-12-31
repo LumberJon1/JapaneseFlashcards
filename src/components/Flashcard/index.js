@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import library from "../../library";
 import {generateTimestamp, convertTime} from "../../utils/Time";
+import { convertNumber} from "../../utils/Numbers";
 
 function Flashcard(props) {
 
@@ -28,12 +29,51 @@ function Flashcard(props) {
     const [kanaText, setKanaText] = useState("");
     const [category, setCategory] = useState("");
 
+
+    function generateNumber() {
+        // Generate random number
+        // Take the current number subcategory and use it to limit the upper number threshold
+        let upperBound;
+        if (selectedFlashcards.includes("Ten-thousands")) {
+            upperBound = 99999;
+        }
+        else if (selectedFlashcards.includes("Thousands")) {
+            upperBound = 9999;
+        }
+        else if (selectedFlashcards.includes("Hundreds")) {
+            upperBound = 999;
+        }
+        else if (selectedFlashcards.includes("Tens")) {
+            upperBound = 99;
+        }
+        else if (selectedFlashcards.includes("Ones")) {
+            upperBound = 9;
+        }
+        let randomNumber = Math.floor(Math.random() * upperBound) + 1;
+
+        console.log("Upper bound: "+upperBound);
+        console.log("Random number generated: "+randomNumber);
+        let convertedNumber = convertNumber(randomNumber);
+
+        // Prepare state for display on the card component
+        setEnglishText(randomNumber);
+        setRomaji(convertedNumber);
+        setKanaText("");
+        setCategory("Numbers");
+    }
+
+
+
     function evaluateCategories() {
 
-        // If the selected flashcards category is "all ___", drop the all and the ending "s"
-        if (selectedFlashcards.includes("All Numbers")) {
-            selectedFlashcards[selectedFlashcards.indexOf("All Numbers")] = "Numbers";
-            console.log("Updated entry for All category.  Selected Flashcards now includes "+selectedFlashcards);
+        // Check to see if the quiz category is Numbers and handle this item differently
+        if (currentQuizCategory === "Numbers") {
+            // If the selected flashcards category is "all ___", drop the all and the ending "s"
+            if (selectedFlashcards.includes("All Numbers") || selectedFlashcards.includes("Numbers")) {
+                selectedFlashcards[selectedFlashcards.indexOf("All Numbers")] = "Numbers";
+                console.log("Updated entry for All category.  Selected Flashcards now includes "+selectedFlashcards);
+            }
+            generateNumber();
         }
         else if (selectedFlashcards.includes("All Phrases")) {
             selectedFlashcards[selectedFlashcards.indexOf("All Phrases")] = "Phrases";
@@ -75,7 +115,7 @@ function Flashcard(props) {
         // Only generate the card if the categories are standard words
         if (
             !selectedFlashcards.includes("Time") &&
-            !selectedFlashcards.includes("All Numbers")
+            !selectedFlashcards.includes("Numbers")
             ) {
                 console.log("Array: "+array);
                 for (let i = 0; i < array.length; i++) {

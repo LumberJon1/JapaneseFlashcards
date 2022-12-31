@@ -38,6 +38,9 @@ function QuizButtons(props) {
         else if (currentQuizCategory === "Phrases") {
             subCategoryArray = phrasesSubCategories;
         }
+        else if (currentQuizCategory === "Numbers") {
+            subCategoryArray = numbersSubCategories;
+        }
 
         setSubCategory(subCategoryArray);
     }
