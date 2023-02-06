@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Japanese Flashcards
+  ## Description
+    Japanese Flashcards is a React SPA (Single Page Application) that allows users to quiz themselves from among different categories of Japanese words and phrases, such as nouns, verbs, and numbers.
+    A library page also displays the entire word bank of words that can be quizzed.  Users can select one or multiple categories and switch between the Japanese and English translations for each word or phrase,
+    to really help solidify memorization.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  ## License
+  [<img src="https://img.shields.io/badge/License-MIT-blue.svg?logo=LOGO">](LINK)
 
-## Available Scripts
+  ## Table of Contents
+  1. [Installation](#Installation)
+  2. [Deployment](#Deployment)
+  3. [Usage](#Usage)
+  4. [Screenshot](#Screenshot)
+  5. [Contributing](#Contributing)
+  6. [Technologies](#Technologies)
+  7. [Tests](#Tests)
+  8. [Questions](#Questions)
 
-In the project directory, you can run:
+  ## Installation
+  No installation is required to run this project.  Simply view the Deployment link to see the app.
 
-### `npm start`
+  ## Deployment
+  https://lumberjon1.github.io/JapaneseFlashcards/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  ## Usage
+  Navigate from home to either quizzes or the library, to try out memorizing various Japanese words and phrases.  Or look through the organized lists of vocabulary.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  ## Screenshot
+  ![screenshot](./public/Screenshot.PNG)
 
-### `npm test`
+  ## Contributing
+  Please feel free to contact me if you have questions about contributing to this project.  Ypu can reach out via my email or GirHub account linked below.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  ## Technologies
+  * Javascript
+  * Node.js
+  * React
+  * TailwindCSS
 
-### `npm run build`
+  ## Tests
+  No testing frameworks were used in the development of this project.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  ## Questions
+  [Check out my GitHub](https://github.com/LumberJon1)
+  --or--
+  Email me at JWilliams12117@gmail.com
