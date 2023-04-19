@@ -3,20 +3,30 @@ import library from "../../library";
 
 function Library() {
 
-    console.log(library);
+    library.forEach((category) => {
+        console.log(category);
+    });
+
 
     return (
+        // Column Labels
         <div className="flex flex-col items-center justify-center">
             <div className="flex items-around justify-center mx-1 mb-6 mt-4 w-full bg-emerald-400 sticky top-12">
                 <p className="w-1/3 p-2 text-center font-bold">English</p>
                 <p className="w-1/3 p-2 text-center font-bold">Romaji</p>
                 <p className="w-1/3 p-2 text-center font-bold">Kana</p>
             </div>
+
+            {/* Doing away with labels and instead focusing on sorting */}
             <ul className="flex flex-col items-center">
+
+                {/* Sort the library according to sorting parameters before mapping */}
+
+
+
                 {library.map((category) => (
                     category[0] != "Phrases" ?
                     <div className="flex flex-col items-center justify-center mx-1 w-full">
-                        <p className="text-center font-bold text-2xl">{category[0]}</p>
                         <ul className="flex flex-col text-center justify-center w-full my-2">
                             {category.map((item) => (
                                 !item.englishText ?
