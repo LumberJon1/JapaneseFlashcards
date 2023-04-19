@@ -1286,37 +1286,39 @@ const library = [
 
 
 // function to sort based on language
-const sortEnglish = () => {
-    library.sort((function(a, b) {
-        const wordA = a.englishText.toUpperCase();
-        const wordB = b.englishText.toUpperCase();
-        if (wordA > wordB) {
-            return 1;
-        }
-        if (wordA < wordB) {
-            return -1;
-        }
-
-        return 0;
+const sortLibrary = (language) => {
+    if (language === "English") {
+        library.sort((function(a, b) {
+            const wordA = a.englishText.toUpperCase();
+            const wordB = b.englishText.toUpperCase();
+            if (wordA > wordB) {
+                return 1;
+            }
+            if (wordA < wordB) {
+                return -1;
+            }
         
-    }));
+            return 0;
+            
+        }));
+    }
+    else {
+        library.sort((function(a, b) {
+            const wordA = a.romaji.toUpperCase();
+            const wordB = b.romaji.toUpperCase();
+            if (wordA > wordB) {
+                return 1;
+            }
+            if (wordA < wordB) {
+                return -1;
+            }
+        
+            return 0;
+        
+        }));
+    }
 }
 
-const sortJapanese = () => {
-    library.sort((function(a, b) {
-        const wordA = a.romaji.toUpperCase();
-        const wordB = b.romaji.toUpperCase();
-        if (wordA > wordB) {
-            return 1;
-        }
-        if (wordA < wordB) {
-            return -1;
-        }
-
-        return 0;
-
-    }));
-}
 
 const countLibrary = () => {
     let wordCount = 0;
@@ -1331,4 +1333,4 @@ const countLibrary = () => {
     console.log("There are "+wordCount+" items in the library, excluding phrases.");
 }
 
-module.exports = library;
+module.exports = {library, sortLibrary, countLibrary};

@@ -1,16 +1,20 @@
-import React from "react";
-import library from "../../library";
+import React, {useState} from "react";
+import {library, sortLibrary, countLibrary} from "../../library";
 
 function Library() {
 
-    library.forEach((item) => {
-        // console.log(item);
-    });
+    // state management for sort order
+    const [sortOrder, setSortOrder] = useState("English");
 
 
     return (
         // Column Labels
         <div className="flex flex-col items-center justify-center">
+
+
+            {/* Searchbar component with sorting button */}
+
+
             <div className="flex items-around justify-center mx-1 mb-6 mt-4 w-full bg-emerald-400 sticky top-12">
                 <p className="w-1/3 p-2 text-center font-bold">English</p>
                 <p className="w-1/3 p-2 text-center font-bold">Romaji</p>
@@ -21,6 +25,7 @@ function Library() {
             <ul className="flex flex-col items-center">
 
                 {/* Sort the library according to sorting parameters before mapping */}
+                {sortLibrary(sortOrder)}
 
                 <div className="flex flex-col items-center justify-center mx-1 w-full">
                     {library.map((item) => (
