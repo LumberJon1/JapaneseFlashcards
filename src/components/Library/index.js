@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import {library, sortLibrary, countLibrary} from "../../library";
+import LibrarySearch from "../LibrarySearch";
 
 function Library() {
 
@@ -13,12 +14,13 @@ function Library() {
 
 
             {/* Searchbar component with sorting button */}
+            <LibrarySearch></LibrarySearch>
 
 
-            <div className="flex items-around justify-center mx-1 mb-6 mt-4 w-full bg-emerald-400 sticky top-12">
-                <p className="w-1/3 p-2 text-center font-bold">English</p>
-                <p className="w-1/3 p-2 text-center font-bold">Romaji</p>
-                <p className="w-1/3 p-2 text-center font-bold">Kana</p>
+            <div className="flex items-around justify-center mx-1 mb-6 mt-4 w-full bg-slate-700 text-zinc-200 sticky top-12">
+                <p className="w-1/3 p-2 text-center">English</p>
+                <p className="w-1/3 p-2 text-center">Romaji</p>
+                <p className="w-1/3 p-2 text-center">Kana</p>
             </div>
 
             {/* Doing away with labels and instead focusing on sorting */}
