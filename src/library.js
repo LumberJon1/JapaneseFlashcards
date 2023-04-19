@@ -1321,7 +1321,7 @@ const sortJapanese = () => {
 const countLibrary = () => {
     let wordCount = 0;
     for (let i = 0; i < library.length; i++) {
-        if (library[i].category != "Phrases") {
+        if (library[i].category !== "Phrases") {
             wordCount += 1;
         }
     }

@@ -3,8 +3,8 @@ import library from "../../library";
 
 function Library() {
 
-    library.forEach((category) => {
-        console.log(category);
+    library.forEach((item) => {
+        // console.log(item);
     });
 
 
@@ -22,9 +22,30 @@ function Library() {
 
                 {/* Sort the library according to sorting parameters before mapping */}
 
+                <div className="flex flex-col items-center justify-center mx-1 w-full">
+                    {library.map((item) => (
+                        item.category !== "Phrases" ?
+                        <li
+                        className="text-center m-2 w-full flex border border-slate-400 rounded items-center justify-center p-2"
+                        key={item.kanaText}
+                        >
+                            <p className="w-1/3 text-center break-words">
+                                {item.englishText}
+                            </p>
+                            <p className="w-1/3 text-center break-words">
+                                {item.romaji}
+                            </p>
+                            <p className="w-1/3 text-center break-words">
+                                {item.kanaText}
+                            </p>
 
+                        </li>
+                        : <div></div>
+                    ))}
 
-                {library.map((category) => (
+                </div>
+
+                {/* {library.map((category) => (
                     category[0] != "Phrases" ?
                     <div className="flex flex-col items-center justify-center mx-1 w-full">
                         <ul className="flex flex-col text-center justify-center w-full my-2">
@@ -50,7 +71,10 @@ function Library() {
                         </ul>
                     </div>
                     : <div></div>
-                ))}
+                ))} */}
+
+
+
             </ul>
 
         </div>
