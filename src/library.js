@@ -930,8 +930,8 @@ const library = [
     },
     {
         englishText: "To Use",
-        romaji: "Tsukaimasu",
-        kanaText: kana_tsu+kana_ka+kana_i+kana_ma+kana_su,
+        romaji: "Tsukau",
+        kanaText: kana_tsu+kana_ka+kana_u,
         kanjiText: "",
         category: "Verbs"
     },
@@ -1281,6 +1281,384 @@ const library = [
         kanaText: kana_ni+kana_chi+kana_yo+kana_u+kana_bi,
         kanjiText: "",
         category: "Days of the Week"
+    },
+    {
+        englishText: "Medical Exam",
+        romaji: "Shinsatsu",
+        kanaText: kana_shi+kana_n+kana_sa+kana_tsu,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "To Wait",
+        romaji: "Matsu",
+        kanaText: kana_ma+kana_tsu,
+        kanjiText: "",
+        category: "Verbs"
+    },
+    {
+        englishText: "To Meet",
+        romaji: "Au",
+        kanaText: kana_a+kana_u,
+        kanjiText: "",
+        category: "Verbs"
+    },
+    {
+        englishText: "To Exit",
+        romaji: "Deru",
+        kanaText: kana_de+kana_ru,
+        kanjiText: "",
+        category: "Verbs"
+    },
+    {
+        englishText: "Coat / Jacket",
+        romaji: "Uwagi",
+        kanaText: kana_u+kana_wa+kana_gi,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "To Open",
+        romaji: "Akeru",
+        kanaText: kana_a+kana_ke+kana_ru,
+        kanjiText: "",
+        category: "Verbs"
+    },
+    {
+        englishText: "Important",
+        romaji: "Taisetsu",
+        kanaText: kana_ta+kana_i+kana_se+kana_tsu,
+        kanjiText: "",
+        category: "-na Adjectives"
+    },
+    {
+        englishText: "Important",
+        romaji: "Daiji",
+        kanaText: kana_da+kana_i+kana_ji,
+        kanjiText: "",
+        category: "-na Adjectives"
+    },
+    {
+        englishText: "Physical Condition",
+        romaji: "Taichou",
+        kanaText: kana_ta+kana_i+kana_chi+kana_yo+kana_u,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "Mental / Emotional Condition",
+        romaji: "Kibun",
+        kanaText: kana_ki+kana_bu+kana_n,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "To be Surprised",
+        romaji: "Otosu",
+        kanaText: kana_o+kana_to+kana_su,
+        kanjiText: "",
+        category: "Verbs"
+    },
+    {
+        englishText: "To Clean",
+        romaji: "Souji Suru",
+        kanaText: kana_so+kana_u+kana_ji+" "+kana_su+kana_ru,
+        kanjiText: "",
+        category: "Verbs"
+    },
+    {
+        englishText: "Fish Tank",
+        romaji: "Suisou",
+        kanaText: kana_su+kana_i+kana_so+kana_u,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "Lid / Cap / Cover",
+        romaji: "Futa",
+        kanaText: kana_fu+kana_ta,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "To Hold / Carry",
+        romaji: "Motsu",
+        kanaText: kana_mo+kana_tsu,
+        kanjiText: "",
+        category: "Verbs"
+    },
+    {
+        englishText: "Weather",
+        romaji: "Tenki",
+        kanaText: kana_te+kana_n+kana_ki,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "To Put On / Wear (Accessories)",
+        romaji: "Tsukeru",
+        kanaText: kana_tsu+kana_ke+kana_ru,
+        kanjiText: "",
+        category: "Verbs"
+    },
+    {
+        englishText: "Shoes",
+        romaji: "Kutsu",
+        kanaText: kana_ku+kana_tsu,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "Cold (To the touch)",
+        romaji: "Tsumetai",
+        kanaText: kana_tsu+kana_me+kana_ta+kana_i,
+        kanjiText: "",
+        category: "-i Adjectives"
+    },
+    {
+        englishText: "Corner",
+        romaji: "Kado",
+        kanaText: kana_ka+kana_do,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "Intersection",
+        romaji: "Kousaten",
+        kanaText: kana_ko+kana_u+kana_sa+kana_te+kana_n,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "Traffic Signal",
+        romaji: "Shingou",
+        kanaText: kana_shi+kana_n+kana_go+kana_u,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "Police",
+        romaji: "Keisatsu",
+        kanaText: kana_ke+kana_i+kana_sa+kana_tsu,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "Snack / Appetizer",
+        romaji: "Otsumami",
+        kanaText: kana_o+kana_tsu+kana_ma+kana_mi,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "Later / After (Suffix)",
+        romaji: "Go",
+        kanaText: kana_go,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "To Arrive",
+        romaji: "Tsuku",
+        kanaText: kana_tsu+kana_ku,
+        kanjiText: "",
+        category: "Verbs"
+    },
+    {
+        englishText: "Kitchen",
+        romaji: "Daidokoro",
+        kanaText: kana_da+kana_i+kana_do+kana_ko+kana_ro,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "To Cook",
+        romaji: "Ryouri Suru",
+        kanaText: kana_ri+kana_yo+kana_u+kana_ri+" "+kana_su+kana_ru,
+        kanjiText: "",
+        category: "Verbs"
+    },
+    {
+        englishText: "Serious / Diligent",
+        romaji: "Majime",
+        kanaText: kana_ma+kana_ji+kana_me,
+        kanjiText: "",
+        category: "-na Adjectives"
+    },
+    {
+        englishText: "Picture",
+        romaji: "Shasshin",
+        kanaText: kana_shi+kana_ya+kana_small_tsu+kana_shi+kana_n,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "To Walk",
+        romaji: "Aruku",
+        kanaText: kana_a+kana_ru+kana_ku,
+        kanjiText: "",
+        category: "Verbs"
+    },
+    {
+        englishText: "Chair",
+        romaji: "Isu",
+        kanaText: kana_i+kana_su,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "To Board / Ride",
+        romaji: "Noru",
+        kanaText: kana_no+kana_ru,
+        kanjiText: "",
+        category: "Verbs"
+    },
+    {
+        englishText: "To Disembark / Get Off",
+        romaji: "Oriru",
+        kanaText: kana_o+kana_ri+kana_ru,
+        kanjiText: "",
+        category: "Verbs"
+    },
+    {
+        englishText: "To Listen / Hear",
+        romaji: "Kiku",
+        kanaText: kana_ki+kana_ku,
+        kanjiText: "",
+        category: "Verbs"
+    },
+    {
+        englishText: "To Take",
+        romaji: "Toru",
+        kanaText: kana_to+kana_ru,
+        kanjiText: "",
+        category: "Verbs"
+    },
+    {
+        englishText: "Happiness",
+        romaji: "Shiawase",
+        kanaText: kana_shi+kana_a+kana_wa+kana_se,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "Front Desk / Reception",
+        romaji: "Uketsuke",
+        kanaText: kana_u+kana_ke+kana_tsu+kana_ke,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "To Wake Up",
+        romaji: "Okiru",
+        kanaText: kana_o+kana_ki+kana_ru,
+        kanjiText: "",
+        category: "Verbs"
+    },
+    {
+        englishText: "To Receive",
+        romaji: "Morau",
+        kanaText: kana_mo+kana_ra+kana_u,
+        kanjiText: "",
+        category: "Verbs"
+    },
+    {
+        englishText: "To Hide",
+        romaji: "Kakusu",
+        kanaText: kana_ka+kana_ku+kana_su,
+        kanjiText: "",
+        category: "Verbs"
+    },
+    {
+        englishText: "Black",
+        romaji: "Kuroi",
+        kanaText: kana_ku+kana_ro+kana_i,
+        kanjiText: "",
+        category: "-i Adjectives"
+    },
+    {
+        englishText: "To Cry",
+        romaji: "Naku",
+        kanaText: kana_na+kana_ku,
+        kanjiText: "",
+        category: "Verbs"
+    },
+    {
+        englishText: "Letter / Mail",
+        romaji: "Tegami",
+        kanaText: kana_te+kana_ga+kana_mi,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "Boss",
+        romaji: "Bushou",
+        kanaText: kana_bu+kana_chi+kana_yo+kana_u,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "Heat / Temperature / Fever",
+        romaji: "Netsu",
+        kanaText: kana_ne+kana_tsu,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "Yellow",
+        romaji: "Kiiroi",
+        kanaText: kana_ki+kana_i+kana_ro+kana_i,
+        kanjiText: "",
+        category: "-i Adjectives"
+    },
+    {
+        englishText: "Doctor",
+        romaji: "Isha",
+        kanaText: kana_i+kana_shi+kana_ya,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "Clothing",
+        romaji: "Fuku",
+        kanaText: kana_fu+kana_ku,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "To Get Angry",
+        romaji: "Okoru",
+        kanaText: kana_o+kana_ko+kana_ru,
+        kanjiText: "",
+        category: "Verbs"
+    },
+    {
+        englishText: "To Sleep",
+        romaji: "Neru",
+        kanaText: kana_ne+kana_ru,
+        kanjiText: "",
+        category: "Verbs"
+    },
+    {
+        englishText: "Red",
+        romaji: "Aka",
+        kanaText: kana_a+kana_ka,
+        kanjiText: "",
+        category: "-i Adjectives"
+    },
+    {
+        englishText: "White",
+        romaji: "Shiroi",
+        kanaText: kana_shi+kana_ro+kana_i,
+        kanjiText: "",
+        category: "-i Adjectives"
+    },
+    {
+        englishText: "Blue",
+        romaji: "Aoi",
+        kanaText: kana_a+kana_o+kana_i,
+        kanjiText: "",
+        category: "-i Adjectives"
     },
 ];
 
