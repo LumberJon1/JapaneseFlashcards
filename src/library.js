@@ -1660,6 +1660,104 @@ const library = [
         kanjiText: "",
         category: "-i Adjectives"
     },
+    {
+        englishText: "Road / Path",
+        romaji: "Michi",
+        kanaText: kana_mi+kana_chi,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "Sky",
+        romaji: "Sora",
+        kanaText: kana_so+kana_ra,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "Cloudy",
+        romaji: "Kumori",
+        kanaText: kana_ku+kana_mo+kana_ri,
+        kanjiText: "",
+        category: "-i Adjectives"
+    },
+    {
+        englishText: "Friend",
+        romaji: "Tomodachi",
+        kanaText: kana_to+kana_mo+kana_da+kana_chi,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "Family",
+        romaji: "Kazoku",
+        kanaText: kana_ka+kana_zo+kana_ku,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "Neighbor",
+        romaji: "Tonari",
+        kanaText: kana_to+kana_na+kana_ri,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "Sunny",
+        romaji: "Hare",
+        kanaText: kana_ha+kana_re,
+        kanjiText: "",
+        category: "-i Adjectives"
+    },
+    {
+        englishText: "Autumn",
+        romaji: "Aki",
+        kanaText: kana_a+kana_ki,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "Winter",
+        romaji: "Fuyu",
+        kanaText: kana_fu+kana_yu,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "Spring",
+        romaji: "Haru",
+        kanaText: kana_ha+kana_ru,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "Summer",
+        romaji: "Natsu",
+        kanaText: kana_na+kana_tsu,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "Probably / Likely",
+        romaji: "Deshou",
+        kanaText: kana_de+kana_shi+kana_yo+kana_u,
+        kanjiText: "",
+        category: "Adverbs"
+    },
+    {
+        englishText: "Same",
+        romaji: "Onaji",
+        kanaText: kana_o+kana_na+kana_ji,
+        kanjiText: "",
+        category: "-na Adjectives"
+    },
+    {
+        englishText: "To Live / Reside",
+        romaji: "Sumu",
+        kanaText: kana_su+kana_mu,
+        kanjiText: "",
+        category: "Verbs"
+    },
 ];
 
 
