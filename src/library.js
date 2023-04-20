@@ -333,7 +333,7 @@ const library = [
     {
         englishText: "Lightweight",
         romaji: "Karui",
-        kanaText: kana_ka+kana_ra+kana_i,
+        kanaText: kana_ka+kana_ru+kana_i,
         kanjiText: "",
         category: "\"-i\" Adjectives"
     },

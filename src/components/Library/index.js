@@ -10,6 +10,9 @@ function Library() {
     // State management for the search terms and search button submission
     const [searchTerms, setSearchTerms] = useState("");
 
+    // State management for search results
+    const [searchResults, setSearchResults] = useState(library);
+
 
     return (
         // Column Labels
@@ -20,6 +23,7 @@ function Library() {
             <LibrarySearch
                 searchTerms={searchTerms}
                 setSearchTerms={setSearchTerms}
+                setSearchResults={setSearchResults}
             ></LibrarySearch>
 
 
@@ -36,7 +40,7 @@ function Library() {
                 {sortLibrary(sortOrder)}
 
                 <div className="flex flex-col items-center justify-center mx-1 w-full">
-                    {library.map((item) => (
+                    {searchResults.map((item) => (
                         item.category !== "Phrases" ?
                         <li
                         className="text-center m-2 w-full flex border border-slate-400 rounded items-center justify-center p-2"

@@ -6,7 +6,8 @@ function LibrarySearch(props) {
     // unpack props
     const {
         searchTerms,
-        setSearchTerms
+        setSearchTerms,
+        setSearchResults
     } = props;
 
     // functions, state management...
@@ -46,7 +47,7 @@ function LibrarySearch(props) {
         // Before returning matches, clear the input field
         setSearchTerms("");
 
-        return matches;
+        setSearchResults(matches);
 
         // If none exist, search for substrings in other indexes of words
 
