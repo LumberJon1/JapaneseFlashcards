@@ -1327,7 +1327,6 @@ const countLibrary = () => {
             wordCount += 1;
         }
     }
-
     // Consider logging an array of unique categories and their total word counts
 
     console.log("There are "+wordCount+" items in the library, excluding phrases.");
