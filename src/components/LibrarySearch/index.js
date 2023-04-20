@@ -1,20 +1,52 @@
 import React, {useState} from "react";
+import { library } from "../../library";
 
 function LibrarySearch() {
 
-    // functions, state management
+    // functions, state management...
 
     // sort click handler
-    const handleSortClick = () => {
+    function handleSortClick() {
         console.log("Clicked the sort button");
     }
 
+    // Handle search change
+    function handleSearchChange(e) {
+        setSearchTerms(e.target.value);
+        console.log(searchTerms);
+    }
+
     // search click handler
-    const handleSearchClick = () => {
-        console.log("Clicked the search button");
+    function handleSearchClick(e) {
+        e.preventDefault();
+        console.log("Submitting "+searchTerms);
+
+        // Initialize an array to hold matching results
+        let matches = [];
+
+        // First find exact matches or matches that have the string in order
+        for (let i = 0; i < library.length; i++) {
+            let comparingWord = library[i].romaji.toLowerCase();
+            // console.log("Comparing word: "+comparingWord);
+            let searchSlice = (comparingWord.slice(0,searchTerms.length))
+            // console.log("Search slice: "+searchSlice)
+            if (searchSlice.includes(searchTerms.toLowerCase())) {
+                console.log(comparingWord+" contains "+searchTerms.toLowerCase());
+                matches.push(library[i]);
+            }
+        }
+        console.log(matches);
+        return matches;
+
+        // If none exist, search for substrings in other indexes of words
+
+        // If there are still no matches, display a message stating "No matches"
     }
 
     // typing state management
+    const [searchTerms, setSearchTerms] = useState("");
+
+    // Also needs to take props from the state of English or Japanese sort method from Library
 
     // animation state management
 
@@ -27,9 +59,7 @@ function LibrarySearch() {
                 <div className="w-1/2 bg-zinc-300 rounded my-2 relative h-full">
                     <button
                         className="p-2 absolute inset-y-0 w-1/2 flex flex-col items-center justify-center h-full rounded shadow bg-violet-500 text-zinc-100 font-bold text-lg left-0"
-                        onClick={() => {
-                            handleSortClick
-                        }}
+                        onClick={handleSortClick}
                     >
                         Sort
                     </button>
@@ -38,21 +68,27 @@ function LibrarySearch() {
                     Japanese
                 </p>
             </div>
-            <div className="flex items-center justify-center w-full">
+            <form action=""
+                id="searchForm"
+                className="flex items-center justify-center w-full"
+            >
                 <input 
                     type="text"
+                    name="searchTerms"
                     placeholder="search"
+                    defaultValue={searchTerms}
                     className="border border-slate-300 p-2 rounded mx-2"
+                    onChange={handleSearchChange}
                 />
                 <button
                     className="rounded shadow-lg flex items-center justify-center p-1 bg-amber-600 font-bold text-lg text-zinc-100"
-                    onClick={() => {
-                        handleSearchClick
-                    }}
+                    name="search"
+                    type="submit"
+                    onClick={handleSearchClick}
                 >
                     Search
                 </button>
-            </div>
+            </form>
         </div>
     )
 }
