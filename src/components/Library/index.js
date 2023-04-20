@@ -7,6 +7,9 @@ function Library() {
     // state management for sort order
     const [sortOrder, setSortOrder] = useState("English");
 
+    // State management for the search terms and search button submission
+    const [searchTerms, setSearchTerms] = useState("");
+
 
     return (
         // Column Labels
@@ -14,7 +17,10 @@ function Library() {
 
 
             {/* Searchbar component with sorting button */}
-            <LibrarySearch></LibrarySearch>
+            <LibrarySearch
+                searchTerms={searchTerms}
+                setSearchTerms={setSearchTerms}
+            ></LibrarySearch>
 
 
             <div className="flex items-around justify-center mx-1 mb-6 mt-4 w-full bg-slate-700 text-zinc-200 sticky top-12">

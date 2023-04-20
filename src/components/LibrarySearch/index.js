@@ -1,7 +1,13 @@
 import React, {useState} from "react";
 import { library } from "../../library";
 
-function LibrarySearch() {
+function LibrarySearch(props) {
+
+    // unpack props
+    const {
+        searchTerms,
+        setSearchTerms
+    } = props;
 
     // functions, state management...
 
@@ -36,15 +42,16 @@ function LibrarySearch() {
             }
         }
         console.log(matches);
+
+        // Before returning matches, clear the input field
+        setSearchTerms("");
+
         return matches;
 
         // If none exist, search for substrings in other indexes of words
 
         // If there are still no matches, display a message stating "No matches"
     }
-
-    // typing state management
-    const [searchTerms, setSearchTerms] = useState("");
 
     // Also needs to take props from the state of English or Japanese sort method from Library
 
@@ -76,7 +83,7 @@ function LibrarySearch() {
                     type="text"
                     name="searchTerms"
                     placeholder="search"
-                    defaultValue={searchTerms}
+                    value={searchTerms}
                     className="border border-slate-300 p-2 rounded mx-2"
                     onChange={handleSearchChange}
                 />
