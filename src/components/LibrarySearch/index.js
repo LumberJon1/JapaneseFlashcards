@@ -7,7 +7,9 @@ function LibrarySearch(props) {
     const {
         searchTerms,
         setSearchTerms,
-        setSearchResults
+        setSearchResults,
+        sortOrder,
+        setSortOrder
     } = props;
 
     // functions, state management...
@@ -15,6 +17,12 @@ function LibrarySearch(props) {
     // sort click handler
     function handleSortClick() {
         console.log("Clicked the sort button");
+        if (sortOrder === "English") {
+            setSortOrder("Japanese");
+        }
+        else {
+            setSortOrder("English");
+        }
     }
 
     // Handle search change
@@ -33,7 +41,16 @@ function LibrarySearch(props) {
 
         // First find exact matches or matches that have the string in order
         for (let i = 0; i < library.length; i++) {
-            let comparingWord = library[i].romaji.toLowerCase();
+
+            let comparingWord = "";
+
+            // Search either romaji or English translations depending on state
+            if (sortOrder === "English") {
+                comparingWord = library[i].englishText.toLowerCase();
+            }
+            else {
+                comparingWord = library[i].romaji.toLowerCase();
+            }
             // console.log("Comparing word: "+comparingWord);
             let searchSlice = (comparingWord.slice(0,searchTerms.length))
             // console.log("Search slice: "+searchSlice)
