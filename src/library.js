@@ -682,13 +682,6 @@ const library = [
         category: "Nouns"
     },
     {
-        englishText: "Noon/Midday",
-        romaji: "Hiru",
-        kanaText: kana_hi+kana_ru,
-        kanjiText: "",
-        category: "Nouns"
-    },
-    {
         englishText: "Morning",
         romaji: "Asa",
         kanaText: kana_a+kana_sa,
@@ -1757,6 +1750,181 @@ const library = [
         kanaText: kana_su+kana_mu,
         kanjiText: "",
         category: "Verbs"
+    },
+    {
+        englishText: "Both",
+        romaji: "Ryouhou",
+        kanaText: kana_ri+kana_yo+kana_u+kana_ho+kana_u,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "To Take off (Clothing)",
+        romaji: "Nugu",
+        kanaText: kana_nu+kana_gu,
+        kanjiText: "",
+        category: "Verbs"
+    },
+    {
+        englishText: "To Put On (Lower body clothing)",
+        romaji: "Haku",
+        kanaText: kana_ha+kana_ku,
+        kanjiText: "",
+        category: "Verbs"
+    },
+    {
+        englishText: "To Put On (Upper body clothing)",
+        romaji: "Kiru",
+        kanaText: kana_ki+kana_ru,
+        kanjiText: "",
+        category: "Verbs"
+    },
+    {
+        englishText: "To Take Off (Accessories)",
+        romaji: "Hazusu",
+        kanaText: kana_ha+kana_zu+kana_su,
+        kanjiText: "",
+        category: "Verbs"
+    },
+    {
+        englishText: "To Rest",
+        romaji: "Yasumu",
+        kanaText: kana_ya+kana_su+kana_mu,
+        kanjiText: "",
+        category: "Verbs"
+    },
+    {
+        englishText: "Fun, Enjoyable",
+        romaji: "Tanoshii",
+        kanaText: kana_ta+kana_no+kana_shi+kana_i,
+        kanjiText: "",
+        category: "-i Adjectives"
+    },
+    {
+        englishText: "Far, Long distance",
+        romaji: "Tooi",
+        kanaText: kana_to+kana_o+kana_i,
+        kanjiText: "",
+        category: "-i Adjectives"
+    },
+    {
+        englishText: "Electricity",
+        romaji: "Den",
+        kanaText: kana_de+kana_n,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "Phone",
+        romaji: "Denwa",
+        kanaText: kana_de+kana_n+kana_wa,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "Lightning, Thunder",
+        romaji: "Kaminari",
+        kanaText: kana_ka+kana_mi+kana_na+kana_ri,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "Sad",
+        romaji: "Kanashii",
+        kanaText: kana_ka+kana_na+kana_shi+kana_i,
+        kanjiText: "",
+        category: "-i Adjectives"
+    },
+    {
+        englishText: "Right (direction)",
+        romaji: "Migi",
+        kanaText: kana_mi+kana_gi,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "Left (direction)",
+        romaji: "Hidari",
+        kanaText: kana_hi+kana_da+kana_ri,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "North",
+        romaji: "Kita",
+        kanaText: kana_ki+kana_ta,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "East",
+        romaji: "Higashi",
+        kanaText: kana_hi+kana_ga+kana_shi,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "South",
+        romaji: "Minami",
+        kanaText: kana_mi+kana_na+kana_mi,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "West",
+        romaji: "Nishi",
+        kanaText: kana_ni+kana_shi,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "Rice",
+        romaji: "Gohan",
+        kanaText: kana_go+kana_ha+kana_n,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "Meat",
+        romaji: "Niku",
+        kanaText: kana_ni+kana_ku,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "Fish",
+        romaji: "Sakana",
+        kanaText: kana_sa+kana_ka+kana_na,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "Daytime",
+        romaji: "Hiru",
+        kanaText: kana_hi+kana_ru,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "Noon",
+        romaji: "Gogo",
+        kanaText: kana_go+kana_go,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "Country",
+        romaji: "Kuni",
+        kanaText: kana_ku+kana_ni,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "Difficult, treacherous, greatly",
+        romaji: "Taihen",
+        kanaText: kana_ta+kana_i+kana_he+kana_n,
+        kanjiText: "",
+        category: "-na Adjectives"
     },
 ];
 
