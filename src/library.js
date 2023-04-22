@@ -140,13 +140,6 @@ const library = [
         category: "\"-na\" Adjectives"
     },
     {
-        englishText: "Important",
-        romaji: "Daiji",
-        kanaText: kana_da+kana_i+kana_ji,
-        kanjiText: "",
-        category: "\"-na\" Adjectives"
-    },
-    {
         englishText: "Easy",
         romaji: "Kantan",
         kanaText: kana_ka+kana_n+kana_ta+kana_n,
@@ -1678,13 +1671,6 @@ const library = [
         englishText: "Friend",
         romaji: "Tomodachi",
         kanaText: kana_to+kana_mo+kana_da+kana_chi,
-        kanjiText: "",
-        category: "Nouns"
-    },
-    {
-        englishText: "Family",
-        romaji: "Kazoku",
-        kanaText: kana_ka+kana_zo+kana_ku,
         kanjiText: "",
         category: "Nouns"
     },
