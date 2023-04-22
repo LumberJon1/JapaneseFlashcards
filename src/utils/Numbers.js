@@ -37,7 +37,7 @@ const convertNumber = (number) => {
     let outputArray = [];
 
     for (let i = 0; i < argsArray.length; i++) {
-        if (argsArray[i] == 0) {
+        if (argsArray[i] === 0) {
             console.log("Nothing in the "+i+" digit...\n");
         }
 

@@ -1,6 +1,7 @@
 import React, {useState} from "react";
-import {library, sortLibrary, countLibrary} from "../../library";
+import {library, sortLibrary} from "../../library";
 import LibrarySearch from "../LibrarySearch";
+import { v4 as uuidv4 } from 'uuid';
 
 function Library() {
 
@@ -46,7 +47,7 @@ function Library() {
                         item.category !== "Phrases" ?
                         <li
                         className="text-center m-2 w-full flex border border-slate-400 rounded items-center justify-center p-2"
-                        key={item.kanaText}
+                        key={uuidv4()}
                         >
                             <p className="w-1/3 text-center break-words">
                                 {item.englishText}

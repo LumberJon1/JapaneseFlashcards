@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 
 function QuizCategories(props) {
     
@@ -6,9 +6,7 @@ function QuizCategories(props) {
     const {
         quizCategoryItems = [],
         setQuizCategory,
-        currentQuizCategory,
         currentSubCategory,
-        setSubCategory
     } = props;
 
     // useEffect(() => {

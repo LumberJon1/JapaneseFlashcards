@@ -46,10 +46,13 @@ const kana_ro = "\u308D";
 const kana_wa = "\u308F";
 const kana_n = "\u3093";
 const kana_pa = "\u3071";
-const kana_pi = "\u3074";
-const kana_pu = "\u3077";
-const kana_pe = "\u307A";
-const kana_po = "\u307D";
+
+// So far unused...
+// const kana_pi = "\u3074";
+// const kana_pu = "\u3077";
+// const kana_pe = "\u307A";
+// const kana_po = "\u307D";
+
 const kana_small_tsu = "\u3063";
 
 // Dakuon
@@ -77,21 +80,21 @@ const library = [
 
     // Category 1: "-na adjectives"
     {
-        englishText: "Well/Fine",
+        englishText: "Well, Fine",
         romaji: "Genki",
         kanaText: kana_ge+kana_n+kana_ki,
         kanjiText: "",
         category: "\"-na\" Adjectives"
     },
     {
-        englishText: "Expensive/Tall",
+        englishText: "Expensive, Tall",
         romaji: "Takai",
         kanaText: kana_ta+kana_ka+kana_i,
         kanjiText: "",
         category: "\"-na\" Adjectives"
     },
     {
-        englishText: "Beautiful/Clean",
+        englishText: "Beautiful, Clean",
         romaji: "Kirei",
         kanaText: kana_ki+kana_re+kana_i,
         kanjiText: "",
@@ -105,7 +108,7 @@ const library = [
         category: "\"-na\" Adjectives"
     },
     {
-        englishText: "Honest/Truthful",
+        englishText: "Honest, Truthful",
         romaji: "Shoujiki",
         kanaText: kana_shi+kana_yo+kana_u+kana_ji+kana_ki,
         kanjiText: "",
@@ -246,7 +249,7 @@ const library = [
         category: "Body Parts"
     },
     {
-        englishText: "Tooth/Teeth",
+        englishText: "Tooth, Teeth",
         romaji: "Ha",
         kanaText: kana_ha,
         kanjiText: "",
@@ -267,14 +270,14 @@ const library = [
         category: "Body Parts"
     },
     {
-        englishText: "Leg(s)/Foot",
+        englishText: "Leg(s), Foot",
         romaji: "Ashi",
         kanaText: kana_a+kana_shi,
         kanjiText: "",
         category: "Body Parts"
     },
     {
-        englishText: "Stomach/Abdomen",
+        englishText: "Stomach, Abdomen",
         romaji: "Onaka",
         kanaText: kana_o+kana_na+kana_ka,
         kanjiText: "",
@@ -282,21 +285,21 @@ const library = [
     },
     // Category 2: "-i adjectives"
     {
-        englishText: "Happy/Glad",
+        englishText: "Happy, Glad",
         romaji: "Ureshii",
         kanaText: kana_u+kana_re+kana_shi+kana_i,
         kanjiText: "",
         category: "\"-i\" Adjectives"
     },
     {
-        englishText: "Cheap/Inexpensive",
+        englishText: "Cheap, Inexpensive",
         romaji: "Yasui",
         kanaText: kana_ya+kana_su+kana_i,
         kanjiText: "",
         category: "\"-i\" Adjectives"
     },
     {
-        englishText: "Noisy/Annoying",
+        englishText: "Noisy, Annoying",
         romaji: "Urusai",
         kanaText: kana_u+kana_ru+kana_sa+kana_i,
         kanjiText: "",
@@ -408,7 +411,7 @@ const library = [
         category: "\"-i\" Adjectives"
     },
     {
-        englishText: "Large",
+        englishText: "Large, big",
         romaji: "Ookii",
         kanaText: kana_o+kana_o+kana_ki+kana_i,
         kanjiText: "",
@@ -436,7 +439,7 @@ const library = [
         category: "\"-i\" Adjectives"
     },
     {
-        englishText: "Slow/Late",
+        englishText: "Slow, Late",
         romaji: "Osoi",
         kanaText: kana_o+kana_so+kana_i,
         kanjiText: "",
@@ -450,7 +453,7 @@ const library = [
         category: "\"-i\" Adjectives"
     },
     {
-        englishText: "Many/Much",
+        englishText: "Many, Much",
         romaji: "Ooi",
         kanaText: kana_o+kana_o+kana_i,
         kanjiText: "",
@@ -471,7 +474,7 @@ const library = [
         category: "\"-i\" Adjectives"
     },
     {
-        englishText: "Thin/Slender",
+        englishText: "Thin, Slender",
         romaji: "Hosoi",
         kanaText: kana_ho+kana_so+kana_i,
         kanjiText: "",
@@ -485,7 +488,7 @@ const library = [
         category: "\"-i\" Adjectives"
     },
     {
-        englishText: "Strong/Powerful",
+        englishText: "Strong, Powerful",
         romaji: "Tsuyoi",
         kanaText: kana_tsu+kana_yo+kana_i,
         kanjiText: "",
@@ -640,7 +643,7 @@ const library = [
         category: "Nouns"
     },
     {
-        englishText: "Clock/Watch",
+        englishText: "Clock, Watch",
         romaji: "Tokei",
         kanaText: kana_to+kana_ke+kana_i,
         kanjiText: "",
@@ -661,7 +664,7 @@ const library = [
         category: "Nouns"
     },
     {
-        englishText: "Store/Shop",
+        englishText: "Store, Shop",
         romaji: "Mise",
         kanaText: kana_mi+kana_se,
         kanjiText: "",
@@ -682,14 +685,14 @@ const library = [
         category: "Nouns"
     },
     {
-        englishText: "Ocean/Beach",
+        englishText: "Ocean, Beach",
         romaji: "Umi",
         kanaText: kana_u+kana_mi,
         kanjiText: "",
         category: "Nouns"
     },
     {
-        englishText: "Summer/Pajama Kimono",
+        englishText: "Summer, Pajama Kimono",
         romaji: "Yukata",
         kanaText: kana_yu+kana_ka+kana_ta,
         kanjiText: "",
@@ -731,7 +734,7 @@ const library = [
         category: "Nouns"
     },
     {
-        englishText: "Work/Job",
+        englishText: "Work, Job",
         romaji: "Shigoto",
         kanaText: kana_shi+kana_go+kana_to,
         kanjiText: "",
@@ -966,21 +969,21 @@ const library = [
         category: "Phrases"
     },
     {
-        englishText: "A little/Slightly",
+        englishText: "A little, Slightly",
         romaji: "Chotto",
         kanaText: kana_chi+kana_yo+kana_small_tsu+kana_to,
         kanjiText: "",
         category: "Phrases"
     },
     {
-        englishText: "Sorry/Excuse me",
+        englishText: "Sorry, Excuse me",
         romaji: "Sumimasen",
         kanaText: kana_su+kana_mi+kana_ma+kana_se+kana_n,
         kanjiText: "",
         category: "Phrases"
     },
     {
-        englishText: "That's great/How nice",
+        englishText: "That's great, How nice",
         romaji: "Ii desu ne",
         kanaText: kana_i+kana_i+" "+kana_de+kana_su+kana_ne,
         kanjiText: "",
@@ -994,7 +997,7 @@ const library = [
         category: "Phrases"
     },
     {
-        englishText: "Of Course/Naturally",
+        englishText: "Of Course, Naturally",
         romaji: "Mochiron",
         kanaText: kana_mo+kana_chi+kana_ro+kana_n,
         kanjiText: "",
@@ -1043,7 +1046,7 @@ const library = [
         category: "Phrases"
     },
     {
-        englishText: "Always/Usually",
+        englishText: "Always, Usually",
         romaji: "Itsumo",
         kanaText: kana_i+kana_tsu+kana_mo,
         kanjiText: "",
@@ -1106,7 +1109,7 @@ const library = [
         category: "Phrases"
     },
     {
-        englishText: "Approximately/About ___",
+        englishText: "Approximately, About ___",
         romaji: "___ gurai",
         kanaText: "___ "+kana_gu+kana_ra+kana_i,
         kanjiText: "",
@@ -1127,7 +1130,7 @@ const library = [
         category: "Phrases"
     },
     {
-        englishText: "Very/Extremely",
+        englishText: "Very, Extremely",
         romaji: "Totemo",
         kanaText: kana_to+kana_te+kana_mo,
         kanjiText: "",
@@ -1148,7 +1151,7 @@ const library = [
         category: "Phrases"
     },
     {
-        englishText: "But/However",
+        englishText: "But, However",
         romaji: "Demo",
         kanaText: kana_de+kana_mo,
         kanjiText: "",
@@ -1204,7 +1207,7 @@ const library = [
         category: "Phrases"
     },
     {
-        englishText: "Dumb/Stupid",
+        englishText: "Dumb, Stupid",
         romaji: "Atama ga warui",
         kanaText: kana_a+kana_ta+kana_ma+" "+kana_ga+" "+kana_wa+kana_ru+kana_i,
         kanjiText: "",
@@ -1297,7 +1300,7 @@ const library = [
         category: "Verbs"
     },
     {
-        englishText: "Coat / Jacket",
+        englishText: "Coat, Jacket",
         romaji: "Uwagi",
         kanaText: kana_u+kana_wa+kana_gi,
         kanjiText: "",

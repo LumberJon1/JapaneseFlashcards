@@ -1,5 +1,4 @@
-import React, {useState} from "react";
-import QuizCategories from "../QuizCategories";
+import React from "react";
 
 function Navbar(props) {
     // Unpack props

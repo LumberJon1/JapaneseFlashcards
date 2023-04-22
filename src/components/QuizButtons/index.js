@@ -1,21 +1,18 @@
-import React, {useState} from "react";
+import React from "react";
 
 function QuizButtons(props) {
 
     // unpack props
     const {
         currentQuizCategory,
-        quizBegun,
         setQuizBegun,
         currentSubCategory,
-        setQuizCategory,
         setSubCategory,
         wordsSubCategories = [],
         timeSubCategories = [],
         numbersSubCategories = [],
         phrasesSubCategories = [],
         setSelectedFlashcards,
-        selectedFlashcards
     } = props
 
 

@@ -11,7 +11,6 @@ function Flashcard(props) {
     // Unpack props for use in the functions
     const {
         currentQuizCategory,
-        currentMenuItem,
         selectedFlashcards = []
     } = props;
 
