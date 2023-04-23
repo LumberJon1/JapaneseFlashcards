@@ -54,6 +54,7 @@ const kana_pa = "\u3071";
 // const kana_po = "\u307D";
 
 const kana_small_tsu = "\u3063";
+const kana_wo = "\u3092";
 
 // Dakuon
 const kana_ga = "\u304C";
@@ -1293,7 +1294,7 @@ const library = [
         category: "Verbs"
     },
     {
-        englishText: "To Exit",
+        englishText: "To Exit / Leave",
         romaji: "Deru",
         kanaText: kana_de+kana_ru,
         kanjiText: "",
@@ -1989,6 +1990,132 @@ const library = [
         englishText: "To Search / Look For",
         romaji: "Sagasu",
         kanaText: kana_sa+kana_ga+kana_su,
+        kanjiText: "",
+        category: "Verbs"
+    },
+    {
+        englishText: "To Enter / Come up",
+        romaji: "Agaru",
+        kanaText: kana_a+kana_ga+kana_ru,
+        kanjiText: "",
+        category: "Verbs"
+    },
+    {
+        englishText: "To Turn",
+        romaji: "Magaru",
+        kanaText: kana_ma+kana_ga+kana_ru,
+        kanjiText: "",
+        category: "Verbs"
+    },
+    {
+        englishText: "Last Month",
+        romaji: "Sengetsu",
+        kanaText: kana_se+kana_n+kana_ge+kana_tsu,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "To Look / See / Watch",
+        romaji: "Miru",
+        kanaText: kana_mi+kana_ru,
+        kanjiText: "",
+        category: "Verbs"
+    },
+    {
+        englishText: "Movie",
+        romaji: "Eiga",
+        kanaText: kana_e+kana_i+kana_ga,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "To Stand",
+        romaji: "Tatsu",
+        kanaText: kana_ta+kana_tsu,
+        kanjiText: "",
+        category: "Verbs"
+    },
+    {
+        englishText: "To Stand",
+        romaji: "Tatsu",
+        kanaText: kana_ta+kana_tsu,
+        kanjiText: "",
+        category: "Verbs"
+    },
+    {
+        englishText: "Last Time / The Other Day / Recently",
+        romaji: "Konomae",
+        kanaText: kana_ko+kana_no+kana_ma+kana_e,
+        kanjiText: "",
+        category: "Misc"
+    },
+    {
+        englishText: "Evening / Night",
+        romaji: "Yoru",
+        kanaText: kana_yo+kana_ru,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "Immediately / Right Away",
+        romaji: "Sugu",
+        kanaText: kana_su+kana_gu,
+        kanjiText: "",
+        category: "Adverbs"
+    },
+    {
+        englishText: "Lies",
+        romaji: "Uso",
+        kanaText: kana_u+kana_so,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "To Lie",
+        romaji: "Uso tsuku",
+        kanaText: kana_u+kana_so+" "+kana_wo+" "+kana_tsu+kana_ku,
+        kanjiText: "",
+        category: "Verbs"
+    },
+    {
+        englishText: "Teacher",
+        romaji: "Sensei",
+        kanaText: kana_se+kana_n+kana_se+kana_i,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "Scary / Frightening",
+        romaji: "Kowai",
+        kanaText: kana_ko+kana_wa+kana_i,
+        kanjiText: "",
+        category: "-i Adjectives"
+    },
+    {
+        englishText: "Heart",
+        romaji: "Kokoro",
+        kanaText: kana_ko+kana_ko+kana_ro,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "To Trust / Believe",
+        romaji: "Shinjiru",
+        kanaText: kana_shi+kana_n+kana_ji+kana_ru,
+        kanjiText: "",
+        category: "Verbs"
+    },
+    {
+        englishText: "Glasses",
+        romaji: "Megane",
+        kanaText: kana_me+kana_ga+kana_ne,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "To Exercise / Work Out",
+        romaji: "Undou Suru",
+        kanaText: kana_u+kana_n+kana_do+kana_u+" "+kana_su+kana_ru,
         kanjiText: "",
         category: "Verbs"
     },
