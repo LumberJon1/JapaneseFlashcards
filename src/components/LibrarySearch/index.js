@@ -35,44 +35,89 @@ function LibrarySearch(props) {
     // search click handler
     function handleSearchClick(e) {
         e.preventDefault();
-        console.log("Submitting "+searchTerms);
 
-        // Initialize an array to hold matching results
-        let matches = [];
-
-        // First find exact matches or matches that have the string in order
-        for (let i = 0; i < library.length; i++) {
-
-            let comparingWord = "";
-
-            // Search either romaji or English translations depending on state
-            if (sortOrder === "English") {
-                comparingWord = library[i].englishText.toLowerCase();
+        if (searchTerms !== "") {
+            console.log("Submitting "+searchTerms);
+    
+            // Initialize an array to hold matching results
+            let matches = [];
+    
+            // First find exact matches or matches that have the string in order
+            for (let i = 0; i < library.length; i++) {
+    
+                let comparingWord = "";
+    
+                // Search either romaji or English translations depending on state
+                if (sortOrder === "English") {
+                    comparingWord = library[i].englishText.toLowerCase();
+                }
+                else {
+                    comparingWord = library[i].romaji.toLowerCase();
+                }
+                // console.log("Comparing word: "+comparingWord);
+                let searchSlice = (comparingWord.slice(0,searchTerms.length))
+                // console.log("Search slice: "+searchSlice)
+                if (searchSlice.includes(searchTerms.toLowerCase())) {
+                    console.log(comparingWord+" contains "+searchTerms.toLowerCase());
+                    matches.push(library[i]);
+                }
             }
-            else {
-                comparingWord = library[i].romaji.toLowerCase();
+            console.log(matches);
+    
+            // If none exist, search for substrings in other indexes of words
+            if (matches.length < 1) {
+                console.log("\nNo verbatim matches.  Searching substrings...\n");
+    
+            for (let i = 0; i < library.length; i++) {
+    
+                let comparingWord = "";
+    
+                // Search either romaji or English translations depending on state
+                if (sortOrder === "English") {
+                    comparingWord = library[i].englishText.toLowerCase();
+                }
+                else {
+                    comparingWord = library[i].romaji.toLowerCase();
+                }
+    
+                for (let j = 0; j < (comparingWord.length - searchTerms.length + 1); j++) {
+                    // Progressively search a slice of the comparing word that is [searchTerms.length] chars
+                    // long, and stop once we reach the end of the word, comparing along the way.
+                    let searchSlice = comparingWord.slice(j, j + searchTerms.length);
+                    if (searchSlice.includes(searchTerms.toLowerCase())) {
+                        console.log("slice within word "+comparingWord+" contains "+searchTerms+".");
+                        matches.push(library[i]);
+                    }
+                }
             }
-            // console.log("Comparing word: "+comparingWord);
-            let searchSlice = (comparingWord.slice(0,searchTerms.length))
-            // console.log("Search slice: "+searchSlice)
-            if (searchSlice.includes(searchTerms.toLowerCase())) {
-                console.log(comparingWord+" contains "+searchTerms.toLowerCase());
-                matches.push(library[i]);
+            console.log(matches);
+    
+            // If there are still no matches, display a message stating "No matches"
+            if (matches.length < 1) {
+    
+                // For now I am using an object with the same structure as library entries, but
+                // I will try and find a more elegant solution in the near future.
+                matches.push({
+                    englishText: "No",
+                    romaji: "Matching",
+                    kanaText: "Results",
+                    kanjiText: "",
+                    category: ""
+                });
+            }
+    
+            // Before returning matches, clear the input field
+            setSearchTerms("");
+    
+            setSearchResults(matches);
             }
         }
-        console.log(matches);
+        else {
+            // If nothing was entered in the search results, load the whole library
+            setSearchResults(library);
+        }
 
-        // Before returning matches, clear the input field
-        setSearchTerms("");
-
-        setSearchResults(matches);
-
-        // If none exist, search for substrings in other indexes of words
-
-        // If there are still no matches, display a message stating "No matches"
     }
-
-    // Also needs to take props from the state of English or Japanese sort method from Library
 
     // animation state management
 

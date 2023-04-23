@@ -191,7 +191,7 @@ function App() {
           }
           {currentMenuItem === "Library" ?
 
-            <div>
+            <div className='w-full'>
               <Library className="bg-zinc-50">
 
               </Library>

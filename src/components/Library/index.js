@@ -17,7 +17,7 @@ function Library() {
 
     return (
         // Column Labels
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center w-full">
 
 
             {/* Searchbar component with sorting button */}
@@ -37,7 +37,7 @@ function Library() {
             </div>
 
             {/* Doing away with labels and instead focusing on sorting */}
-            <ul className="flex flex-col items-center">
+            <ul className="flex flex-col items-center w-full">
 
                 {/* Sort the library according to sorting parameters before mapping */}
                 {sortLibrary(sortOrder)}
