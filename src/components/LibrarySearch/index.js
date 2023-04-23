@@ -68,25 +68,26 @@ function LibrarySearch(props) {
             if (matches.length < 1) {
                 console.log("\nNo verbatim matches.  Searching substrings...\n");
     
-            for (let i = 0; i < library.length; i++) {
-    
-                let comparingWord = "";
-    
-                // Search either romaji or English translations depending on state
-                if (sortOrder === "English") {
-                    comparingWord = library[i].englishText.toLowerCase();
-                }
-                else {
-                    comparingWord = library[i].romaji.toLowerCase();
-                }
-    
-                for (let j = 0; j < (comparingWord.length - searchTerms.length + 1); j++) {
-                    // Progressively search a slice of the comparing word that is [searchTerms.length] chars
-                    // long, and stop once we reach the end of the word, comparing along the way.
-                    let searchSlice = comparingWord.slice(j, j + searchTerms.length);
-                    if (searchSlice.includes(searchTerms.toLowerCase())) {
-                        console.log("slice within word "+comparingWord+" contains "+searchTerms+".");
-                        matches.push(library[i]);
+                for (let i = 0; i < library.length; i++) {
+        
+                    let comparingWord = "";
+        
+                    // Search either romaji or English translations depending on state
+                    if (sortOrder === "English") {
+                        comparingWord = library[i].englishText.toLowerCase();
+                    }
+                    else {
+                        comparingWord = library[i].romaji.toLowerCase();
+                    }
+        
+                    for (let j = 0; j < (comparingWord.length - searchTerms.length + 1); j++) {
+                        // Progressively search a slice of the comparing word that is [searchTerms.length] chars
+                        // long, and stop once we reach the end of the word, comparing along the way.
+                        let searchSlice = comparingWord.slice(j, j + searchTerms.length);
+                        if (searchSlice.includes(searchTerms.toLowerCase())) {
+                            console.log("slice within word "+comparingWord+" contains "+searchTerms+".");
+                            matches.push(library[i]);
+                        }
                     }
                 }
             }
@@ -108,12 +109,12 @@ function LibrarySearch(props) {
     
             // Before returning matches, clear the input field
             setSearchTerms("");
-    
+
             setSearchResults(matches);
-            }
         }
         else {
             // If nothing was entered in the search results, load the whole library
+            setSearchTerms("");
             setSearchResults(library);
         }
 

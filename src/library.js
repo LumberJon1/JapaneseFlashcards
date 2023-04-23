@@ -1134,7 +1134,7 @@ const library = [
         romaji: "Totemo",
         kanaText: kana_to+kana_te+kana_mo,
         kanjiText: "",
-        category: "Phrases"
+        category: "Adverbs"
     },
     {
         englishText: "There is/are (animate objects)",
@@ -1155,14 +1155,14 @@ const library = [
         romaji: "Demo",
         kanaText: kana_de+kana_mo,
         kanjiText: "",
-        category: "Phrases"
+        category: "Misc"
     },
     {
         englishText: "Slowly",
         romaji: "Yukkuri",
         kanaText: kana_yu+kana_small_tsu+kana_ku+kana_ri,
         kanjiText: "",
-        category: "Phrases"
+        category: "Adverbs"
     },
     {
         englishText: "Welcome",
@@ -1183,7 +1183,7 @@ const library = [
         romaji: "Dare",
         kanaText: kana_da+kana_re,
         kanjiText: "",
-        category: "Phrases"
+        category: "Misc"
     },
     {
         englishText: "This way",
@@ -1914,6 +1914,83 @@ const library = [
         kanaText: kana_ta+kana_i+kana_he+kana_n,
         kanjiText: "",
         category: "-na Adjectives"
+    },
+    {
+        englishText: "But, However (formal)",
+        romaji: "Keredomo",
+        kanaText: kana_ke+kana_re+kana_do+kana_mo,
+        kanjiText: "",
+        category: "Misc"
+    },
+    {
+        englishText: "But, However (regular)",
+        romaji: "Kedo",
+        kanaText: kana_ke+kana_do,
+        kanjiText: "",
+        category: "Misc"
+    },
+    {
+        englishText: "Anything",
+        romaji: "Nandemo",
+        kanaText: kana_na+kana_n+kana_de+kana_mo,
+        kanjiText: "",
+        category: "Misc"
+    },
+    {
+        englishText: "Airplane",
+        romaji: "Hikouki",
+        kanaText: kana_hi+kana_ko+kana_u+kana_ki,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "Train Platform",
+        romaji: "Bansen",
+        kanaText: kana_ba+kana_n+kana_se+kana_n,
+        kanjiText: "",
+        category: "Nouns"
+    },
+    {
+        englishText: "Boring",
+        romaji: "Tsumaranai",
+        kanaText: kana_tsu+kana_ma+kana_ra+kana_na+kana_i,
+        kanjiText: "",
+        category: "-i Adjectives"
+    },
+    {
+        englishText: "To Turn Off / Erase",
+        romaji: "Kesu",
+        kanaText: kana_ke+kana_su,
+        kanjiText: "",
+        category: "Verbs"
+    },
+    {
+        englishText: "To Stop",
+        romaji: "Tomeru",
+        kanaText: kana_to+kana_me+kana_ru,
+        kanjiText: "",
+        category: "Verbs"
+    },
+    {
+        englishText: "To Touch / Pet",
+        romaji: "Sawaru",
+        kanaText: kana_sa+kana_wa+kana_ru,
+        kanjiText: "",
+        category: "Verbs"
+    },
+    {
+        englishText: "To Sit",
+        romaji: "Suwaru",
+        kanaText: kana_su+kana_wa+kana_ru,
+        kanjiText: "",
+        category: "Verbs"
+    },
+    {
+        englishText: "To Search / Look For",
+        romaji: "Sagasu",
+        kanaText: kana_sa+kana_ga+kana_su,
+        kanjiText: "",
+        category: "Verbs"
     },
 ];
 
