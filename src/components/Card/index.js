@@ -18,10 +18,8 @@ function Card(props) {
         else {
             setLanguage("Japanese");
         }
-        console.log("Flipped to "+language+" translation");
     }
 
-    console.log("\nProps passed to the Card component as currentCard: "+currentCard);
 
     return (
 

@@ -40,23 +40,18 @@ function QuizDisplay(props) {
         for (let i = 0; i < library.length; i++) {
             
             if (selectedCategories.includes(library[i].category)) {
-                console.log("Including "+library[i]);
                 cardLoader.push({...library[i]});
             }
         }
         
         // CardLoader:
-        console.log("\ncardLoader Array: "+cardLoader);
         for (let i = 0; i < cardLoader.length; i++) {
-            console.log("cardLoader["+i+"]: "+cardLoader[i].englishText);
             setQuizzingCards([
                 ...quizzingCards,
                 cardLoader[i]
             ])
-            // console.log("quizzingCards["+i+"]: "+quizzingCards[i]);
         }
-        
-        // console.log("\n\nQuizzing cards: "+quizzingCards);
+    
         const updatedQuizzingCards = [...quizzingCards, ...cardLoader];
         setQuizzingCards(updatedQuizzingCards);
     }
@@ -72,12 +67,7 @@ function QuizDisplay(props) {
     
     // useEffect hook to update currentCard whenever quizzingCards changes
     useEffect(() => {
-        console.log("\n\nQuizzing cards: "+quizzingCards);
-        for (let i = 0; i < quizzingCards.length; i++) {
-            console.log("quizzingCards["+i+"]: "+quizzingCards[i].englishText);
-        }
         chooseCurrentCard();
-        console.log("\ncurrentCard: "+currentCard.englishText);
     }, [quizzingCards]);
 
 
