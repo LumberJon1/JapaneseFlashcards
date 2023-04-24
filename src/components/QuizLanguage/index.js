@@ -25,7 +25,7 @@ function QuizLanguage(props) {
         <div className="h-24 mt-3 mb-1 w-full flex flex-col items-center justify-around">
             
             <p
-                className="text-center text-lg font-bold"
+                className="text-center text-sm font-bold text-zinc-300"
             >
                 Showing Cards in
             </p>

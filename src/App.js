@@ -107,19 +107,8 @@ function App() {
   // State variable to control which card categories the user selected to have loaded and randomized
   const [selectedFlashcards, setSelectedFlashcards] = useState([]);
   
-    
-  // Function handler for category items being clicked
-  const [currentQuizCategory, setQuizCategory] = useState(quizCategoryItems[0].name);
-  
-  // State variable for setting the array of subcategories
-  const [currentSubCategory, setSubCategory] = useState(wordsSubCategories[0].name);
-  
   // state object to handle whether the quiz has been started
   const [quizBegun, setQuizBegun] = useState(false);  
-  
-  useEffect(() => {
-
-  }, [currentSubCategory]);
 
   // Conponent return...
   
@@ -142,49 +131,31 @@ function App() {
         //     setQuizBegun(false);
         //   }
         // }
-      ></Navbar>
-      {/* Flashcard Categories */}
+      ></Navbar>     
+      {currentMenuItem === "Quiz"
+        ? 
+          <Quiz
+          ></Quiz>
+        :
+          <></>
+      }
+      {currentMenuItem === "Library"
+        ?
+          <div className='w-full'>
+            <Library className="bg-zinc-50">
 
-      {/* Conditionally render either quiz buttons or flashcards depending on whether
-      the user has selected a subcategory and pressed "start" yet */}
+            </Library>
+          </div>
+        :
+          <></>
+      }
+      {currentMenuItem === "Home"
+        ?
+          <Homepage className="fullBackground">
 
-      {quizBegun 
-        ? <Flashcard
-            className="h-full bg-zinc-50"
-            currentMenuItem={currentMenuItem}
-            currentQuizCategory={currentQuizCategory}
-            selectedFlashcards={selectedFlashcards}
-          ></Flashcard>      
-        
-        : 
-        
-          <>      
-            {currentMenuItem === "Quiz" ? 
-            <div>
-              <Quiz></Quiz>
-            </div>
-          : <></>
-          }
-          {currentMenuItem === "Library" ?
-
-            <div className='w-full'>
-              <Library className="bg-zinc-50">
-
-              </Library>
-            </div>
-            : <></>
-
-          }
-          {currentMenuItem === "Home" ?
-          
-            <Homepage className="fullBackground">
-
-            </Homepage>
-          :
-          
-            <></>
-          }
-          </>
+          </Homepage>
+        :
+          <></>
       }
     </div>
   );
