@@ -5,7 +5,8 @@ function QuizControls(props) {
     const {
         setQuizActive,
         setDisplayingCategories,
-        quizzingCards
+        quizzingCards,
+        setCurrentCard
      } = props;
 
 
@@ -22,7 +23,7 @@ function QuizControls(props) {
         let chosenCard = quizzingCards[randomCardIndex];
         
         console.log("\nChose card "+chosenCard);
-        return chosenCard;
+        setCurrentCard(chosenCard);
     }
 
     return (

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import Card from "../Card";
 import QuizLanguage from "../QuizLanguage";
 import QuizControls from "../QuizControls";
@@ -26,28 +26,60 @@ function QuizDisplay(props) {
             console.log("No selected categories");
         }
     }
-
+    
+    
     // State to hold quizzingCards of category that matches selectedCategories, from which
     // random cards will be drawn and displayed onClick of the next button
     const [quizzingCards, setQuizzingCards] = useState([]);
-
+    
     // function that searches library for list of words that fit selectedCategories
     function generateCards() {
-
+        
         let cardLoader = [];
-
+        
         for (let i = 0; i < library.length; i++) {
-            console.log(library[i]);
+            
             if (selectedCategories.includes(library[i].category)) {
                 console.log("Including "+library[i]);
-                cardLoader.push(library[i]);
+                cardLoader.push({...library[i]});
             }
         }
-
-        // Load cards into the quizzingCards state
-        setQuizzingCards(cardLoader);
-        console.log("\n\nQuizzing cards: "+quizzingCards);
+        
+        // CardLoader:
+        console.log("\ncardLoader Array: "+cardLoader);
+        for (let i = 0; i < cardLoader.length; i++) {
+            console.log("cardLoader["+i+"]: "+cardLoader[i].englishText);
+            setQuizzingCards([
+                ...quizzingCards,
+                cardLoader[i]
+            ])
+            // console.log("quizzingCards["+i+"]: "+quizzingCards[i]);
+        }
+        
+        // console.log("\n\nQuizzing cards: "+quizzingCards);
+        const updatedQuizzingCards = [...quizzingCards, ...cardLoader];
+        setQuizzingCards(updatedQuizzingCards);
     }
+    
+    // State to hold the currently chosen card that will be displayed in component
+    const [currentCard, setCurrentCard] = useState();
+
+    // Function to call and assign setCurrent card to random index
+    function chooseCurrentCard() {
+        let randomCardIndex = Math.floor(Math.random() * quizzingCards.length);
+        setCurrentCard({...quizzingCards[randomCardIndex]});
+    }
+    
+    // useEffect hook to update currentCard whenever quizzingCards changes
+    useEffect(() => {
+        console.log("\n\nQuizzing cards: "+quizzingCards);
+        for (let i = 0; i < quizzingCards.length; i++) {
+            console.log("quizzingCards["+i+"]: "+quizzingCards[i].englishText);
+        }
+        chooseCurrentCard();
+        console.log("\ncurrentCard: "+currentCard.englishText);
+    }, [quizzingCards]);
+
 
 
     return (
@@ -68,11 +100,13 @@ function QuizDisplay(props) {
                         language={language}
                         setLanguage={setLanguage}
                         quizzingCards={quizzingCards}
+                        currentCard={currentCard}
                     ></Card>
                     <QuizControls
                         setQuizActive={setQuizActive}
                         setDisplayingCategories={setDisplayingCategories}
                         quizzingCards={quizzingCards}
+                        setCurrentCard={setCurrentCard}
                     ></QuizControls>
                 </div>
 

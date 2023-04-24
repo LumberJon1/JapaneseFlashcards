@@ -6,7 +6,8 @@ function Card(props) {
     const {
         language,
         setLanguage,
-        quizzingCards
+        quizzingCards,
+        currentCard
     } = props;
 
     // flip card handler to swap between English and Japanese translations
@@ -19,6 +20,8 @@ function Card(props) {
         }
         console.log("Flipped to "+language+" translation");
     }
+
+    console.log("\nProps passed to the Card component as currentCard: "+currentCard);
 
     return (
 
@@ -33,7 +36,7 @@ function Card(props) {
                     <p
                         className="flex flex-col items-center justify-center h-full w-full text-xl font-bold"
                     >
-                        English Word
+                        {currentCard.englishText}
                     </p>
                 :
                     <div
@@ -42,17 +45,17 @@ function Card(props) {
                         <p
                             className="my-3"
                         >
-                            Kanji
+                            {currentCard.kanjiText}
                         </p>
                         <p
                             className="my-3"
                         >
-                            Hiragana
+                            {currentCard.kanaText}
                         </p>
                         <p
                             className="my-3"
                         >
-                            Romaji
+                            {currentCard.romaji}
                         </p>
                     </div>
                 }
