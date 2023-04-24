@@ -1,12 +1,9 @@
 import React, {useState} from "react";
 import library from "../../library";
 import QuizCategories from "../QuizCategories";
-import QuizLanguage from "../QuizLanguage";
 import QuizDisplay from "../QuizDisplay";
 
 function Quiz() {
-
-    const [language, setLanguage] = useState("English");
 
     // State management for quizCategories
     const [selectedCategories, setSelectedCategories] = useState([]);
@@ -22,13 +19,16 @@ function Quiz() {
     // State management for shown/hidden categories
     const [displayingCategories, setDisplayingCategories] = useState(true);
 
+    // State management for ongoing quiz
+    const [quizActive, setQuizActive] = useState(false);
+
     return (
 
         <div
-            className="w-full h-full bg-indigo-400"
+            className="w-full h-full"
         >
             <div
-                className="h-1/4"
+                className={quizActive ? "h-auto" : "h-2/5"}
             >
                 <QuizCategories
                     availableCategories={availableCategories}
@@ -37,15 +37,16 @@ function Quiz() {
                     selectedCategories={selectedCategories}
                     setSelectedCategories={setSelectedCategories}
                 ></QuizCategories>
-                <QuizLanguage
-                    language={language}
-                    setLanguage={setLanguage}
-                ></QuizLanguage>
             </div>
             <div
-                className="h-3/4"
+                className={quizActive ? "h-5/6"  : "h-3/5"}
             >
-                <QuizDisplay></QuizDisplay>
+                <QuizDisplay
+                    quizActive={quizActive}
+                    setQuizActive={setQuizActive}
+                    selectedCategories={selectedCategories}
+                    setDisplayingCategories={setDisplayingCategories}
+                ></QuizDisplay>
             </div>
 
         </div>

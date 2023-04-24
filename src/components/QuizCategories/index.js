@@ -70,7 +70,12 @@ function QuizCategories(props) {
     return (
 
         <div
-            className="w-full flex flex-col items-center justify-center"
+            className={displayingCategories === true ?
+                "w-full border-gray-500 bg-slate-200 flex flex-col items-center justify-center z-20"
+                :
+                "w-full flex flex-col items-center justify-center z-20"
+            }
+                
         >
             {displayingCategories ? <div>
                 QuizCategories
@@ -80,7 +85,7 @@ function QuizCategories(props) {
                     {availableCategories.map((item) => (
 
                         <li
-                            className={`border rounded p-1 m-2 ${selectedCategories.includes(item) && "bg-cyan-200"}`}
+                            className={`border-slate-800 rounded bg-slate-700 text-zinc-100 p-1 m-2 ${selectedCategories.includes(item) && "bg-blue-400 border-cyan-300"}`}
                             key={uuidv4()}
                             onClick={toggleSelectCategory}
                         >
@@ -88,7 +93,7 @@ function QuizCategories(props) {
                         </li>
                     ))}
                     <li
-                        className="border rounded p-1 m-2"
+                        className={`border-slate-800 rounded bg-slate-700 text-zinc-100 p-1 m-2 ${selectedCategories.includes("All Categories") && "bg-blue-400 border-cyan-300"}`}
                         onClick={toggleSelectCategory}
                     >
                         All Categories
@@ -98,33 +103,13 @@ function QuizCategories(props) {
             : <></>
             }
             <button
-                className="border rounded-bottom p-1"
+                className={`rounded bg-violet-500 text-zinc-100 p-1 z-30`}
                 onClick={toggleDisplayingCategories}
             >
                 Show/Hide
 
             </button>
         </div>
-
-    //     <div className="w-full mt-4">
-    //         <ul className="flex items-center justify-center">
-    //             {quizCategoryItems.map((item) => (
-    //                 <li
-    //                     className={`flex bg-indigo-600 items-center justify-center p-2 mx-1 border rounded shadow text-zinc-100 w-1/4${currentSubCategory === item.name && "bg-indigo-500 border-violet-600"}`}
-    //                     key={item.name}
-    //                 >
-    //                     <span onClick={() =>  {
-    //                         setQuizCategory(item.name);
-    //                     }
-                            
-    //                     }>
-    //                         {item.name}
-    //                     </span>
-    //                 </li>
-                
-    //             ))}
-    //         </ul>
-    //     </div>
     );
 }
 

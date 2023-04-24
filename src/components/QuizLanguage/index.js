@@ -22,7 +22,7 @@ function QuizLanguage(props) {
 
     return (
 
-        <div className="h-24 mt-3 mb-1 w-full flex flex-col items-center justify-around">
+        <div className="h-auto mt-3 mb-2 w-full flex flex-col items-center justify-around z-10">
             
             <p
                 className="text-center text-sm font-bold text-zinc-300"
