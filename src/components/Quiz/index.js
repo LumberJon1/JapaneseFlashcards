@@ -9,7 +9,7 @@ function Quiz() {
     const [language, setLanguage] = useState("English");
 
     // State management for quizCategories
-    const [categories, setCategories] = useState([]);
+    const [selectedCategories, setSelectedCategories] = useState([]);
 
     // Separate loop to gather unique categories and map through them to display as buttons
     let availableCategories = [];
@@ -34,6 +34,8 @@ function Quiz() {
                     availableCategories={availableCategories}
                     displayingCategories={displayingCategories}
                     setDisplayingCategories={setDisplayingCategories}
+                    selectedCategories={selectedCategories}
+                    setSelectedCategories={setSelectedCategories}
                 ></QuizCategories>
                 <QuizLanguage
                     language={language}
