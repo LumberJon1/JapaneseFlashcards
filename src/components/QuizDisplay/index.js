@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import Card from "../Card";
 import QuizLanguage from "../QuizLanguage";
 import QuizControls from "../QuizControls";
+import { library } from "../../library";
 
 function QuizDisplay(props) {
     // unpack props
@@ -19,10 +20,33 @@ function QuizDisplay(props) {
         if (selectedCategories.length >= 1) {
             setQuizActive(true);
             setDisplayingCategories(false);
+            generateCards();
         }
         else {
             console.log("No selected categories");
         }
+    }
+
+    // State to hold quizzingCards of category that matches selectedCategories, from which
+    // random cards will be drawn and displayed onClick of the next button
+    const [quizzingCards, setQuizzingCards] = useState([]);
+
+    // function that searches library for list of words that fit selectedCategories
+    function generateCards() {
+
+        let cardLoader = [];
+
+        for (let i = 0; i < library.length; i++) {
+            console.log(library[i]);
+            if (selectedCategories.includes(library[i].category)) {
+                console.log("Including "+library[i]);
+                cardLoader.push(library[i]);
+            }
+        }
+
+        // Load cards into the quizzingCards state
+        setQuizzingCards(cardLoader);
+        console.log("\n\nQuizzing cards: "+quizzingCards);
     }
 
 
@@ -40,10 +64,15 @@ function QuizDisplay(props) {
                         language={language}
                         setLanguage={setLanguage}
                     ></QuizLanguage>
-                    <Card></Card>
+                    <Card
+                        language={language}
+                        setLanguage={setLanguage}
+                        quizzingCards={quizzingCards}
+                    ></Card>
                     <QuizControls
                         setQuizActive={setQuizActive}
                         setDisplayingCategories={setDisplayingCategories}
+                        quizzingCards={quizzingCards}
                     ></QuizControls>
                 </div>
 

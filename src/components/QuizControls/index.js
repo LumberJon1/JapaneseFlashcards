@@ -4,7 +4,8 @@ function QuizControls(props) {
     // unpack props
     const {
         setQuizActive,
-        setDisplayingCategories
+        setDisplayingCategories,
+        quizzingCards
      } = props;
 
 
@@ -12,6 +13,16 @@ function QuizControls(props) {
     function handleStopClick() {
         setQuizActive(false);
         setDisplayingCategories(true);
+    }
+
+    // Click handler for next button to randomize a new card
+    // Randomize card function to take random card from quizzingCards array and render to VDOM
+    function loadCard() {
+        let randomCardIndex = Math.floor(Math.random() * quizzingCards.length);
+        let chosenCard = quizzingCards[randomCardIndex];
+        
+        console.log("\nChose card "+chosenCard);
+        return chosenCard;
     }
 
     return (
@@ -28,6 +39,7 @@ function QuizControls(props) {
 
             <button
                 className="border rounded-lg p-2 ml-2 text-lg font-bold text-zinc-400 shadow-lg bg-emerald-500"
+                onClick={loadCard}
             >
                 Next
             </button>
