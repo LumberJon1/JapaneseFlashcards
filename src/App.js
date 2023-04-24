@@ -1,9 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
 import Navbar from "./components/Navbar";
-import QuizCategories from './components/QuizCategories';
+import Quiz from './components/Quiz';
 import Flashcard from './components/Flashcard';
-import QuizButtons from './components/QuizButtons';
 import Library from './components/Library';
 import Homepage from './components/Homepage';
 
@@ -33,77 +32,77 @@ function App() {
   const [currentMenuItem, setCurrMenuItem] = useState(menuItems[2].name);
 
   // Quiz Categories...
-  const [quizCategoryItems] = useState([
-      {
-          name: "Words", 
-          link: ""
-        },
-        {
-          name: "Time", 
-          link: ""
-        },
-        {
-          name: "Numbers", 
-          link: ""
-        },
-        {
-          name: "Phrases", 
-          link: ""
-        },
-      ]);
+  // const [quizCategoryItems] = useState([
+  //     {
+  //         name: "Words", 
+  //         link: ""
+  //       },
+  //       {
+  //         name: "Time", 
+  //         link: ""
+  //       },
+  //       {
+  //         name: "Numbers", 
+  //         link: ""
+  //       },
+  //       {
+  //         name: "Phrases", 
+  //         link: ""
+  //       },
+  //     ]);
     
   // Quiz Subcategories
   // Define the lists of possible subcategories and UI buttons to conditionally render
-  const [wordsSubCategories] = useState([
-    {
-      name: "Verbs"
-    },
-    {
-      name: "-i Adjectives"
-    },
-    {
-      name: "-na Adjectives"
-    },
-    {
-      name: "Nouns"
-    },
-    {
-      name: "Body Parts"
-    },
-    {
-      name: "All Words"
-    },
-  ]);
+  // const [wordsSubCategories] = useState([
+  //   {
+  //     name: "Verbs"
+  //   },
+  //   {
+  //     name: "-i Adjectives"
+  //   },
+  //   {
+  //     name: "-na Adjectives"
+  //   },
+  //   {
+  //     name: "Nouns"
+  //   },
+  //   {
+  //     name: "Body Parts"
+  //   },
+  //   {
+  //     name: "All Words"
+  //   },
+  // ]);
   
-  const [timeSubCategories] = useState([
-    {
-      name: "All Times"
-    }
-  ]);
+  // const [timeSubCategories] = useState([
+  //   {
+  //     name: "All Times"
+  //   }
+  // ]);
   
-  const [numbersSubCategories] = useState([
-    {
-      name: "Ones"
-    },
-    {
-      name: "Tens"
-    },
-    {
-      name: "Hundreds"
-    },
-    {
-      name: "Thousands"
-    },
-    {
-      name: "Ten-thousands"
-    }    
-  ]);
+  // const [numbersSubCategories] = useState([
+  //   {
+  //     name: "Ones"
+  //   },
+  //   {
+  //     name: "Tens"
+  //   },
+  //   {
+  //     name: "Hundreds"
+  //   },
+  //   {
+  //     name: "Thousands"
+  //   },
+  //   {
+  //     name: "Ten-thousands"
+  //   }    
+  // ]);
   
-  const [phrasesSubCategories] = useState([
-    {
-      name: "All Phrases"
-    }   
-  ]);
+  // const [phrasesSubCategories] = useState([
+  //   {
+  //     name: "All Phrases"
+  //   }   
+  // ]);
 
   // State variable to control which card categories the user selected to have loaded and randomized
   const [selectedFlashcards, setSelectedFlashcards] = useState([]);
@@ -162,30 +161,7 @@ function App() {
           <>      
             {currentMenuItem === "Quiz" ? 
             <div>
-              <QuizCategories
-                className="bg-zinc-50"
-                quizCategoryItems={quizCategoryItems}
-                setQuizCategory={setQuizCategory}
-                currentQuizCategory={currentQuizCategory}
-                currentSubCategory={currentSubCategory}
-                setSubCategory={setSubCategory}
-                setQuizBegun={setQuizBegun}
-                ></QuizCategories>
-              <QuizButtons
-                className="bg-zinc-50"
-                  currentQuizCategory={currentQuizCategory}
-                  quizBegun={quizBegun}
-                  setQuizBegun={setQuizBegun}
-                  currentSubCategory={currentSubCategory}
-                  setQuizCategory={setQuizCategory}
-                  setSubCategory={setSubCategory}
-                  wordsSubCategories={wordsSubCategories}
-                  timeSubCategories={timeSubCategories}
-                  numbersSubCategories={numbersSubCategories}
-                  phrasesSubCategories={phrasesSubCategories}
-                  setSelectedFlashcards={setSelectedFlashcards}
-                  selectedFlashcards={selectedFlashcards}
-                ></QuizButtons>
+              <Quiz></Quiz>
             </div>
           : <></>
           }
