@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/JapaneseFlashcards/static/css/main.f2d773f7.css",
-    "main.js": "/JapaneseFlashcards/static/js/main.af40283c.js",
+    "main.css": "/JapaneseFlashcards/static/css/main.3638f942.css",
+    "main.js": "/JapaneseFlashcards/static/js/main.3cd9c058.js",
     "static/js/787.9dd0dd9e.chunk.js": "/JapaneseFlashcards/static/js/787.9dd0dd9e.chunk.js",
     "static/media/fushimiInari_2.jpeg": "/JapaneseFlashcards/static/media/fushimiInari_2.fb286b46505375ab0f41.jpeg",
     "index.html": "/JapaneseFlashcards/index.html",
-    "main.f2d773f7.css.map": "/JapaneseFlashcards/static/css/main.f2d773f7.css.map",
-    "main.af40283c.js.map": "/JapaneseFlashcards/static/js/main.af40283c.js.map",
+    "main.3638f942.css.map": "/JapaneseFlashcards/static/css/main.3638f942.css.map",
+    "main.3cd9c058.js.map": "/JapaneseFlashcards/static/js/main.3cd9c058.js.map",
     "787.9dd0dd9e.chunk.js.map": "/JapaneseFlashcards/static/js/787.9dd0dd9e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2d773f7.css",
-    "static/js/main.af40283c.js"
+    "static/css/main.3638f942.css",
+    "static/js/main.3cd9c058.js"
   ]
 }
