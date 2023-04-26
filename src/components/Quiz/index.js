@@ -27,19 +27,22 @@ function Quiz() {
         <div
             className="w-full h-full"
         >
+            {!quizActive ?
+                <div
+                    className="h-1/2"
+                >
+                    <QuizCategories
+                        availableCategories={availableCategories}
+                        displayingCategories={displayingCategories}
+                        setDisplayingCategories={setDisplayingCategories}
+                        selectedCategories={selectedCategories}
+                        setSelectedCategories={setSelectedCategories}
+                    ></QuizCategories>
+                </div>
+            : <></>    
+        }
             <div
-                className={quizActive ? "h-auto" : "h-2/5"}
-            >
-                <QuizCategories
-                    availableCategories={availableCategories}
-                    displayingCategories={displayingCategories}
-                    setDisplayingCategories={setDisplayingCategories}
-                    selectedCategories={selectedCategories}
-                    setSelectedCategories={setSelectedCategories}
-                ></QuizCategories>
-            </div>
-            <div
-                className={quizActive ? "h-5/6"  : "h-3/5"}
+                className={quizActive ? "h-5/6"  : "h-1/2"}
             >
                 <QuizDisplay
                     quizActive={quizActive}

@@ -71,16 +71,24 @@ function QuizCategories(props) {
 
         <div
             className={displayingCategories === true ?
-                "w-full border-gray-500 bg-slate-200 flex flex-col items-center justify-center z-20"
+                "w-full h-full border-gray-500 bg-slate-200 flex flex-col items-center justify-evenly z-20"
                 :
                 "w-full flex flex-col items-center justify-center z-20"
             }
                 
         >
-            {displayingCategories ? <div>
-                QuizCategories
+            {displayingCategories ? <div
+                className="flex flex-col justify-evenly h-full"
+            >
+
+                <p
+                    className="h-1/3 mb-12 flex clex-col items-center justify-center text-2xl font-semibold rounded-lg p-3 bg-indigo-200"
+                >
+                    Flashcard Categories
+                </p>
+                
                 <ul
-                    className="flex flex-wrap items-center justify-center"
+                    className="flex flex-wrap items-center justify-center h-1/2"
                 >
                     {availableCategories.map((item) => (
 

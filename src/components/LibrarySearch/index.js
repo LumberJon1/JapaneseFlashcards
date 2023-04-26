@@ -123,47 +123,57 @@ function LibrarySearch(props) {
     // animation state management
 
     return (
-        <div className="h-24 mt-3 mb-1 w-full flex flex-col items-center justify-around">
-            <div className="flex items-center justify-evenly w-full h-8">
-                <p className={sortOrder === "English" ? "text-lg font-bold text-amber-400"
-                    : "text-lg font-bold text-zinc-300"}>
-                    English
-                </p>
-                <div className="w-1/2 bg-zinc-300 rounded my-2 relative h-full">
-                    <button
-                        className={sortOrder === "English" ? "p-2 absolute inset-y-0 w-1/2 flex flex-col items-center justify-center h-full rounded shadow bg-violet-500 text-zinc-100 font-bold text-lg left-0"
-                        : "p-2 absolute inset-y-0 w-1/2 flex flex-col items-center justify-center h-full rounded shadow bg-violet-500 text-zinc-100 font-bold text-lg right-0"}
-                        onClick={handleSortClick}
-                    >
-                    Switch
-                    </button>
-                </div>
-                <p className={sortOrder === "Japanese" ? "text-lg font-bold text-amber-400"
-                    : "text-lg font-bold text-zinc-300"}>
-                    Japanese
-                </p>
-            </div>
-            <form action=""
-                id="searchForm"
-                className="flex items-center justify-center w-full"
+        <div className="h-32 mt-3 mb-1 w-full flex flex-col items-center justify-around">
+            <div
+                className="flex flex-col justify-evenly h-full w-full"
             >
-                <input 
-                    type="text"
-                    name="searchTerms"
-                    placeholder="search"
-                    value={searchTerms}
-                    className="border border-slate-300 p-2 rounded mx-2"
-                    onChange={handleSearchChange}
-                />
-                <button
-                    className="rounded shadow-lg flex items-center justify-center px-3 py-2 bg-emerald-500 font-bold text-lg text-zinc-100 w-1/5"
-                    name="search"
-                    type="submit"
-                    onClick={handleSearchClick}
+                <p
+                    className="font-semibold text-lg text-slate-500"
                 >
-                    Go
-                </button>
-            </form>
+                    Searching In
+                </p>
+                <div className="flex items-center justify-evenly w-full h-8">
+                    <p className={sortOrder === "English" ? "text-lg font-bold text-amber-400"
+                        : "text-lg font-bold text-zinc-300"}>
+                        English
+                    </p>
+                    <div className="w-1/2 bg-zinc-300 rounded my-2 relative h-full">
+                        <button
+                            className={sortOrder === "English" ? "p-2 absolute inset-y-0 w-1/2 flex flex-col items-center justify-center h-full rounded shadow bg-violet-500 text-zinc-100 font-bold text-lg left-0"
+                            : "p-2 absolute inset-y-0 w-1/2 flex flex-col items-center justify-center h-full rounded shadow bg-violet-500 text-zinc-100 font-bold text-lg right-0"}
+                            onClick={handleSortClick}
+                        >
+                        Switch
+                        </button>
+                    </div>
+                    <p className={sortOrder === "Japanese" ? "text-lg font-bold text-amber-400"
+                        : "text-lg font-bold text-zinc-300"}>
+                        Japanese
+                    </p>
+                </div>
+                <form action=""
+                    id="searchForm"
+                    className="flex items-center justify-center w-full"
+                >
+                    <input 
+                        type="text"
+                        name="searchTerms"
+                        placeholder="search"
+                        value={searchTerms}
+                        className="border border-slate-300 p-2 rounded mx-2"
+                        onChange={handleSearchChange}
+                    />
+                    <button
+                        className="rounded shadow-lg flex items-center justify-center px-3 py-2 bg-emerald-500 font-bold text-lg text-zinc-100 w-1/5"
+                        name="search"
+                        type="submit"
+                        onClick={handleSearchClick}
+                    >
+                        Go
+                    </button>
+                </form>
+
+            </div>
         </div>
     )
 }

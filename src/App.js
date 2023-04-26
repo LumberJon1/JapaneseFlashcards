@@ -16,7 +16,7 @@ function App() {
         link: ""
     },
     {
-        name: "Quiz", 
+        name: "Study", 
         link: ""
     },
     {
@@ -132,7 +132,7 @@ function App() {
         //   }
         // }
       ></Navbar>     
-      {currentMenuItem === "Quiz"
+      {currentMenuItem === "Study"
         ? 
           <Quiz
           ></Quiz>

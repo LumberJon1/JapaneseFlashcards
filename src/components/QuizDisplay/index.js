@@ -108,12 +108,12 @@ function QuizDisplay(props) {
                     <p
                         className="mt-12 text-lg"
                     >
-                        Select Categories to Quiz
+                        Select Categories to Include in Flashcard Study
                     </p>
                     <button
                         onClick={handleStartClick}
                         className={selectedCategories.length >= 1 ?
-                            `rounded mt-24 p-2 border border-slate-800 text-lg font-bold bg-emerald-500 shadow-lg`
+                            `rounded mt-24 p-2 border border-emerald-200 text-lg font-bold text-emerald-200 shadow-lg bg-emerald-500`
                             : `rounded mt-24 p-2 border text-zinc-400 border-slate-400 text-lg font-bold bg-zinc-300 shadow-lg`
                         }
                     >

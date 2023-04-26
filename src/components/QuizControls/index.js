@@ -32,14 +32,14 @@ function QuizControls(props) {
             className="flex items-center justify-evenly mt-2 w-full"
         >
             <button
-                className="border rounded-lg p-2 mr-2 text-lg font-bold text-zinc-400 shadow-lg bg-amber-500"
+                className="border rounded-lg p-2 mr-2 text-lg font-bold text-amber-300 shadow-lg bg-amber-500"
                 onClick={handleStopClick}
             >
-                Stop
+                Finish
             </button>
 
             <button
-                className="border rounded-lg p-2 ml-2 text-lg font-bold text-zinc-400 shadow-lg bg-emerald-500"
+                className="border rounded-lg p-2 ml-2 text-lg font-bold text-emerald-300 shadow-lg bg-emerald-500"
                 onClick={loadCard}
             >
                 Next
