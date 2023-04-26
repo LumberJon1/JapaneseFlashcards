@@ -2482,6 +2482,7 @@ const countLibrary = () => {
     // Consider logging an array of unique categories and their total word counts
 
     console.log("There are "+wordCount+" items in the library, excluding phrases.");
+    return wordCount;
 }
 
 module.exports = {library, sortLibrary, countLibrary};
