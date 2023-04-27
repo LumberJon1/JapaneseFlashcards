@@ -123,12 +123,12 @@ function LibrarySearch(props) {
     // animation state management
 
     return (
-        <div className="h-40 mt-3 mb-1 w-full flex flex-col items-center justify-around">
+        <div className="h-48 mt-3 mb-1 w-full flex flex-col items-center justify-around">
             <div
                 className="flex flex-col justify-evenly h-full w-full"
             >
                 <p
-                    className="text-sm text-zinc-400"
+                    className="text-sm text-zinc-400 mt-8"
                 >
                     ({countLibrary()}) entries in library
                 </p>
@@ -161,7 +161,7 @@ function LibrarySearch(props) {
                     className="flex items-center justify-center w-full"
                 >
                     <input 
-                        type="text"
+                        type="search"
                         name="searchTerms"
                         placeholder="search"
                         value={searchTerms}

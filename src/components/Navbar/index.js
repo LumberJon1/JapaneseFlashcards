@@ -15,7 +15,7 @@ function Navbar(props) {
     }
 
     return (
-        <div className="w-full sticky top-0">
+        <div className="w-full fixed z-30 top-0">
             <ul className="flex items-center justify-center">
                 {menuItems.map((item) => (
                     <li

@@ -6,11 +6,6 @@
   text-align: center;
 }
 
-.navbar {
-  position: sticky;
-  top: 0;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
