@@ -4,7 +4,6 @@ import Navbar from "./components/Navbar";
 import StudyPage from './components/StudyPage';
 import Library from './components/Library';
 import Homepage from './components/Homepage';
-import StudyPage from './components/StudyPage';
 
 function App() {
 
