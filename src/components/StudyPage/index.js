@@ -37,7 +37,7 @@ function StudyPage(props) {
                             Flashcards
                         </button>
                         <p
-                            className="border shadow bg-zinc-100 p-2 my-3"
+                            className="border shadow bg-zinc-100 p-2 my-3 mx-4"
                             >
                             Select from multiple categories of flashcards to study in either English or
                             Japanese.  Tap cards to switch between the English and Japanese translations.
@@ -53,7 +53,7 @@ function StudyPage(props) {
                             Quiz
                         </button>
                         <p
-                            className="border shadow bg-zinc-100 p-2 my-3"
+                            className="border shadow bg-zinc-100 p-2 my-3 mx-4"
                         >
                             Quiz yourself on various words from selected categories.  Each word will
                             have multiple choice answers.  Missed answers will show up more frequently.  Correct answers
@@ -63,7 +63,7 @@ function StudyPage(props) {
                 </div>
             }
             {studyType === "Flashcards" &&
-                <div>
+                <div className="h-full w-full flex flex-col items-center justify-center mt-8">
                     <FlashcardsPage></FlashcardsPage>
                 </div>
             }   

@@ -110,13 +110,6 @@ function FlashcardCategories(props) {
             </div>
             : <></>
             }
-            <button
-                className={`rounded bg-violet-500 text-zinc-100 p-1 z-30`}
-                onClick={toggleDisplayingCategories}
-            >
-                Show/Hide
-
-            </button>
         </div>
     );
 }
