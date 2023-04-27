@@ -1,6 +1,6 @@
 import React from "react";
 
-function QuizLanguage(props) {
+function FlashcardLanguage(props) {
 
     // Take props from higher level component to use in language order
     const {
@@ -54,4 +54,4 @@ function QuizLanguage(props) {
 
 }
 
-export default QuizLanguage;
+export default FlashcardLanguage;

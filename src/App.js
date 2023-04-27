@@ -32,6 +32,9 @@ function App() {
 
   // State variable to control which card categories the user selected to have loaded and randomized
   const [selectedFlashcards, setSelectedFlashcards] = useState([]);
+
+  // Management of study type to pass to pae and to use in navbar
+  const [studyType, setStudyType] = useState("None");
   
   // state object to handle whether the quiz has been started
   const [quizBegun, setQuizBegun] = useState(false);  
@@ -50,10 +53,14 @@ function App() {
         currentMenuItem={currentMenuItem}
         setQuizBegun={setQuizBegun}
         buttonWidth={buttonWidth}
+        setStudyType={setStudyType}
       ></Navbar>     
       {currentMenuItem === "Study"
         ? 
-          <StudyPage></StudyPage>
+          <StudyPage
+            studyType={studyType}
+            setStudyType={setStudyType}
+          ></StudyPage>
         :
           <></>
       }

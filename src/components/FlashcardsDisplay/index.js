@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from "react";
 import Card from "../Card";
-import QuizLanguage from "../QuizLanguage";
-import QuizControls from "../QuizControls";
+import FlashcardLanguage from "../FlashcardLanguage";
+import FlashcardControls from "../FlashcardControls";
 import { library } from "../../library";
 
-function QuizDisplay(props) {
+function FlashcardsDisplay(props) {
     // unpack props
     const {
         quizActive,
@@ -82,22 +82,22 @@ function QuizDisplay(props) {
                 <div
                     className="h-full w-full"
                 >
-                    <QuizLanguage
+                    <FlashcardLanguage
                         language={language}
                         setLanguage={setLanguage}
-                    ></QuizLanguage>
+                    ></FlashcardLanguage>
                     <Card
                         language={language}
                         setLanguage={setLanguage}
                         quizzingCards={quizzingCards}
                         currentCard={currentCard}
                     ></Card>
-                    <QuizControls
+                    <FlashcardControls
                         setQuizActive={setQuizActive}
                         setDisplayingCategories={setDisplayingCategories}
                         quizzingCards={quizzingCards}
                         setCurrentCard={setCurrentCard}
-                    ></QuizControls>
+                    ></FlashcardControls>
                 </div>
 
                 :
@@ -128,4 +128,4 @@ function QuizDisplay(props) {
 
 }
 
-export default QuizDisplay;
+export default FlashcardsDisplay;

@@ -1,11 +1,11 @@
 import React, {useState} from "react";
 import library from "../../library";
-import QuizCategories from "../QuizCategories";
-import QuizDisplay from "../QuizDisplay";
+import FlashcardCategories from "../FlashcardCategories";
+import FlashcardsDisplay from "../FlashcardsDisplay";
 
-function Quiz() {
+function FlashcardsPage() {
 
-    // State management for quizCategories
+    // State management for FlashcardCategories
     const [selectedCategories, setSelectedCategories] = useState([]);
 
     // Separate loop to gather unique categories and map through them to display as buttons
@@ -31,25 +31,25 @@ function Quiz() {
                 <div
                     className="h-1/2"
                 >
-                    <QuizCategories
+                    <FlashcardCategories
                         availableCategories={availableCategories}
                         displayingCategories={displayingCategories}
                         setDisplayingCategories={setDisplayingCategories}
                         selectedCategories={selectedCategories}
                         setSelectedCategories={setSelectedCategories}
-                    ></QuizCategories>
+                    ></FlashcardCategories>
                 </div>
             : <></>    
         }
             <div
                 className={quizActive ? "h-5/6"  : "h-1/2"}
             >
-                <QuizDisplay
+                <FlashcardsDisplay
                     quizActive={quizActive}
                     setQuizActive={setQuizActive}
                     selectedCategories={selectedCategories}
                     setDisplayingCategories={setDisplayingCategories}
-                ></QuizDisplay>
+                ></FlashcardsDisplay>
             </div>
 
         </div>
@@ -58,4 +58,4 @@ function Quiz() {
 
 }
 
-export default Quiz;
+export default FlashcardsPage;

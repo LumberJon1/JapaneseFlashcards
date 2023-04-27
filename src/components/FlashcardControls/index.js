@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-function QuizControls(props) {
+function FlashcardControls(props) {
     // unpack props
     const {
         setQuizActive,
@@ -49,4 +49,4 @@ function QuizControls(props) {
     )
 }
 
-export default QuizControls;
+export default FlashcardControls;

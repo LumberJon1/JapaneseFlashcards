@@ -7,11 +7,16 @@ function Navbar(props) {
         setCurrMenuItem,
         currentMenuItem,
         buttonWidth,
-        setQuizBegun
+        setQuizBegun,
+        setStudyType
     } = props;
 
     function handleCategoryClick() {
         setQuizBegun(false);
+    }
+    
+    function handleStudyCategoryReset() {
+        setStudyType("None");
     }
 
     return (
@@ -22,6 +27,7 @@ function Navbar(props) {
                         onClick={() => {
                             setCurrMenuItem(item.name);
                             handleCategoryClick();
+                            handleStudyCategoryReset();
                         }}
                         /* Conditionally add the "Active" class so long as the item name matches currentCategory.*/
                         className={`flex bg-slate-700 mx-1 items-center justify-center p-2 border rounded shadow text-zinc-100 w-1/${buttonWidth} ${currentMenuItem.name === item.name && "navActive"}`}

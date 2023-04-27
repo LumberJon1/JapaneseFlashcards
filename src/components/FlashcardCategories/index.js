@@ -1,7 +1,7 @@
 import React from "react";
 import { v4 as uuidv4 } from 'uuid';
 
-function QuizCategories(props) {
+function FlashcardCategories(props) {
     
     // Unpack props
     const {
@@ -121,4 +121,4 @@ function QuizCategories(props) {
     );
 }
 
-export default QuizCategories;
+export default FlashcardCategories;
