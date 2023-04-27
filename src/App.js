@@ -1,10 +1,10 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import Navbar from "./components/Navbar";
-import Quiz from './components/Quiz';
-import Flashcard from './components/Flashcard';
+import StudyPage from './components/StudyPage';
 import Library from './components/Library';
 import Homepage from './components/Homepage';
+import StudyPage from './components/StudyPage';
 
 function App() {
 
@@ -31,79 +31,6 @@ function App() {
   // Direct vDOM to re-render changes to selected category
   const [currentMenuItem, setCurrMenuItem] = useState(menuItems[2].name);
 
-  // Quiz Categories...
-  // const [quizCategoryItems] = useState([
-  //     {
-  //         name: "Words", 
-  //         link: ""
-  //       },
-  //       {
-  //         name: "Time", 
-  //         link: ""
-  //       },
-  //       {
-  //         name: "Numbers", 
-  //         link: ""
-  //       },
-  //       {
-  //         name: "Phrases", 
-  //         link: ""
-  //       },
-  //     ]);
-    
-  // Quiz Subcategories
-  // Define the lists of possible subcategories and UI buttons to conditionally render
-  // const [wordsSubCategories] = useState([
-  //   {
-  //     name: "Verbs"
-  //   },
-  //   {
-  //     name: "-i Adjectives"
-  //   },
-  //   {
-  //     name: "-na Adjectives"
-  //   },
-  //   {
-  //     name: "Nouns"
-  //   },
-  //   {
-  //     name: "Body Parts"
-  //   },
-  //   {
-  //     name: "All Words"
-  //   },
-  // ]);
-  
-  // const [timeSubCategories] = useState([
-  //   {
-  //     name: "All Times"
-  //   }
-  // ]);
-  
-  // const [numbersSubCategories] = useState([
-  //   {
-  //     name: "Ones"
-  //   },
-  //   {
-  //     name: "Tens"
-  //   },
-  //   {
-  //     name: "Hundreds"
-  //   },
-  //   {
-  //     name: "Thousands"
-  //   },
-  //   {
-  //     name: "Ten-thousands"
-  //   }    
-  // ]);
-  
-  // const [phrasesSubCategories] = useState([
-  //   {
-  //     name: "All Phrases"
-  //   }   
-  // ]);
-
   // State variable to control which card categories the user selected to have loaded and randomized
   const [selectedFlashcards, setSelectedFlashcards] = useState([]);
   
@@ -113,11 +40,8 @@ function App() {
   // Conponent return...
   
   return (
-    <div className="App w-screen h-screen flex flex-col items-center p-2"
-    // style={{
-    //   backgroundImage: `url(${bgImage})`
-    //   backgroundSize: `cover`
-    //   }}
+    <div 
+      className="App w-screen h-screen flex flex-col items-center p-2"
     >
       {/* Navbar and hamburger menu */}
       <Navbar
@@ -127,15 +51,10 @@ function App() {
         currentMenuItem={currentMenuItem}
         setQuizBegun={setQuizBegun}
         buttonWidth={buttonWidth}
-        // onClick={() => {
-        //     setQuizBegun(false);
-        //   }
-        // }
       ></Navbar>     
       {currentMenuItem === "Study"
         ? 
-          <Quiz
-          ></Quiz>
+          <StudyPage></StudyPage>
         :
           <></>
       }
