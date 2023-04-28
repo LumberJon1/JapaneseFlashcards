@@ -40,9 +40,65 @@ function QuizPage() {
         }
     }
 
+    function handleQuizNumIncrease() {
+        // Validate for upper bound of category length
+        let totalWords = 0;
+        for (let i = 0; i < selectedCategories.length; i++) {
+
+            for (let j = 0; j < library.length; j++) {
+                let category = selectedCategories[i];
+                if (library[j].category === (category)) {
+                    console.log(library[j].englishText+" has matching category "+category);
+                    totalWords += 1;
+                }
+            }
+        }
+
+        console.log("Total words: "+totalWords);
+
+        if (quizNumWords < totalWords) {
+            setQuizNumWords(quizNumWords + 1);
+        }
+    }
+    
+    function handleQuizNumDecrease() {
+        // Validate for lower bound of 5
+        if (quizNumWords > 5) {
+            setQuizNumWords(quizNumWords - 1);
+        }
+    }
+    
+    // Handler for user controlling input
+    function handleNumChange(e) {        
+        if (e.target.innerText === ">") {
+            console.log("Clicked increase.");
+            handleQuizNumIncrease();
+            
+        }
+        else if (e.target.innerText === "<") {
+            console.log("Clicked decrease.");
+            handleQuizNumDecrease();
+        }
+        else {
+            setQuizNumWords(Number(e.target.value));
+        }
+    }
+    function handleFormSubmit(e) {
+        e.preventDefault();
+        setQuizNumWords(quizNumWords);
+    }
+    
     useEffect(() => {
         categorySelectedListener();
     }, [selectedCategories]);
+    
+    useEffect(() => {
+        
+    }, [quizNumWords]);
+
+    function handleQuizStart() {
+        setQuizActive(true);
+    }
 
 
     return (
@@ -79,32 +135,37 @@ function QuizPage() {
                                 </p>
                             
                                 <form
-                                    className="flex items-center justify-center my-8"
+                                    className="flex flex-col items-center justify-center my-8"
+                                    onSubmit={handleFormSubmit}
                                 >
-
+                                    <div className="flex items-center justify-center">
+                                        <button
+                                            className="rounded-lg bg-zinc-100 shadow shadow-lg text-lg font-bold p-2"
+                                            onClick={handleNumChange}
+                                        >
+                                            {`<`}
+                                        </button>
+                                        <input
+                                            type="number"
+                                            value={quizNumWords}
+                                            onChange={handleNumChange}
+                                            className="border rounded-lg p-2 text-center mx-3 w-1/4"
+                                        />
+                                        <button
+                                            className="rounded-lg bg-zinc-100 shadow shadow-lg text-lg font-bold p-2"
+                                            onClick={handleNumChange}
+                                        >
+                                            {`>`}
+                                        </button>
+                                    </div>
                                     <button
-                                        className="rounded-lg shadow shadow-lg text-lg font-bold p-2"
+                                        className="rounded p-2 mt-10 bg-emerald-400 shadow-lg mt-3 font-bold text-lg text-zinc-200 w-1/3"
+                                        onClick={handleQuizStart}
+                                        type="submit"
                                     >
-                                        {`<`}
+                                        Begin
                                     </button>
-                                    <input
-                                        type="number"
-                                        defaultValue={5}
-                                        className="border rounded-lg p-2 text-center mx-3 w-1/4"
-                                    />
-                                    <button
-                                        className="rounded-lg shadow shadow-lg text-lg font-bold p-2"
-                                    >
-                                        {`>`}
-                                    </button>
-
-
                                 </form>
-                                <button
-                                    className="rounded p-2 bg-emerald-400 shadow-lg mt-3 font-bold text-lg text-zinc-200 w-1/3"
-                                >
-                                    Begin
-                                </button>
                             </div>
                         }        
                     </div>
