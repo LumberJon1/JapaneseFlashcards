@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import FlashcardsPage from "../FlashcardsPage";
 import Navbar from "../Navbar";
+import QuizPage from "../QuizPage";
 
 function StudyPage(props) {
 
@@ -16,6 +17,9 @@ function StudyPage(props) {
 
     function handleFlashcardsClick() {
         setStudyType("Flashcards");
+    }
+    function handleQuizClick() {
+        setStudyType("Quiz");
     }
 
     return (
@@ -49,6 +53,7 @@ function StudyPage(props) {
                     <div className="flex h-1/3 flex-col items-center justify-center">
                         <button
                             className="flex bg-slate-700 mx-1 items-center justify-center p-2 border rounded shadow text-zinc-100 w-1/3"
+                            onClick={handleQuizClick}
                             >
                             Quiz
                         </button>
@@ -65,6 +70,11 @@ function StudyPage(props) {
             {studyType === "Flashcards" &&
                 <div className="h-full w-full flex flex-col items-center justify-center mt-8">
                     <FlashcardsPage></FlashcardsPage>
+                </div>
+            }   
+            {studyType === "Quiz" &&
+                <div className="h-full w-full flex flex-col items-center justify-center mt-8">
+                    <QuizPage></QuizPage>
                 </div>
             }   
             

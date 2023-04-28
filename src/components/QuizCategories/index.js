@@ -1,16 +1,16 @@
 import React from "react";
 import { v4 as uuidv4 } from 'uuid';
 
-function FlashcardCategories(props) {
-    
-    // Unpack props
+function QuizCategories(props) {
+
+    // destructure props
     const {
         availableCategories,
         selectedCategories,
         setSelectedCategories
     } = props;
 
-    
+
     // Handler for onClick event for each category
     function toggleSelectCategory(e) {
         let localCategories = [...selectedCategories];
@@ -53,26 +53,23 @@ function FlashcardCategories(props) {
         setSelectedCategories(localCategories);
     }
 
-
     return (
 
         <div
-            className="w-full h-full border-gray-500 bg-slate-200 flex flex-col items-center justify-evenly z-20"
-            
-                
+            className=""
         >
             <div
                 className="flex flex-col justify-evenly h-full"
             >
 
                 <p
-                    className="h-1/3 mb-12 flex clex-col items-center justify-center text-2xl font-semibold rounded-lg p-3 bg-indigo-200"
+                    className="h-1/5 mb-12 flex clex-col items-center justify-center text-2xl font-semibold rounded-lg p-3 bg-indigo-100"
                 >
-                    Flashcard Categories
+                    Quiz Categories
                 </p>
                 
                 <ul
-                    className="flex flex-wrap items-center justify-center h-1/2"
+                    className="flex flex-wrap items-center justify-center border shadow p-1 rounded-lg bg-zinc-100"
                 >
                     {availableCategories.map((item) => (
 
@@ -96,4 +93,4 @@ function FlashcardCategories(props) {
     );
 }
 
-export default FlashcardCategories;
+export default QuizCategories;
