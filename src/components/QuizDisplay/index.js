@@ -32,7 +32,6 @@ function QuizDisplay(props) {
                 setAnswersArray={setAnswersArray}
             ></QuizAnswers>
             {/* Quit Button */}
-            WIP
         </div>
     )
 }

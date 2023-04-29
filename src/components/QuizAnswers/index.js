@@ -9,77 +9,82 @@ function QuizAnswers(props) {
         setAnswersArray
     } = props;
 
-    // // State manager to flip true once value of currentCard shows
-    // const [receivedValue, setReceivedValue] = useState(false);
-
-    // useEffect(() => {
-    //     if (currentCard.englishText != undefined) {
-    //         setReceivedValue(true);
-    //         console.log("Set received value flag to "+receivedValue);
-    //         setCorrectAnswer();
-    //     }
-    //     else {
-    //         setReceivedValue(false);
-    //     }
-    // }, [currentCard]);
-
 
     // // local variable to hold correct card value
     let correctAnswer = "";
-
-    // // Randomize answers array in place and add the current card, then set state
-    // function randomizeAnswers() {
-
-    //     // Add the correct answer from the current card
-    //     let answers = [];
-    //     answers.push(currentCard.englishText);
-    //     console.log("\nAnswers within the randomizeAnswers() component function: "+answers);
-
-    //     // Randomize order and set state
-    //     let shuffledArray = answers.sort((a, b) => 0.5 - Math.random());
-    //     setAnswersArray(...shuffledArray);
-    // }
 
     function setCorrectAnswer() {
         correctAnswer = currentCard.englishText;
     }
 
-    // useEffect(() => {
-    //     console.log("\n\ncurrentCard.englishText: "+currentCard.englishText);
-    //     let randomIndex = Math.floor(Math.random() * answersArray.length);
-    //     console.log("Randomly generated index "+randomIndex);
-    //     let copyArray = [...answersArray];
-    //     console.log("Copy array: "+copyArray);
-    //     // Replace an empty index if one exists
-    //     if (copyArray.includes("")) {
-    //         for (let i = 0; i < copyArray.length; i++) {
-    //             if (copyArray[i].innerText === "") {
-    //                 copyArray[i] = currentCard.englishText;
-    //             }
-    //         }
-    //     }
-    //     else {
-    //         copyArray[randomIndex] = currentCard.englishText;
-    //     }
-    //     console.log("Updated copyArray: "+copyArray);
-    //     setAnswersArray(copyArray);
-
-    // }, [receivedValue])
-    // randomizeAnswers()
+    // state management for whether the user has selected the answer
+    const [answered, setAnswered] = useState(false);
 
     // function to highlight the correct and incorrect answers on guess, and
     // call the next card
     function handleAnswerClick(e) {
         setCorrectAnswer();
+        setAnswered(true);
+        
         console.log("\nComparing to "+correctAnswer);
         console.log("Clicked "+e.target.innerText);
         if (e.target.innerText === correctAnswer) {
             console.log("Correct answer!");
+            e.target.className = "w-1/3 m-2 p-2 bg-emerald-300 border rounded-lg flex items-center justify-center font-semibold shadow"
         }
         else {
+            e.target.className = "w-1/3 m-2 p-2 bg-red-300 border rounded-lg flex items-center justify-center font-semibold shadow"
             console.log("Wrong answer.");
         }
+
     }
+
+        // // Handler for onClick event for each category
+        // function toggleSelectCategory(e) {
+        //     let localCategories = [...selectedCategories];
+    
+        //     if (localCategories.includes(e.target.innerText)) {
+        //         console.log(e.target.innerText+" already in selected categories.  Removing...");
+        //         localCategories.splice(localCategories.indexOf(e.target.innerText), 1);
+        //         console.log("Now contains "+localCategories);
+        //     }
+    
+        //     // Cases where user clicks "All Categories"
+        //     else if (e.target.innerText === "All Categories") {
+        //         console.log("\nlocalCategories: "+localCategories);
+        //         console.log("length: "+localCategories.length);
+        //         console.log("\navailableCategories: "+availableCategories);
+        //         console.log("length: "+availableCategories.length);
+                
+        //         if (localCategories.length === availableCategories.length) {
+        //             console.log("All categories already selected.  Resetting selected categories...");
+        //             localCategories = [];
+        //             console.log("Now contains "+localCategories);
+        //         }
+        //         else {
+        //             console.log("Changing current selection to be all categories...");
+    
+        //             for (let i = 0; i < availableCategories.length; i++) {
+        //                 if (!localCategories.includes(availableCategories[i])) {
+        //                     localCategories.push(availableCategories[i]);
+        //                 }
+        //             }
+        //             console.log("Now contains "+localCategories);
+        //         }
+        //     }
+    
+        //     else {
+        //         console.log(e.target.innerText+" not already in array.  Pushing value...");
+        //         localCategories.push(e.target.innerText);
+        //         console.log("Now contains "+localCategories);
+        //     }
+        //     setSelectedCategories(localCategories);
+        // }
+
+    useEffect(() => {
+        // Set the correct answer on component load
+        setCorrectAnswer();
+    }, [answered, currentCard, correctAnswer]);
 
     return (
         <div>
@@ -88,7 +93,9 @@ function QuizAnswers(props) {
             >
                 {answersArray.map((answer) => (
                     <li
-                        className="w-1/3 m-2 p-2 bg-zinc-100 border rounded-lg flex items-center justify-center font-semibold shadow"
+                        // className={answered === false ? "w-1/3 m-2 p-2 bg-zinc-100 border rounded-lg flex items-center justify-center font-semibold shadow"
+                        //             : answer === correctAnswer && "w-1/3 m-2 p-2 bg-red-300 border rounded-lg flex items-center justify-center font-semibold shadow"}
+                        className={`w-1/3 m-2 p-2 bg-zinc-100 border rounded-lg flex items-center justify-center font-semibold shadow ${answered && answer === correctAnswer ? 'bg-emerald-300' : ''}`}
                         key={uuidv4()}
                         onClick={handleAnswerClick}
                     >
