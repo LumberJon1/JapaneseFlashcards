@@ -16,6 +16,9 @@ function QuizPage() {
         }
     }
 
+    // Language selection, defaults to Japanese
+    const [language, setLanguage] = useState("Japanese");
+
     // State management for shown/hidden quiz length selectors
     const [quizNumWords, setQuizNumWords] = useState(5);
     const [quizNumShown, setQuizNumShown] = useState(false);
@@ -48,7 +51,6 @@ function QuizPage() {
             for (let j = 0; j < library.length; j++) {
                 let category = selectedCategories[i];
                 if (library[j].category === (category)) {
-                    console.log(library[j].englishText+" has matching category "+category);
                     totalWords += 1;
                 }
             }
@@ -96,22 +98,75 @@ function QuizPage() {
         
     }, [quizNumWords]);
 
+    // Take quiz categories and generate a bank of selected words
+    const [quizzingCards, setQuizzingCards] = useState([]);
+
+    // function that searches library for list of words that fit selectedCategories
+    function generateCards() {
+        
+        let cardLoader = [];
+        
+        for (let i = 0; i < library.length; i++) {
+            
+            if (selectedCategories.includes(library[i].category)) {
+                cardLoader.push({...library[i]});
+            }
+        }
+        
+        // CardLoader:
+        for (let i = 0; i < cardLoader.length; i++) {
+            setQuizzingCards([
+                ...quizzingCards,
+                cardLoader[i]
+            ])
+        }
+    
+        const updatedQuizzingCards = [...quizzingCards, ...cardLoader];
+        setQuizzingCards(updatedQuizzingCards);
+    }
+
+    // State to hold the currently chosen card that will be displayed in component
+    const [currentCard, setCurrentCard] = useState();
+
+    // Function to call and assign setCurrent card to random index
+    function chooseCurrentCard() {
+        let randomCardIndex = Math.floor(Math.random() * quizzingCards.length);
+        setCurrentCard({...quizzingCards[randomCardIndex]});
+    }
+    
+    // useEffect hook to update currentCard whenever quizzingCards changes
+    useEffect(() => {
+        console.log("Current card: "+{...currentCard});
+        chooseCurrentCard();
+    }, [quizzingCards]);
+
     function handleQuizStart() {
+        generateCards();
+        // chooseCurrentCard();
         setQuizActive(true);
     }
 
 
     return (
         <div
-            className="h-full flex flex-col items-center"
+            className="h-full flex w-full flex-col items-center"
         >
-            <p
-                className="h-1/6 flex flex-col items-center justify-center"
-            >
-                Select One or More Categories Below to Quiz
-            </p>
+            {!quizActive && 
+                <p
+                    className="h-1/6 flex flex-col items-center justify-center"
+                >
+                    Select One or More Categories Below to Quiz
+                </p>
+            }
             {quizActive ? 
-                <QuizDisplay></QuizDisplay>
+                <QuizDisplay
+                    quizzingCards={quizzingCards}
+                    currentCard={currentCard}
+                    setCurrentCard={setCurrentCard}
+                    language={language}
+                >
+
+                </QuizDisplay>
             : 
                 <div
                     className="flex flex-col items-center justify-center"
