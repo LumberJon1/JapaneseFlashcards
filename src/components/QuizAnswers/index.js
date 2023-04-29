@@ -1,45 +1,53 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { v4 as uuidv4 } from 'uuid';
 
 function QuizAnswers(props) {
     const {
         currentCard,
-        library
+        library,
+        answersArray = [],
+        setAnswersArray
     } = props;
 
-    // function to load correct and incorrect quiz answers
 
-    function loadAnswers() {
 
-        // empty array to load all answers into
-        let answersArray = [];
+    // Randomize answers array in place and add the current card, then set state
+    function randomizeAnswers() {
 
-        // First load the correct answer from the current card
-        let correctAnswer = currentCard.englishText;
-        answersArray.push(correctAnswer);
-        console.log("Correct answer: "+correctAnswer);
+        // Add the correct answer from the current card
+        let answers = [];
+        answers.push(currentCard.englishText);
+        console.log("\nAnswers within the randomizeAnswers() component function: "+answers);
 
-        // Then choose from any number of englishText properties from
-        // any card in the library at random and load them into answersArray
-        for (let i = 0; i < library.length; i++) {
-            let randomAnswerIndex = Math.floor(Math.random() * library.length);
-            // If by some miracle it's already in the answersArray, don't include it and run again
-            if (answersArray.includes(library[randomAnswerIndex].englishText)) {
-                console.log(library[randomAnswerIndex].englishText+" is already in answers.");
-                console.log("Re-running randomizer...");
-                i--;
-
-            }
-            else {
-                console.log("Pushing "+library[randomAnswerIndex].englishText);
-                answersArray.push(library[randomAnswerIndex].englishText);
-            }
-        }
+        // Randomize order and set state
+        let shuffledArray = answers.sort((a, b) => 0.5 - Math.random());
+        setAnswersArray(...shuffledArray);
     }
 
+    useEffect(() => {
+        console.log("\n\ncurrentCard.englishText: "+currentCard.englishText);
+        let randomIndex = Math.floor(Math.random() * answersArray.length);
+        console.log("Randomly generated index "+randomIndex);
+        let copyArray = [...answersArray];
+        console.log("Copy array: "+copyArray);
+        copyArray[randomIndex] = currentCard.englishText;
+        console.log("Updated copyArray: "+copyArray);
+        setAnswersArray(copyArray);
+
+    }, [currentCard])
+    // randomizeAnswers()
 
     return (
         <div>
-            Answers
+            <ul>
+                {answersArray.map((answer) => (
+                    <li
+                        key={uuidv4()}
+                    >
+                        {answer}
+                    </li>
+                ))}
+            </ul>
         </div>
     )
 }

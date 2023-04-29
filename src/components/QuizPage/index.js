@@ -133,6 +133,32 @@ function QuizPage() {
         let randomCardIndex = Math.floor(Math.random() * quizzingCards.length);
         setCurrentCard({...quizzingCards[randomCardIndex]});
     }
+
+
+    // function to load correct and incorrect quiz answers
+    function loadAnswers() {
+
+        // empty array to load all answers into
+        let answers = [];
+
+        // Choose from any number of englishText properties from
+        // any card in the library at random and load them into answers
+        for (let j = 0; j < 6; j++) {
+            let randomAnswerIndex = Math.floor(Math.random() * library.length);
+            console.log("library[i].englishText: "+library[j].englishText);
+            console.log("library[randomAnswerIndex].englishText: "+library[randomAnswerIndex].englishText);
+            // If by some miracle it's already in the answers, don't include it and run again
+            if (!answers.includes(library[randomAnswerIndex].englishText)) {
+                console.log("Pushing "+library[randomAnswerIndex].englishText);
+                answers.push(library[randomAnswerIndex].englishText);
+            }
+        }
+        console.log("Answers array: "+answers);
+        setAnswersArray(answers);
+    }
+
+    // State management for answers array
+    const [answersArray, setAnswersArray] = useState([]);
     
     // useEffect hook to update currentCard whenever quizzingCards changes
     useEffect(() => {
@@ -140,8 +166,13 @@ function QuizPage() {
         chooseCurrentCard();
     }, [quizzingCards]);
 
+    useEffect(() => {
+        console.log("\nAnswers array on the QuizPage component: "+answersArray);
+    }, [answersArray]);
+
     function handleQuizStart() {
-        generateCards();
+        generateCards()
+        loadAnswers()
         // chooseCurrentCard();
         setQuizActive(true);
     }
@@ -163,6 +194,8 @@ function QuizPage() {
                     quizzingCards={quizzingCards}
                     currentCard={currentCard}
                     setCurrentCard={setCurrentCard}
+                    answersArray={answersArray}
+                    setAnswersArray={setAnswersArray}
                     language={language}
                 >
 

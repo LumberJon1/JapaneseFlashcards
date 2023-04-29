@@ -8,11 +8,13 @@ function QuizDisplay(props) {
     // destructure props
     const {
         currentCard,
-        language
+        language,
+        answersArray = [],
+        setAnswersArray
     } = props;
-    
 
-    // For each card, generate 6 random English answers, one of which is correct
+
+    console.log("\nanswersArray on the QuizDisplay component: "+answersArray);
 
     return (
         <div 
@@ -28,6 +30,8 @@ function QuizDisplay(props) {
             <QuizAnswers
                 currentCard={currentCard}
                 library={library}
+                answersArray={answersArray}
+                setAnswersArray={setAnswersArray}
             ></QuizAnswers>
             {/* Quit Button */}
             WIP
