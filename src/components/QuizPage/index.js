@@ -177,6 +177,15 @@ function QuizPage() {
         setQuizActive(true);
     }
 
+    useEffect(() => {
+        if (currentCard != undefined) {
+            let copyArray = [...answersArray];
+            let randomIndex = Math.floor(Math.random() * copyArray.length);
+            copyArray[randomIndex] = currentCard.englishText;
+            setAnswersArray(copyArray);
+        }
+    }, [currentCard])
+
 
     return (
         <div

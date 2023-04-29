@@ -19,7 +19,7 @@ function QuizCard(props) {
     return (
 
         <div
-            className="border border-slate-400 shadow-lg rounded-lg h-1/2 w-3/4 bg-slate-100 mt-10"
+            className="border border-slate-400 shadow-lg rounded-lg h-1/3 w-3/4 bg-slate-100 mt-10"
         >
             <div
                 className="h-full w-full flex flex-col items-center justify-center"

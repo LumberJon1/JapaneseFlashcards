@@ -12,9 +12,7 @@ function QuizDisplay(props) {
         answersArray = [],
         setAnswersArray
     } = props;
-
-
-    console.log("\nanswersArray on the QuizDisplay component: "+answersArray);
+    
 
     return (
         <div 
