@@ -48,10 +48,10 @@ const kana_n = "\u3093";
 const kana_pa = "\u3071";
 
 // So far unused...
-// const kana_pi = "\u3074";
-// const kana_pu = "\u3077";
-// const kana_pe = "\u307A";
-// const kana_po = "\u307D";
+const kana_pi = "\u3074";
+const kana_pu = "\u3077";
+const kana_pe = "\u307A";
+const kana_po = "\u307D";
 
 const kana_small_tsu = "\u3063";
 const kana_wo = "\u3092";
@@ -74,6 +74,8 @@ const kana_ba = "\u3070";
 const kana_bi = "\u3073";
 const kana_bu = "\u3076";
 const kana_be = "\u3079";
+
+const middleDot = "\u30FB";
 
 
 const library = [
@@ -869,69 +871,77 @@ const library = [
     },
 
     // Category 4: verbs
+
+
+    /*
+        Verbs follow a different key-value structure, due to multiple conjugations,
+        and are loaded into their own components.  The following is the format:
+        {
+        kanjiText: "食べる", // Base form of the verb in kanji
+        kanaText: "たべる", // Base form in kana
+        romaji: "taberu", // Base form in romaji
+        englishText: "to eat", // English translation
+        category: "verb", // Indicates it's a verb
+        conjugations: {
+            regular: {
+                kanji: "食べる",
+                kana: "たべる",
+                romaji: "taberu"
+            },
+            polite: {
+                kanji: "食べます",
+                kana: "たべます",
+                romaji: "tabemasu"
+            },
+            pastRegular: {
+                kanji: "食べた",
+                kana: "たべた",
+                romaji: "tabeta"
+            },
+            teForm: {
+                kanji: "食べて",
+                kana: "たべて",
+                romaji: "tabete"
+            }
+        }
+    },
+    */
+
+    // "\u98f2"
+
     {
         englishText: "To Drink",
-        romaji: "Nomimasu",
-        kanaText: kana_no+kana_mi+kana_ma+kana_su,
-        kanjiText: "",
-        category: "Verbs"
+        romaji: "Nomu",
+        kanjiText: "\u98f2",
+        kanaText: kana_mu,
+        furiganaPairs: [
+            { base: "\u98f2", furigana: "の" }, // Kanji with Furigana
+        ],
+        category: "Verbs",
+        conjugations: {
+            regular: {
+                kanji: "\u98f2"+middleDot+kana_mu,
+                kana: kana_no+middleDot+kana_mu,
+                romaji: "nomu"
+            },
+            polite: {
+                kanji: "\u98f2"+middleDot+kana_mi+kana_ma+kana_su,
+                kana: kana_no+middleDot+kana_mi+kana_ma+kana_su,
+                romaji: "nomimasu"
+            },
+            pastRegular: {
+                kanji: "\u98f2"+kana_n+kana_da,
+                kana: kana_no+kana_n+kana_da,
+                romaji: "nonda"
+            },
+            teForm: {
+                kanji: "\u98f2"+kana_n+kana_de,
+                kana: kana_no+kana_n+kana_de,
+                romaji: "nonde"
+            }
+        }
     },
-    {
-        englishText: "To Buy",
-        romaji: "Kaimasu",
-        kanaText: kana_ka+kana_i+kana_ma+kana_su,
-        kanjiText: "",
-        category: "Verbs"
-    },
-    {
-        englishText: "To Write",
-        romaji: "Kakimasu",
-        kanaText: kana_ka+kana_ki+kana_ma+kana_su,
-        kanjiText: "",
-        category: "Verbs"
-    },
-    {
-        englishText: "To Read",
-        romaji: "Yomimasu",
-        kanaText: kana_yo+kana_mi+kana_ma+kana_su,
-        kanjiText: "",
-        category: "Verbs"
-    },
-    {
-        englishText: "To Speak",
-        romaji: "Hanashimasu",
-        kanaText: kana_ha+kana_na+kana_shi+kana_ma+kana_su,
-        kanjiText: "",
-        category: "Verbs"
-    },
-    {
-        englishText: "To Make",
-        romaji: "Tsukurimasu",
-        kanaText: kana_tsu+kana_ku+kana_ri+kana_ma+kana_su,
-        kanjiText: "",
-        category: "Verbs"
-    },
-    {
-        englishText: "To Use",
-        romaji: "Tsukau",
-        kanaText: kana_tsu+kana_ka+kana_u,
-        kanjiText: "",
-        category: "Verbs"
-    },
-    {
-        englishText: "To Drop",
-        romaji: "Otoshimasu",
-        kanaText: kana_o+kana_to+kana_shi+kana_ma+kana_su,
-        kanjiText: "",
-        category: "Verbs"
-    },
-    {
-        englishText: "To Get Tired",
-        romaji: "Tsukaremasu",
-        kanaText: kana_tsu+kana_ka+kana_re+kana_ma+kana_su,
-        kanjiText: "",
-        category: "Verbs"
-    },
+    
     
     // Category 5: Phrases
     {
@@ -1336,13 +1346,6 @@ const library = [
         category: "Verbs"
     },
     {
-        englishText: "To Clean",
-        romaji: "Souji Suru",
-        kanaText: kana_so+kana_u+kana_ji+" "+kana_su+kana_ru,
-        kanjiText: "",
-        category: "Verbs"
-    },
-    {
         englishText: "Fish Tank",
         romaji: "Suisou",
         kanaText: kana_su+kana_i+kana_so+kana_u,
@@ -1357,25 +1360,11 @@ const library = [
         category: "Nouns"
     },
     {
-        englishText: "To Hold / Carry",
-        romaji: "Motsu",
-        kanaText: kana_mo+kana_tsu,
-        kanjiText: "",
-        category: "Verbs"
-    },
-    {
         englishText: "Weather",
         romaji: "Tenki",
         kanaText: kana_te+kana_n+kana_ki,
         kanjiText: "",
         category: "Nouns"
-    },
-    {
-        englishText: "To Put On / Wear (Accessories)",
-        romaji: "Tsukeru",
-        kanaText: kana_tsu+kana_ke+kana_ru,
-        kanjiText: "",
-        category: "Verbs"
     },
     {
         englishText: "Shoes",
@@ -1448,13 +1437,6 @@ const library = [
         category: "Nouns"
     },
     {
-        englishText: "To Cook",
-        romaji: "Ryouri Suru",
-        kanaText: kana_ri+kana_yo+kana_u+kana_ri+" "+kana_su+kana_ru,
-        kanjiText: "",
-        category: "Verbs"
-    },
-    {
         englishText: "Serious / Diligent",
         romaji: "Majime",
         kanaText: kana_ma+kana_ji+kana_me,
@@ -1469,46 +1451,11 @@ const library = [
         category: "Nouns"
     },
     {
-        englishText: "To Walk",
-        romaji: "Aruku",
-        kanaText: kana_a+kana_ru+kana_ku,
-        kanjiText: "",
-        category: "Verbs"
-    },
-    {
         englishText: "Chair",
         romaji: "Isu",
         kanaText: kana_i+kana_su,
         kanjiText: "",
         category: "Nouns"
-    },
-    {
-        englishText: "To Board / Ride",
-        romaji: "Noru",
-        kanaText: kana_no+kana_ru,
-        kanjiText: "",
-        category: "Verbs"
-    },
-    {
-        englishText: "To Disembark / Get Off",
-        romaji: "Oriru",
-        kanaText: kana_o+kana_ri+kana_ru,
-        kanjiText: "",
-        category: "Verbs"
-    },
-    {
-        englishText: "To Listen / Hear",
-        romaji: "Kiku",
-        kanaText: kana_ki+kana_ku,
-        kanjiText: "",
-        category: "Verbs"
-    },
-    {
-        englishText: "To Take",
-        romaji: "Toru",
-        kanaText: kana_to+kana_ru,
-        kanjiText: "",
-        category: "Verbs"
     },
     {
         englishText: "Happiness",
@@ -1525,39 +1472,11 @@ const library = [
         category: "Nouns"
     },
     {
-        englishText: "To Wake Up",
-        romaji: "Okiru",
-        kanaText: kana_o+kana_ki+kana_ru,
-        kanjiText: "",
-        category: "Verbs"
-    },
-    {
-        englishText: "To Receive",
-        romaji: "Morau",
-        kanaText: kana_mo+kana_ra+kana_u,
-        kanjiText: "",
-        category: "Verbs"
-    },
-    {
-        englishText: "To Hide",
-        romaji: "Kakusu",
-        kanaText: kana_ka+kana_ku+kana_su,
-        kanjiText: "",
-        category: "Verbs"
-    },
-    {
         englishText: "Black",
         romaji: "Kuroi",
         kanaText: kana_ku+kana_ro+kana_i,
         kanjiText: "",
         category: "-i Adjectives"
-    },
-    {
-        englishText: "To Cry",
-        romaji: "Naku",
-        kanaText: kana_na+kana_ku,
-        kanjiText: "",
-        category: "Verbs"
     },
     {
         englishText: "Letter / Mail",
@@ -1600,13 +1519,6 @@ const library = [
         kanaText: kana_fu+kana_ku,
         kanjiText: "",
         category: "Nouns"
-    },
-    {
-        englishText: "To Get Angry",
-        romaji: "Okoru",
-        kanaText: kana_o+kana_ko+kana_ru,
-        kanjiText: "",
-        category: "Verbs"
     },
     {
         englishText: "To Sleep",
@@ -1721,53 +1633,11 @@ const library = [
         category: "-na Adjectives"
     },
     {
-        englishText: "To Live / Reside",
-        romaji: "Sumu",
-        kanaText: kana_su+kana_mu,
-        kanjiText: "",
-        category: "Verbs"
-    },
-    {
         englishText: "Both",
         romaji: "Ryouhou",
         kanaText: kana_ri+kana_yo+kana_u+kana_ho+kana_u,
         kanjiText: "",
         category: "Nouns"
-    },
-    {
-        englishText: "To Take off (Clothing)",
-        romaji: "Nugu",
-        kanaText: kana_nu+kana_gu,
-        kanjiText: "",
-        category: "Verbs"
-    },
-    {
-        englishText: "To Put On (Lower body clothing)",
-        romaji: "Haku",
-        kanaText: kana_ha+kana_ku,
-        kanjiText: "",
-        category: "Verbs"
-    },
-    {
-        englishText: "To Put On (Upper body clothing)",
-        romaji: "Kiru",
-        kanaText: kana_ki+kana_ru,
-        kanjiText: "",
-        category: "Verbs"
-    },
-    {
-        englishText: "To Take Off (Accessories)",
-        romaji: "Hazusu",
-        kanaText: kana_ha+kana_zu+kana_su,
-        kanjiText: "",
-        category: "Verbs"
-    },
-    {
-        englishText: "To Rest",
-        romaji: "Yasumu",
-        kanaText: kana_ya+kana_su+kana_mu,
-        kanjiText: "",
-        category: "Verbs"
     },
     {
         englishText: "Fun, Enjoyable",
@@ -1945,55 +1815,6 @@ const library = [
         category: "-i Adjectives"
     },
     {
-        englishText: "To Turn Off / Erase",
-        romaji: "Kesu",
-        kanaText: kana_ke+kana_su,
-        kanjiText: "",
-        category: "Verbs"
-    },
-    {
-        englishText: "To Stop",
-        romaji: "Tomeru",
-        kanaText: kana_to+kana_me+kana_ru,
-        kanjiText: "",
-        category: "Verbs"
-    },
-    {
-        englishText: "To Touch / Pet",
-        romaji: "Sawaru",
-        kanaText: kana_sa+kana_wa+kana_ru,
-        kanjiText: "",
-        category: "Verbs"
-    },
-    {
-        englishText: "To Sit",
-        romaji: "Suwaru",
-        kanaText: kana_su+kana_wa+kana_ru,
-        kanjiText: "",
-        category: "Verbs"
-    },
-    {
-        englishText: "To Search / Look For",
-        romaji: "Sagasu",
-        kanaText: kana_sa+kana_ga+kana_su,
-        kanjiText: "",
-        category: "Verbs"
-    },
-    {
-        englishText: "To Enter / Come up",
-        romaji: "Agaru",
-        kanaText: kana_a+kana_ga+kana_ru,
-        kanjiText: "",
-        category: "Verbs"
-    },
-    {
-        englishText: "To Turn",
-        romaji: "Magaru",
-        kanaText: kana_ma+kana_ga+kana_ru,
-        kanjiText: "",
-        category: "Verbs"
-    },
-    {
         englishText: "Last Month",
         romaji: "Sengetsu",
         kanaText: kana_se+kana_n+kana_ge+kana_tsu,
@@ -2013,20 +1834,6 @@ const library = [
         kanaText: kana_e+kana_i+kana_ga,
         kanjiText: "",
         category: "Nouns"
-    },
-    {
-        englishText: "To Stand",
-        romaji: "Tatsu",
-        kanaText: kana_ta+kana_tsu,
-        kanjiText: "",
-        category: "Verbs"
-    },
-    {
-        englishText: "To Stand",
-        romaji: "Tatsu",
-        kanaText: kana_ta+kana_tsu,
-        kanjiText: "",
-        category: "Verbs"
     },
     {
         englishText: "Last Time / The Other Day / Recently",
@@ -2085,25 +1892,11 @@ const library = [
         category: "Nouns"
     },
     {
-        englishText: "To Trust / Believe",
-        romaji: "Shinjiru",
-        kanaText: kana_shi+kana_n+kana_ji+kana_ru,
-        kanjiText: "",
-        category: "Verbs"
-    },
-    {
         englishText: "Glasses",
         romaji: "Megane",
         kanaText: kana_me+kana_ga+kana_ne,
         kanjiText: "",
         category: "Nouns"
-    },
-    {
-        englishText: "To Exercise / Work Out",
-        romaji: "Undou Suru",
-        kanaText: kana_u+kana_n+kana_do+kana_u+" "+kana_su+kana_ru,
-        kanjiText: "",
-        category: "Verbs"
     },
     {
         englishText: "Side",
@@ -2125,27 +1918,6 @@ const library = [
         kanaText: kana_yo+kana_me+kana_i,
         kanjiText: "",
         category: "-na Adjectives"
-    },
-    {
-        englishText: "To Say",
-        romaji: "Iu",
-        kanaText: kana_i+kana_u,
-        kanjiText: "",
-        category: "Verbs"
-    },
-    {
-        englishText: "To Think About",
-        romaji: "Kangaeru",
-        kanaText: kana_ka+kana_n+kana_ga+kana_e+kana_ru,
-        kanjiText: "",
-        category: "Verbs"
-    },
-    {
-        englishText: "To Think",
-        romaji: "Omou",
-        kanaText: kana_o+kana_mo+kana_u,
-        kanjiText: "",
-        category: "Verbs"
     },
     {
         englishText: "Wind, Cold (illness)",
@@ -2363,13 +2135,6 @@ const library = [
         kanaText: kana_do+kana_u+kana_i,
         kanjiText: "",
         category: "Nouns"
-    },
-    {
-        englishText: "To Agree",
-        romaji: "Doui Suru",
-        kanaText: kana_do+kana_u+kana_i+" "+kana_su+kana_ru,
-        kanjiText: "",
-        category: "Verbs"
     },
     {
         englishText: "Certain, Sure",

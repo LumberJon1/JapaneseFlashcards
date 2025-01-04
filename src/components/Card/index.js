@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import VerbCard from "./VerbCard";
+import VerbCard from "../VerbCard";
 
 function Card(props) {
 
@@ -9,7 +9,6 @@ function Card(props) {
         setLanguage,
         quizzingCards,
         currentCard,
-        category
     } = props;
 
     // flip card handler to swap between English and Japanese translations
@@ -29,7 +28,7 @@ function Card(props) {
         onClick={flipCard}
     >
         <div className="h-full w-full flex flex-col items-center justify-center">
-            {currentCard.category === "verb" ? (
+            {currentCard.category === "Verbs" ? (
                 <VerbCard language={language} currentCard={currentCard} />
             ) : (
                 <>
