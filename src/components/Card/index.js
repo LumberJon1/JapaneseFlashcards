@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import VerbCard from "./VerbCard";
 
 function Card(props) {
 
@@ -7,7 +8,8 @@ function Card(props) {
         language,
         setLanguage,
         quizzingCards,
-        currentCard
+        currentCard,
+        category
     } = props;
 
     // flip card handler to swap between English and Japanese translations
@@ -20,47 +22,33 @@ function Card(props) {
         }
     }
 
-
     return (
 
         <div
-            className="border border-slate-400 shadow-lg rounded-lg h-3/5 bg-slate-100 mx-4"
-            onClick={flipCard}
-        >
-            <div
-                className="h-full w-full flex flex-col items-center justify-center"
-            >
-                {language === "English" ?
-                    <p
-                        className="flex flex-col items-center justify-center h-full w-full text-xl font-bold"
-                    >
-                        {currentCard.englishText}
-                    </p>
-                :
-                    <div
-                        className="flex flex-col items-center justify-center h-full w-full text-xl font-bold"
-                    >
-                        <p
-                            className="my-3"
-                        >
-                            {currentCard.kanjiText}
+        className="border border-slate-400 shadow-lg rounded-lg h-3/5 bg-slate-100 mx-4"
+        onClick={flipCard}
+    >
+        <div className="h-full w-full flex flex-col items-center justify-center">
+            {currentCard.category === "verb" ? (
+                <VerbCard language={language} currentCard={currentCard} />
+            ) : (
+                <>
+                    {language === "English" ? (
+                        <p className="flex flex-col items-center justify-center h-full w-full text-xl font-bold">
+                            {currentCard.englishText}
                         </p>
-                        <p
-                            className="my-3"
-                        >
-                            {currentCard.kanaText}
-                        </p>
-                        <p
-                            className="my-3"
-                        >
-                            {currentCard.romaji}
-                        </p>
-                    </div>
-                }
-            </div>
+                    ) : (
+                        <div className="flex flex-col items-center justify-center h-full w-full text-xl font-bold">
+                            <p className="my-3">{currentCard.kanjiText}</p>
+                            <p className="my-3">{currentCard.kanaText}</p>
+                            <p className="my-3">{currentCard.romaji}</p>
+                        </div>
+                    )}
+                </>
+            )}
         </div>
-
-    )
+    </div>
+    );
 
 }
 
