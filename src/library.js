@@ -797,953 +797,1043 @@ const library = [
         englishText: "Car",
         romaji: "Kuruma",
         kanaText: kana_ku+kana_ru+kana_ma,
-        kanjiText: "",
+        kanjiText: "車",
         category: "Nouns"
     },
     {
         englishText: "Wallet",
         romaji: "Saifu",
         kanaText: kana_sa+kana_i+kana_fu,
-        kanjiText: "",
+        kanjiText: "財布",
         category: "Nouns"
     },
     {
         englishText: "Dream",
         romaji: "Yume",
         kanaText: kana_yu+kana_me,
-        kanjiText: "",
+        kanjiText: "夢",
         category: "Nouns"
     },
     {
         englishText: "Family",
         romaji: "Kazoku",
         kanaText: kana_ka+kana_zo+kana_ku,
-        kanjiText: "",
+        kanjiText: "家族",
         category: "Nouns"
     },
     {
         englishText: "Animal",
         romaji: "Doubutsu",
         kanaText: kana_do+kana_u+kana_bu+kana_tsu,
-        kanjiText: "",
+        kanjiText: "動物",
         category: "Nouns"
     },
     {
         englishText: "Address",
         romaji: "Juusho",
         kanaText: kana_ji+kana_yu+kana_u+kana_shi+kana_yo,
-        kanjiText: "",
+        kanjiText: "住所",
         category: "Nouns"
     },
     {
         englishText: "Name",
         romaji: "Namae",
         kanaText: kana_na+kana_ma+kana_e,
-        kanjiText: "",
+        kanjiText: "名前",
         category: "Nouns"
     },
     {
         englishText: "Cash",
         romaji: "Genkin",
         kanaText: kana_ge+kana_n+kana_ki+kana_n,
-        kanjiText: "",
+        kanjiText: "現金",
         category: "Nouns"
     },
     {
         englishText: "Money",
-        romaji: "Okane",
+        romaji: "Kane",
         kanaText: kana_o+kana_ka+kana_ne,
-        kanjiText: "",
+        kanjiText: "鐘",
         category: "Nouns"
     },
     {
         englishText: "Leather",
         romaji: "Kawa",
         kanaText: kana_ka+kana_wa,
-        kanjiText: "",
+        kanjiText: "革",
+        category: "Nouns"
+    },
+    {
+        englishText: "Hide, Pelt, Fur, Bark, Shell, Wrapping",
+        romaji: "Kawa",
+        kanaText: kana_ka+kana_wa,
+        kanjiText: "皮",
         category: "Nouns"
     },
     {
         englishText: "Train Station",
         romaji: "Eki",
         kanaText: kana_e+kana_ki,
-        kanjiText: "",
+        kanjiText: "駅",
         category: "Nouns"
     },
     {
         englishText: "Umbrella",
         romaji: "Kasa",
         kanaText: kana_ka+kana_sa,
-        kanjiText: "",
+        kanjiText: "傘",
         category: "Nouns"
     },
     {
         englishText: "Entrance",
         romaji: "Iriguchi",
         kanaText: kana_i+kana_ri+kana_gu+kana_chi,
-        kanjiText: "",
+        kanjiText: "入り口",
         category: "Nouns"
     },
     {
         englishText: "Exit",
         romaji: "Deguchi",
         kanaText: kana_de+kana_gu+kana_chi,
-        kanjiText: "",
+        kanjiText: "出口",
         category: "Nouns"
     },
     {
         englishText: "This (here)",
         romaji: "Kore",
         kanaText: kana_ko+kana_re,
-        kanjiText: "",
+        kanjiText: "-",
         category: "Nouns"
     },
     {
         englishText: "That (near speaker)",
         romaji: "Sore",
         kanaText: kana_so+kana_re,
-        kanjiText: "",
+        kanjiText: "-",
         category: "Nouns"
     },
     {
         englishText: "That (over there)",
         romaji: "are",
         kanaText: kana_a+kana_re,
-        kanjiText: "",
+        kanjiText: "-",
         category: "Nouns"
     },
     {
         englishText: "Medical Exam",
         romaji: "Shinsatsu",
         kanaText: kana_shi+kana_n+kana_sa+kana_tsu,
-        kanjiText: "",
+        kanjiText: "診察",
         category: "Nouns"
     },
     {
         englishText: "Coat, Jacket",
         romaji: "Uwagi",
         kanaText: kana_u+kana_wa+kana_gi,
-        kanjiText: "",
+        kanjiText: "診察",
         category: "Nouns"
     },
-    
     {
         englishText: "Physical Condition",
         romaji: "Taichou",
         kanaText: kana_ta+kana_i+kana_chi+kana_yo+kana_u,
-        kanjiText: "",
+        kanjiText: "体調",
         category: "Nouns"
     },
     {
-        englishText: "Mental / Emotional Condition",
+        englishText: "Condition, State",
+        romaji: "Guai",
+        kanaText: kana_gu+kana_a+kana_i,
+        kanjiText: "具合",
+        category: "Nouns"
+    },
+    {
+        englishText: "Mental / Emotional Condition, Mood",
         romaji: "Kibun",
         kanaText: kana_ki+kana_bu+kana_n,
-        kanjiText: "",
+        kanjiText: "気分",
         category: "Nouns"
     },
     {
         englishText: "Fish Tank",
         romaji: "Suisou",
         kanaText: kana_su+kana_i+kana_so+kana_u,
-        kanjiText: "",
+        kanjiText: "水槽",
         category: "Nouns"
     },
     {
         englishText: "Lid / Cap / Cover",
         romaji: "Futa",
         kanaText: kana_fu+kana_ta,
-        kanjiText: "",
+        kanjiText: "蓋",
         category: "Nouns"
     },
     {
         englishText: "Weather",
         romaji: "Tenki",
         kanaText: kana_te+kana_n+kana_ki,
-        kanjiText: "",
+        kanjiText: "天気",
         category: "Nouns"
     },
     {
         englishText: "Shoes",
         romaji: "Kutsu",
         kanaText: kana_ku+kana_tsu,
-        kanjiText: "",
+        kanjiText: "靴",
+        category: "Nouns"
+    },
+    {
+        englishText: "Socks, Stockings",
+        romaji: "Kutsushita",
+        kanaText: kana_ku+kana_tsu,
+        kanjiText: "靴下",
         category: "Nouns"
     },
     {
         englishText: "Corner",
         romaji: "Kado",
         kanaText: kana_ka+kana_do,
-        kanjiText: "",
+        kanjiText: "角",
         category: "Nouns"
     },
     {
         englishText: "Intersection",
         romaji: "Kousaten",
         kanaText: kana_ko+kana_u+kana_sa+kana_te+kana_n,
-        kanjiText: "",
+        kanjiText: "交差点",
         category: "Nouns"
     },
     {
         englishText: "Traffic Signal",
         romaji: "Shingou",
         kanaText: kana_shi+kana_n+kana_go+kana_u,
-        kanjiText: "",
+        kanjiText: "信号",
         category: "Nouns"
     },
     {
         englishText: "Police",
         romaji: "Keisatsu",
         kanaText: kana_ke+kana_i+kana_sa+kana_tsu,
-        kanjiText: "",
+        kanjiText: "警察",
         category: "Nouns"
     },
     {
-        englishText: "Snack / Appetizer",
-        romaji: "Otsumami",
-        kanaText: kana_o+kana_tsu+kana_ma+kana_mi,
-        kanjiText: "",
-        category: "Nouns"
-    },
-    {
-        englishText: "Later / After (Suffix)",
-        romaji: "Go",
-        kanaText: kana_go,
-        kanjiText: "",
-        category: "Nouns"
-    },
-    {
-        englishText: "Kitchen",
+        englishText: "Kitchen (Japanese)",
         romaji: "Daidokoro",
         kanaText: kana_da+kana_i+kana_do+kana_ko+kana_ro,
-        kanjiText: "",
+        kanjiText: "台所",
         category: "Nouns"
     },
     {
         englishText: "Picture",
-        romaji: "Shasshin",
-        kanaText: kana_shi+kana_ya+kana_small_tsu+kana_shi+kana_n,
-        kanjiText: "",
+        romaji: "Shashin",
+        kanaText: kana_shi+kana_ya+kana_shi+kana_n,
+        kanjiText: "写真",
+        category: "Nouns"
+    },
+    {
+        englishText: "Photographer",
+        romaji: "Shashinka",
+        kanaText: kana_shi+kana_ya+kana_shi+kana_n+kana_ka,
+        kanjiText: "写真家",
         category: "Nouns"
     },
     {
         englishText: "Chair",
         romaji: "Isu",
         kanaText: kana_i+kana_su,
-        kanjiText: "",
+        kanjiText: "椅子",
         category: "Nouns"
     },
     {
         englishText: "Happiness",
         romaji: "Shiawase",
         kanaText: kana_shi+kana_a+kana_wa+kana_se,
-        kanjiText: "",
+        kanjiText: "幸せ",
         category: "Nouns"
     },
     {
         englishText: "Front Desk / Reception",
         romaji: "Uketsuke",
         kanaText: kana_u+kana_ke+kana_tsu+kana_ke,
-        kanjiText: "",
+        kanjiText: "受付",
         category: "Nouns"
     },
     {
         englishText: "Letter / Mail",
         romaji: "Tegami",
         kanaText: kana_te+kana_ga+kana_mi,
-        kanjiText: "",
+        kanjiText: "手紙",
         category: "Nouns"
     },
     {
         englishText: "Boss",
         romaji: "Buchou",
         kanaText: kana_bu+kana_chi+kana_yo+kana_u,
-        kanjiText: "",
+        kanjiText: "部長",
         category: "Nouns"
     },
     {
         englishText: "Heat / Temperature / Fever",
         romaji: "Netsu",
         kanaText: kana_ne+kana_tsu,
-        kanjiText: "",
+        kanjiText: "熱",
+        category: "Nouns"
+    },
+    {
+        englishText: "Temperature (in general, or indoors)",
+        romaji: "Ondo",
+        kanaText: kana_o+kana_n+kana_do,
+        kanjiText: "温度",
+        category: "Nouns"
+    },
+    {
+        englishText: "Air Temperature (outdoors, weather)",
+        romaji: "Kion",
+        kanaText: kana_ki+kana_o+kana_n,
+        kanjiText: "気温",
         category: "Nouns"
     },
     {
         englishText: "Doctor",
         romaji: "Isha",
         kanaText: kana_i+kana_shi+kana_ya,
-        kanjiText: "",
+        kanjiText: "医者",
         category: "Nouns"
     },
     {
         englishText: "Clothing",
         romaji: "Fuku",
         kanaText: kana_fu+kana_ku,
-        kanjiText: "",
+        kanjiText: "服",
         category: "Nouns"
     },
     {
         englishText: "Road / Path",
         romaji: "Michi",
         kanaText: kana_mi+kana_chi,
-        kanjiText: "",
+        kanjiText: "道",
+        category: "Nouns"
+    },
+    {
+        englishText: "Freeway, Highway",
+        romaji: "Douro",
+        kanaText: kana_do+kana_u+kana_ro,
+        kanjiText: "道路",
         category: "Nouns"
     },
     {
         englishText: "Sky",
         romaji: "Sora",
         kanaText: kana_so+kana_ra,
-        kanjiText: "",
+        kanjiText: "空",
         category: "Nouns"
     },
     {
         englishText: "Friend",
         romaji: "Tomodachi",
         kanaText: kana_to+kana_mo+kana_da+kana_chi,
-        kanjiText: "",
+        kanjiText: "友達",
+        category: "Nouns"
+    },
+    {
+        englishText: "Colleague, Associate",
+        romaji: "Nakama",
+        kanaText: kana_na+kana_ka+kana_ma,
+        kanjiText: "仲間",
+        category: "Nouns"
+    },
+    {
+        englishText: "Close friend, Best friend",
+        romaji: "Shinyuu",
+        kanaText: kana_shi+kana_n+kana_yu+kana_u,
+        kanjiText: "親友",
+        category: "Nouns"
+    },
+    {
+        englishText: "Co-worker",
+        romaji: "Douryou",
+        kanaText: kana_do+kana_u+kana_ri+kana_yo+kana_u,
+        kanjiText: "同僚",
         category: "Nouns"
     },
     {
         englishText: "Neighbor",
         romaji: "Tonari",
         kanaText: kana_to+kana_na+kana_ri,
-        kanjiText: "",
+        kanjiText: "隣",
+        category: "Nouns"
+    },
+    {
+        englishText: "Neighborhood",
+        romaji: "Kinjo",
+        kanaText: kana_ki+kana_n+kana_ji+kana_yo,
+        kanjiText: "近所",
+        category: "Nouns"
+    },
+    {
+        englishText: "Seasons",
+        romaji: "Kisetsu",
+        kanaText: kana_ki+kana_se+kana_tsu,
+        kanjiText: "季節",
         category: "Nouns"
     },
     {
         englishText: "Autumn",
         romaji: "Aki",
         kanaText: kana_a+kana_ki,
-        kanjiText: "",
+        kanjiText: "秋",
+        category: "Nouns"
+    },
+    {
+        englishText: "Autumn colors, Autumn leaves",
+        romaji: "Kouyou",
+        kanaText: kana_ko+kana_u+kana_yo+kana_u,
+        kanjiText: "紅葉",
         category: "Nouns"
     },
     {
         englishText: "Winter",
         romaji: "Fuyu",
         kanaText: kana_fu+kana_yu,
-        kanjiText: "",
+        kanjiText: "冬",
         category: "Nouns"
     },
     {
         englishText: "Spring",
         romaji: "Haru",
         kanaText: kana_ha+kana_ru,
-        kanjiText: "",
+        kanjiText: "春",
         category: "Nouns"
     },
     {
         englishText: "Summer",
         romaji: "Natsu",
         kanaText: kana_na+kana_tsu,
-        kanjiText: "",
+        kanjiText: "夏",
         category: "Nouns"
-    },
-    {
-        englishText: "Probably / Likely",
-        romaji: "Deshou",
-        kanaText: kana_de+kana_shi+kana_yo+kana_u,
-        kanjiText: "",
-        category: "Adverbs"
     },
     {
         englishText: "Both",
         romaji: "Ryouhou",
         kanaText: kana_ri+kana_yo+kana_u+kana_ho+kana_u,
-        kanjiText: "",
+        kanjiText: "両方",
         category: "Nouns"
     },
     {
         englishText: "Electricity",
-        romaji: "Den",
-        kanaText: kana_de+kana_n,
-        kanjiText: "",
+        romaji: "Denki",
+        kanaText: kana_de+kana_n+kana_ki,
+        kanjiText: "電気",
         category: "Nouns"
     },
     {
         englishText: "Phone",
         romaji: "Denwa",
         kanaText: kana_de+kana_n+kana_wa,
-        kanjiText: "",
+        kanjiText: "電話",
+        category: "Nouns"
+    },
+    {
+        englishText: "(Electrical) Power",
+        romaji: "Dengen",
+        kanaText: kana_de+kana_n+kana_ge+kana_n,
+        kanjiText: "電源",
         category: "Nouns"
     },
     {
         englishText: "Lightning, Thunder",
         romaji: "Kaminari",
         kanaText: kana_ka+kana_mi+kana_na+kana_ri,
-        kanjiText: "",
+        kanjiText: "雷",
         category: "Nouns"
     },
     {
         englishText: "Right (direction)",
         romaji: "Migi",
         kanaText: kana_mi+kana_gi,
-        kanjiText: "",
+        kanjiText: "右",
         category: "Nouns"
     },
     {
         englishText: "Left (direction)",
         romaji: "Hidari",
         kanaText: kana_hi+kana_da+kana_ri,
-        kanjiText: "",
+        kanjiText: "左",
         category: "Nouns"
     },
     {
         englishText: "North",
         romaji: "Kita",
         kanaText: kana_ki+kana_ta,
-        kanjiText: "",
+        kanjiText: "北",
         category: "Nouns"
     },
     {
         englishText: "East",
         romaji: "Higashi",
         kanaText: kana_hi+kana_ga+kana_shi,
-        kanjiText: "",
+        kanjiText: "東",
         category: "Nouns"
     },
     {
         englishText: "South",
         romaji: "Minami",
         kanaText: kana_mi+kana_na+kana_mi,
-        kanjiText: "",
+        kanjiText: "南",
         category: "Nouns"
     },
     {
         englishText: "West",
         romaji: "Nishi",
         kanaText: kana_ni+kana_shi,
-        kanjiText: "",
+        kanjiText: "西",
         category: "Nouns"
     },
     {
-        englishText: "Rice",
+        englishText: "Correct answer, Solution",
+        romaji: "Seikai",
+        kanaText: kana_se+kana_i+kana_ka+kana_i,
+        kanjiText: "正解",
+        category: "Nouns"
+    },
+    {
+        englishText: "Rice (cooked)",
         romaji: "Gohan",
         kanaText: kana_go+kana_ha+kana_n,
-        kanjiText: "",
+        kanjiText: "ご飯",
         category: "Nouns"
     },
     {
         englishText: "Meat",
         romaji: "Niku",
         kanaText: kana_ni+kana_ku,
-        kanjiText: "",
+        kanjiText: "肉",
         category: "Nouns"
     },
     {
         englishText: "Fish",
         romaji: "Sakana",
         kanaText: kana_sa+kana_ka+kana_na,
-        kanjiText: "",
-        category: "Nouns"
-    },
-    {
-        englishText: "Daytime",
-        romaji: "Hiru",
-        kanaText: kana_hi+kana_ru,
-        kanjiText: "",
+        kanjiText: "魚",
         category: "Nouns"
     },
     {
         englishText: "Noon",
+        romaji: "Hiru",
+        kanaText: kana_hi+kana_ru,
+        kanjiText: "昼",
+        category: "Nouns"
+    },
+    {
+        englishText: "Afteroon",
         romaji: "Gogo",
         kanaText: kana_go+kana_go,
-        kanjiText: "",
+        kanjiText: "午後",
         category: "Nouns"
     },
     {
         englishText: "Country",
         romaji: "Kuni",
         kanaText: kana_ku+kana_ni,
-        kanjiText: "",
+        kanjiText: "国",
         category: "Nouns"
     },
     {
         englishText: "Airplane",
         romaji: "Hikouki",
         kanaText: kana_hi+kana_ko+kana_u+kana_ki,
-        kanjiText: "",
+        kanjiText: "飛行機",
         category: "Nouns"
     },
     {
         englishText: "Train Platform",
         romaji: "Bansen",
         kanaText: kana_ba+kana_n+kana_se+kana_n,
-        kanjiText: "",
+        kanjiText: "番線",
         category: "Nouns"
     },
     {
         englishText: "Last Month",
         romaji: "Sengetsu",
         kanaText: kana_se+kana_n+kana_ge+kana_tsu,
-        kanjiText: "",
+        kanjiText: "先月",
         category: "Nouns"
     },
     {
         englishText: "Movie",
         romaji: "Eiga",
         kanaText: kana_e+kana_i+kana_ga,
-        kanjiText: "",
+        kanjiText: "映画",
         category: "Nouns"
     },
     {
         englishText: "Evening / Night",
         romaji: "Yoru",
         kanaText: kana_yo+kana_ru,
-        kanjiText: "",
+        kanjiText: "夜",
+        category: "Nouns"
+    },
+    {
+        englishText: "Tonight, This evening",
+        romaji: "Konya",
+        kanaText: kana_ko+kana_n+kana_ya,
+        kanjiText: "今夜",
         category: "Nouns"
     },
     {
         englishText: "Lies",
         romaji: "Uso",
         kanaText: kana_u+kana_so,
-        kanjiText: "",
+        kanjiText: "嘘",
         category: "Nouns"
     },
     {
         englishText: "Teacher",
         romaji: "Sensei",
         kanaText: kana_se+kana_n+kana_se+kana_i,
-        kanjiText: "",
+        kanjiText: "先生",
         category: "Nouns"
     },
     {
         englishText: "Heart",
         romaji: "Kokoro",
         kanaText: kana_ko+kana_ko+kana_ro,
-        kanjiText: "",
+        kanjiText: "心",
         category: "Nouns"
     },
     {
         englishText: "Glasses",
         romaji: "Megane",
-        kanaText: kana_me+kana_ga+kana_ne,
-        kanjiText: "",
+        kanaText: 'メガネ',
+        kanjiText: "-",
         category: "Nouns"
     },
     {
-        englishText: "Side",
-        romaji: "Kawa",
-        kanaText: kana_ka+kana_wa,
-        kanjiText: "",
+        englishText: "Side (i.e. left side, side of something)",
+        romaji: "Gawa",
+        kanaText: kana_ga+kana_wa,
+        kanjiText: "側",
         category: "Nouns"
     },
     {
-        englishText: "Wind, Cold (illness)",
+        englishText: "Wind",
         romaji: "Kaze",
         kanaText: kana_ka+kana_ze,
-        kanjiText: "",
+        kanjiText: "風",
         category: "Nouns"
     },
     {
         englishText: "Water",
         romaji: "Mizu",
         kanaText: kana_mi+kana_zu,
-        kanjiText: "",
+        kanjiText: "水",
         category: "Nouns"
     },
     {
         englishText: "Lake",
         romaji: "Mizuumi",
         kanaText: kana_mi+kana_zu+kana_u+kana_mi,
-        kanjiText: "",
+        kanjiText: "湖",
         category: "Nouns"
     },
     {
         englishText: "Bank",
         romaji: "Ginkou",
         kanaText: kana_gi+kana_n+kana_ko+kana_u,
-        kanjiText: "",
+        kanjiText: "銀行",
         category: "Nouns"
     },
     {
         englishText: "Ice",
-        romaji: "Kouri",
-        kanaText: kana_ko+kana_u+kana_ri,
-        kanjiText: "",
+        romaji: "Koori",
+        kanaText: kana_ko+kana_o+kana_ri,
+        kanjiText: "氷",
         category: "Nouns"
     },
     {
         englishText: "Seat",
         romaji: "Seki",
         kanaText: kana_se+kana_ki,
-        kanjiText: "",
+        kanjiText: "席",
         category: "Nouns"
     },
     {
         englishText: "Plum",
         romaji: "Ume",
         kanaText: kana_u+kana_me,
-        kanjiText: "",
+        kanjiText: "梅",
         category: "Nouns"
     },
     {
         englishText: "Peach",
         romaji: "Momo",
         kanaText: kana_mo+kana_mo,
-        kanjiText: "",
+        kanjiText: "桃",
         category: "Nouns"
     },
     {
         englishText: "Strawberry",
         romaji: "Ichigo",
         kanaText: kana_i+kana_chi+kana_go,
-        kanjiText: "",
+        kanjiText: "-",
         category: "Nouns"
     },
     {
         englishText: "Eel",
         romaji: "Unagi",
         kanaText: kana_u+kana_na+kana_gi,
-        kanjiText: "",
+        kanjiText: "-",
         category: "Nouns"
     },
     {
         englishText: "Bird",
         romaji: "Tori",
         kanaText: kana_to+kana_ri,
-        kanjiText: "",
+        kanjiText: "鳥",
         category: "Nouns"
     },
     {
         englishText: "Apple",
         romaji: "Ringo",
         kanaText: kana_ri+kana_n+kana_go,
-        kanjiText: "",
+        kanjiText: "-",
         category: "Nouns"
     },
     {
         englishText: "Dog",
         romaji: "Inu",
         kanaText: kana_i+kana_nu,
-        kanjiText: "",
+        kanjiText: "犬",
         category: "Nouns"
     },
     {
         englishText: "Cat",
         romaji: "Neko",
         kanaText: kana_ne+kana_ko,
-        kanjiText: "",
+        kanjiText: "猫",
         category: "Nouns"
     },
     {
         englishText: "Room, Bedroom",
         romaji: "Heya",
         kanaText: kana_he+kana_ya,
-        kanjiText: "",
+        kanjiText: "部屋",
         category: "Nouns"
     },
     {
-        englishText: "Stairs",
+        englishText: "Stairs, Stairway, Staircase",
         romaji: "Kaidan",
         kanaText: kana_ka+kana_i+kana_da+kana_n,
-        kanjiText: "",
+        kanjiText: "階段",
         category: "Nouns"
     },
     {
         englishText: "Rural area, Countryside",
         romaji: "Inaka",
         kanaText: kana_i+kana_na+kana_ka,
-        kanjiText: "",
+        kanjiText: "田舎",
         category: "Nouns"
     },
     {
-        englishText: "Word",
+        englishText: "Word, Speech, Phrase, Term",
         romaji: "Kotoba",
         kanaText: kana_ko+kana_to+kana_ba,
-        kanjiText: "",
+        kanjiText: "言葉",
         category: "Nouns"
     },
     {
         englishText: "Hot Water",
         romaji: "Oyu",
         kanaText: kana_o+kana_yu,
-        kanjiText: "",
+        kanjiText: "お湯",
         category: "Nouns"
     },
     {
-        englishText: "Situation",
+        englishText: "Situation, Case, Circumstance",
         romaji: "Baai",
         kanaText: kana_ba+kana_a+kana_i,
-        kanjiText: "",
-        category: "Nouns"
-    },
-    {
-        englishText: "Agreement",
-        romaji: "Doui",
-        kanaText: kana_do+kana_u+kana_i,
-        kanjiText: "",
+        kanjiText: "場合",
         category: "Nouns"
     },
     {
         englishText: "Library",
         romaji: "Toshokan",
         kanaText: kana_to+kana_shi+kana_yo+kana_ka+kana_n,
-        kanjiText: "",
+        kanjiText: "図書館",
         category: "Nouns"
     },
     {
         englishText: "Movie Theater",
         romaji: "Eigakan",
         kanaText: kana_e+kana_i+kana_ga+kana_ka+kana_n,
-        kanjiText: "",
+        kanjiText: "映画館",
         category: "Nouns"
     },
     {
         englishText: "Bathtub",
         romaji: "Ofuro",
         kanaText: kana_o+kana_fu+kana_ro,
-        kanjiText: "",
+        kanjiText: "お風呂",
         category: "Nouns"
     },
     {
         englishText: "House",
         romaji: "ie",
         kanaText: kana_i+kana_e,
-        kanjiText: "",
+        kanjiText: "家",
         category: "Nouns"
     },
     {
-        englishText: "Home",
+        englishText: "Home, Inside, Within",
         romaji: "Uchi",
         kanaText: kana_u+kana_chi,
-        kanjiText: "",
+        kanjiText: "内",
         category: "Nouns"
     },
     {
         englishText: "Outside",
         romaji: "Soto",
         kanaText: kana_so+kana_to,
-        kanjiText: "",
+        kanjiText: "外",
         category: "Nouns"
     },
     {
         englishText: "Clock, Watch",
         romaji: "Tokei",
         kanaText: kana_to+kana_ke+kana_i,
-        kanjiText: "",
+        kanjiText: "時計",
         category: "Nouns"
     },
     {
-        englishText: "Late night",
+        englishText: "Late night, Middle of the night",
         romaji: "Yonaka",
         kanaText: kana_yo+kana_na+kana_ka,
-        kanjiText: "",
+        kanjiText: "夜中",
         category: "Nouns"
     },
     {
         englishText: "Luggage",
         romaji: "Nimotsu",
         kanaText: kana_ni+kana_mo+kana_tsu,
-        kanjiText: "",
+        kanjiText: "荷物",
         category: "Nouns"
     },
     {
         englishText: "Store, Shop",
         romaji: "Mise",
         kanaText: kana_mi+kana_se,
-        kanjiText: "",
+        kanjiText: "店",
         category: "Nouns"
     },
     {
         englishText: "Evening",
         romaji: "Ban",
         kanaText: kana_ba+kana_n,
-        kanjiText: "",
+        kanjiText: "晩",
         category: "Nouns"
     },
     {
         englishText: "Morning",
         romaji: "Asa",
         kanaText: kana_a+kana_sa,
-        kanjiText: "",
+        kanjiText: "朝",
+        category: "Nouns"
+    },
+    {
+        englishText: "This morning",
+        romaji: "Kesa",
+        kanaText: kana_ke+kana_sa,
+        kanjiText: "今朝",
         category: "Nouns"
     },
     {
         englishText: "Ocean, Beach",
         romaji: "Umi",
         kanaText: kana_u+kana_mi,
-        kanjiText: "",
+        kanjiText: "海",
         category: "Nouns"
     },
     {
-        englishText: "Summer, Pajama Kimono",
+        englishText: "Summertime clothing similar to Kimono",
         romaji: "Yukata",
         kanaText: kana_yu+kana_ka+kana_ta,
-        kanjiText: "",
+        kanjiText: "浴衣",
         category: "Nouns"
     },
     {
         englishText: "Voice",
         romaji: "Koe",
         kanaText: kana_ko+kana_e,
-        kanjiText: "",
+        kanjiText: "声",
         category: "Nouns"
     },
     {
         englishText: "Woman",
         romaji: "Onna no hito",
         kanaText: kana_o+kana_n+kana_na+" "+kana_no+" "+kana_hi+kana_to,
-        kanjiText: "",
+        kanjiText: "女の人",
         category: "Nouns"
     },
     {
         englishText: "Train",
         romaji: "Densha",
         kanaText: kana_de+kana_n+kana_shi+kana_ya,
-        kanjiText: "",
+        kanjiText: "電車",
         category: "Nouns"
     },
     {
         englishText: "Subway",
         romaji: "Chikatetsu",
         kanaText: kana_chi+kana_ka+kana_te+kana_tsu,
-        kanjiText: "",
+        kanjiText: "地下鉄",
         category: "Nouns"
     },
     {
         englishText: "Vegetables",
         romaji: "Yasai",
         kanaText: kana_ya+kana_sa+kana_i,
-        kanjiText: "",
+        kanjiText: "野菜",
         category: "Nouns"
     },
     {
         englishText: "Work, Job",
         romaji: "Shigoto",
         kanaText: kana_shi+kana_go+kana_to,
-        kanjiText: "",
+        kanjiText: "仕事",
         category: "Nouns"
     },
     {
         englishText: "Vacation",
         romaji: "Yasumi",
         kanaText: kana_ya+kana_su+kana_mi,
-        kanjiText: "",
+        kanjiText: "休み",
         category: "Nouns"
     },
     {
         englishText: "Forest",
         romaji: "Mori",
         kanaText: kana_mo+kana_ri,
-        kanjiText: "",
+        kanjiText: "森",
         category: "Nouns"
     },
     {
         englishText: "Everyone",
-        romaji: "Mina-san",
-        kanaText: kana_mi+kana_na+"-"+kana_sa+kana_n,
-        kanjiText: "",
+        romaji: "Minna",
+        kanaText: kana_mi+kana_n+kana_na,
+        kanjiText: "-",
         category: "Nouns"
     },
     {
         englishText: "Arrival",
         romaji: "Touchaku",
         kanaText: kana_to+kana_u+kana_chi+kana_ya+kana_ku,
-        kanjiText: "",
+        kanjiText: "到着",
         category: "Nouns"
     },
     {
         englishText: "Airport",
         romaji: "Kuukou",
         kanaText: kana_ku+kana_u+kana_ko+kana_u,
-        kanjiText: "",
+        kanjiText: "空港",
         category: "Nouns"
     },
     {
         englishText: "Park",
-        romaji: "Koen",
+        romaji: "Kouen",
         kanaText: kana_ko+kana_u+kana_e+kana_n,
-        kanjiText: "",
+        kanjiText: "公園",
         category: "Nouns"
     },
     {
         englishText: "License",
         romaji: "Menkyo",
         kanaText: kana_me+kana_n+kana_ki+kana_yo,
-        kanjiText: "",
+        kanjiText: "免許",
         category: "Nouns"
     },
     {
         englishText: "Tomorrow",
         romaji: "Ashita",
         kanaText: kana_a+kana_shi+kana_ta,
-        kanjiText: "",
+        kanjiText: "明日",
         category: "Nouns"
     },
     {
         englishText: "Yesterday",
         romaji: "Kinou",
         kanaText: kana_ki+kana_no+kana_u,
-        kanjiText: "",
+        kanjiText: "昨日",
         category: "Nouns"
     },
     {
         englishText: "Departure",
         romaji: "Shuppatsu",
         kanaText: kana_shi+kana_yu+kana_small_tsu+kana_pa+kana_tsu,
-        kanjiText: "",
+        kanjiText: "出発",
         category: "Nouns"
     },
     {
         englishText: "Today",
         romaji: "Kyou",
         kanaText: kana_ki+kana_yo+kana_u,
-        kanjiText: "",
+        kanjiText: "今日",
         category: "Nouns"
     },
     {
         englishText: "Rain",
         romaji: "Ame",
         kanaText: kana_a+kana_me,
-        kanjiText: "",
+        kanjiText: "雨",
         category: "Nouns"
     },
     {
         englishText: "Customer",
-        romaji: "Kyaku-san",
-        kanaText: "("+kana_o+") "+kana_ki+kana_ya+kana_ku+"-"+kana_sa+kana_n,
-        kanjiText: "",
+        romaji: "Kyaku",
+        kanaText: "("+kana_o+") "+kana_ki+kana_ya+kana_ku,
+        kanjiText: "("+kana_o+") 客",
         category: "Nouns"
     },
     {
         englishText: "Now",
         romaji: "Ima",
         kanaText: kana_i+kana_ma,
-        kanjiText: "",
+        kanjiText: "今",
         category: "Nouns"
     },
     {
         englishText: "Crab",
         romaji: "Kani",
-        kanaText: kana_ka+kana_ni,
-        kanjiText: "",
+        kanaText: 'カニ',
+        kanjiText: "-",
         category: "Nouns"
     },
     {
         englishText: "Bag",
         romaji: "Kaban",
         kanaText: kana_ka+kana_ba+kana_n,
-        kanjiText: "",
+        kanjiText: "鞄",
         category: "Nouns"
     },
     {
         englishText: "Tea",
-        romaji: "Ocha",
+        romaji: "cha",
         kanaText: kana_o+kana_chi+kana_ya,
-        kanjiText: "",
-        category: "Nouns"
-    },
-    {
-        englishText: "Traffic",
-        romaji: "Juutai",
-        kanaText: kana_ji+kana_yu+kana_u+kana_ta+kana_i,
-        kanjiText: "",
+        kanjiText: "茶",
         category: "Nouns"
     },
     {
         englishText: "Medicine",
         romaji: "Kusuri",
         kanaText: kana_ku+kana_su+kana_ri,
-        kanjiText: "",
+        kanjiText: "薬",
+        category: "Nouns"
+    },
+    {
+        englishText: "Snow",
+        romaji: "Yuki",
+        kanaText: kana_yu+kana_ki,
+        kanjiText: "雪",
         category: "Nouns"
     },
 
