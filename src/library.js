@@ -206,476 +206,588 @@ const library = [
         englishText: "Well, Fine, Energetic",
         romaji: "Genki",
         kanaText: kana_ge+kana_n+kana_ki,
-        kanjiText: "",
+        kanjiText: '元気',
         category: "Adjectives"
     },
     {
         englishText: "Expensive, Tall",
         romaji: "Takai",
         kanaText: kana_ta+kana_ka+kana_i,
-        kanjiText: "",
+        kanjiText: '\u9ad8'+kana_i,
         category: "Adjectives"
     },
     {
         englishText: "Beautiful, Clean",
         romaji: "Kirei",
         kanaText: kana_ki+kana_re+kana_i,
-        kanjiText: "",
+        kanjiText: "綺麗",
         category: "Adjectives"
     },
     {
         englishText: "Inconvenient",
         romaji: "Fuben",
         kanaText: kana_fu+kana_be+kana_n,
-        kanjiText: "",
+        kanjiText: "不便",
         category: "Adjectives"
     },
     {
         englishText: "Honest, Truthful",
         romaji: "Shoujiki",
         kanaText: kana_shi+kana_yo+kana_u+kana_ji+kana_ki,
-        kanjiText: "",
+        kanjiText: "正直",
         category: "Adjectives"
     },
     {
-        englishText: "Kind",
+        englishText: "Kind, gentle, considerate",
         romaji: "Shinsetsu",
         kanaText: kana_shi+kana_n+kana_se+kana_tsu,
-        kanjiText: "",
+        kanjiText: "親切",
         category: "Adjectives"
     },
     {
-        englishText: "Rude",
+        englishText: "Kind, gentle, nice",
+        romaji: "Yasashii",
+        kanaText: kana_ya+kana_sa+kana_shi+kana_i,
+        kanjiText: "優しい",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Rude, Impolite",
         romaji: "Shitsurei",
         kanaText: kana_shi+kana_tsu+kana_re+kana_i,
-        kanjiText: "",
+        kanjiText: "失礼",
         category: "Adjectives"
     },
     {
         englishText: "Safe",
         romaji: "Anzen",
         kanaText: kana_a+kana_n+kana_ze+kana_n,
-        kanjiText: "",
+        kanjiText: "安全",
         category: "Adjectives"
     },
     {
-        englishText: "Convenient",
+        englishText: "Convenient, useful",
         romaji: "Benri",
         kanaText: kana_be+kana_n+kana_ri,
-        kanjiText: "",
+        kanjiText: "便利",
         category: "Adjectives"
     },
     {
-        englishText: "Easy",
+        englishText: "Easy, simple",
         romaji: "Kantan",
         kanaText: kana_ka+kana_n+kana_ta+kana_n,
-        kanjiText: "",
+        kanjiText: "簡単",
         category: "Adjectives"
     },
     {
         englishText: "Fresh",
         romaji: "Shinsen",
         kanaText: kana_shi+kana_n+kana_se+kana_n,
-        kanjiText: "",
+        kanjiText: "新鮮",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Raw, live, fresh, draft (beer)",
+        romaji: "Nama",
+        kanaText: kana_na+kana_ma,
+        kanjiText: "生",
         category: "Adjectives"
     },
     {
         englishText: "Quiet",
         romaji: "Shizuka",
         kanaText: kana_shi+kana_zu+kana_ka,
-        kanjiText: "",
+        kanjiText: "静か",
         category: "Adjectives"
     },
     {
         englishText: "Cold (To the touch)",
         romaji: "Tsumetai",
         kanaText: kana_tsu+kana_me+kana_ta+kana_i,
-        kanjiText: "",
+        kanjiText: "冷たい",
         category: "Adjectives"
     },
     {
         englishText: "Serious / Diligent",
         romaji: "Majime",
         kanaText: kana_ma+kana_ji+kana_me,
-        kanjiText: "",
+        kanjiText: "真面目",
         category: "Adjectives"
     },
     {
         englishText: "Black",
         romaji: "Kuroi",
         kanaText: kana_ku+kana_ro+kana_i,
-        kanjiText: "",
+        kanjiText: "黒い",
         category: "Adjectives"
     },
     {
         englishText: "Yellow",
         romaji: "Kiiroi",
         kanaText: kana_ki+kana_i+kana_ro+kana_i,
-        kanjiText: "",
+        kanjiText: "黄色い",
         category: "Adjectives"
     },
     {
-        englishText: "Sad",
-        romaji: "Kanashii",
-        kanaText: kana_ka+kana_na+kana_shi+kana_i,
-        kanjiText: "",
-        category: "Adjectives"
-    },
-    {
-        englishText: "Happy, Glad",
-        romaji: "Ureshii",
-        kanaText: kana_u+kana_re+kana_shi+kana_i,
-        kanjiText: "",
-        category: "Adjectives"
-    },
-    {
-        englishText: "Cheap, Inexpensive",
-        romaji: "Yasui",
-        kanaText: kana_ya+kana_su+kana_i,
-        kanjiText: "",
-        category: "Adjectives"
-    },
-    {
-        englishText: "Noisy, Annoying",
-        romaji: "Urusai",
-        kanaText: kana_u+kana_ru+kana_sa+kana_i,
-        kanjiText: "",
-        category: "Adjectives"
-    },
-    {
-        englishText: "Early",
-        romaji: "Hayai",
-        kanaText: kana_ha+kana_ya+kana_i,
-        kanjiText: "",
-        category: "Adjectives"
-    },
-    {
-        englishText: "Difficult",
-        romaji: "Muzukashi",
-        kanaText: kana_mu+kana_zu+kana_ka+kana_shi+kana_i,
-        kanjiText: "",
-        category: "Adjectives"
-    },
-    {
-        englishText: "Sweet",
-        romaji: "Amai",
-        kanaText: kana_a+kana_ma+kana_i,
-        kanjiText: "",
-        category: "Adjectives"
-    },
-    {
-        englishText: "Lightweight",
-        romaji: "Karui",
-        kanaText: kana_ka+kana_ru+kana_i,
-        kanjiText: "",
-        category: "Adjectives"
-    },
-    {
-        englishText: "Wide",
-        romaji: "Hiroi",
-        kanaText: kana_hi+kana_ro+kana_i,
-        kanjiText: "",
-        category: "Adjectives"
-    },
-    {
-        englishText: "Spicy",
-        romaji: "Karai",
-        kanaText: kana_ka+kana_ra+kana_i,
-        kanjiText: "",
-        category: "Adjectives"
-    },
-    {
-        englishText: "Dirty",
-        romaji: "Kitanai",
-        kanaText: kana_ki+kana_ta+kana_na+kana_i,
-        kanjiText: "",
-        category: "Adjectives"
-    },
-    {
-        englishText: "Dangerous",
-        romaji: "Abunai",
-        kanaText: kana_a+kana_bu+kana_na+kana_i,
-        kanjiText: "",
-        category: "Adjectives"
-    },
-    {
-        englishText: "Hot (weather)",
-        romaji: "Atsui",
-        kanaText: kana_a+kana_tsu+kana_i,
-        kanjiText: "",
-        category: "Adjectives"
-    },
-    {
-        englishText: "Dark",
-        romaji: "Kurai",
-        kanaText: kana_ku+kana_ra+kana_i,
-        kanjiText: "",
-        category: "Adjectives"
-    },
-    {
-        englishText: "Cool (weather)",
-        romaji: "Suzushii",
-        kanaText: kana_su+kana_zu+kana_shi+kana_i,
-        kanjiText: "",
-        category: "Adjectives"
-    },
-    {
-        englishText: "Small",
-        romaji: "Chiisai",
-        kanaText: kana_chi+kana_i+kana_sa+kana_i,
-        kanjiText: "",
-        category: "Adjectives"
-    },
-    {
-        englishText: "Busy",
-        romaji: "Isogashii",
-        kanaText: kana_i+kana_so+kana_ga+kana_shi+kana_i,
-        kanjiText: "",
-        category: "Adjectives"
-    },
-    {
-        englishText: "Old",
-        romaji: "Furui",
-        kanaText: kana_fu+kana_ru+kana_i,
-        kanjiText: "",
-        category: "Adjectives"
-    },
-    {
-        englishText: "Short",
-        romaji: "Mijikai",
-        kanaText: kana_mi+kana_ji+kana_ka+kana_i,
-        kanjiText: "",
-        category: "Adjectives"
-    },
-    {
-        englishText: "Large, big",
-        romaji: "Ookii",
-        kanaText: kana_o+kana_o+kana_ki+kana_i,
-        kanjiText: "",
-        category: "Adjectives"
-    },
-    {
-        englishText: "Good at, Skillful at",
-        romaji: "Jouzu",
-        kanaText: kana_ji+kana_yo+kana_u+kana_zu,
-        kanjiText: "",
-        category: "Adjectives"
-    },
-    {
-        englishText: "Bad at, Not Skilled at",
-        romaji: "Heta",
-        kanaText: kana_he+kana_ta,
-        kanjiText: "",
-        category: "Adjectives"
-    },
-    {
-        englishText: "Okay / Fine",
-        romaji: "Daijoubu",
-        kanaText: kana_da+kana_i+kana_ji+kana_yo+kana_u+kana_bu,
-        kanjiText: "",
-        category: "Adjectives"
-    },
-    {
-        englishText: "Scary / Frightening",
-        romaji: "Kowai",
-        kanaText: kana_ko+kana_wa+kana_i,
-        kanjiText: "",
-        category: "Adjectives"
-    },
-    {
-        englishText: "Boring",
-        romaji: "Tsumaranai",
-        kanaText: kana_tsu+kana_ma+kana_ra+kana_na+kana_i,
-        kanjiText: "",
-        category: "Adjectives"
-    },    
-    {
-        englishText: "Popular",
-        romaji: "Ninki",
-        kanaText: kana_ni+kana_n+kana_ki,
-        kanjiText: "",
-        category: "Adjectives"
-    },
-    {
-        englishText: "Famous",
-        romaji: "Yumei",
-        kanaText: kana_yo+kana_me+kana_i,
-        kanjiText: "",
-        category: "Adjectives"
-    },
-    {
-        englishText: "Strange, Weird",
-        romaji: "Okashii",
-        kanaText: kana_o+kana_ka+kana_shi+kana_i,
-        kanjiText: "",
-        category: "Adjectives"
-    },
-    {
-        englishText: "Strange, Weird",
-        romaji: "Hen",
-        kanaText: kana_he+kana_n,
-        kanjiText: "",
-        category: "Adjectives"
-    },
-    {
-        englishText: "Mean",
-        romaji: "Hidoi",
-        kanaText: kana_hi+kana_do+kana_i,
-        kanjiText: "",
-        category: "Adjectives"
-    },
-    {
-        englishText: "Interesting",
-        romaji: "Omoshiroi",
-        kanaText: kana_o+kana_mo+kana_shi+kana_ro+kana_i,
-        kanjiText: "",
-        category: "Adjectives"
-    },
-    {
-        englishText: "Heavy",
-        romaji: "Omoi",
-        kanaText: kana_o+kana_mo+kana_i,
-        kanjiText: "",
-        category: "Adjectives"
-    },
-    {
-        englishText: "New",
-        romaji: "Atarashi",
-        kanaText: kana_a+kana_ta+kana_ra+kana_shi+kana_i,
-        kanjiText: "",
-        category: "Adjectives"
-    },
-    {
-        englishText: "Slow, Late",
-        romaji: "Osoi",
-        kanaText: kana_o+kana_so+kana_i,
-        kanjiText: "",
-        category: "Adjectives"
-    },
-    {
-        englishText: "Bright",
-        romaji: "Akarui",
-        kanaText: kana_a+kana_ka+kana_ru+kana_i,
-        kanjiText: "",
-        category: "Adjectives"
-    },
-    {
-        englishText: "Many, Much",
-        romaji: "Ooi",
-        kanaText: kana_o+kana_o+kana_i,
-        kanjiText: "",
-        category: "Adjectives"
-    },
-    {
-        englishText: "Salty",
-        romaji: "Shoppai",
-        kanaText: kana_shi+kana_yo+kana_small_tsu+kana_pa+kana_i,
-        kanjiText: "",
-        category: "Adjectives"
-    },
-    {
-        englishText: "Cold (weather)",
-        romaji: "Samui",
-        kanaText: kana_sa+kana_mu+kana_i,
-        kanjiText: "",
-        category: "Adjectives"
-    },
-    {
-        englishText: "Thin, Slender",
-        romaji: "Hosoi",
-        kanaText: kana_ho+kana_so+kana_i,
-        kanjiText: "",
-        category: "Adjectives"
-    },
-    {
-        englishText: "Sour",
-        romaji: "Suppai",
-        kanaText: kana_su+kana_small_tsu+kana_pa+kana_i,
-        kanjiText: "",
-        category: "Adjectives"
-    },
-    {
-        englishText: "Strong, Powerful",
-        romaji: "Tsuyoi",
-        kanaText: kana_tsu+kana_yo+kana_i,
-        kanjiText: "",
+        englishText: "Green",
+        romaji: "Midori",
+        kanaText: kana_mi+kana_do+kana_ri,
+        kanjiText: "緑",
         category: "Adjectives"
     },
     {
         englishText: "Red",
-        romaji: "Aka",
-        kanaText: kana_a+kana_ka,
-        kanjiText: "",
+        romaji: "Akai",
+        kanaText: kana_a+kana_ka+kana_i,
+        kanjiText: "赤い",
         category: "Adjectives"
     },
     {
         englishText: "White",
         romaji: "Shiroi",
         kanaText: kana_shi+kana_ro+kana_i,
-        kanjiText: "",
+        kanjiText: "白い",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Gray",
+        romaji: "Haiiro",
+        kanaText: kana_ha+kana_i+kana_i+kana_ro,
+        kanjiText: "灰色",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Purple",
+        romaji: "Murasaki",
+        kanaText: kana_mu+kana_ra+kana_sa+kana_ki,
+        kanjiText: "紫",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Sad",
+        romaji: "Kanashii",
+        kanaText: kana_ka+kana_na+kana_shi+kana_i,
+        kanjiText: "悲しい",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Happy, Glad",
+        romaji: "Ureshii",
+        kanaText: kana_u+kana_re+kana_shi+kana_i,
+        kanjiText: "嬉しい",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Cheap, Inexpensive",
+        romaji: "Yasui",
+        kanaText: kana_ya+kana_su+kana_i,
+        kanjiText: "安い",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Noisy, Annoying",
+        romaji: "Urusai",
+        kanaText: kana_u+kana_ru+kana_sa+kana_i,
+        kanjiText: "煩い",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Early, Fast, Quick",
+        romaji: "Hayai",
+        kanaText: kana_ha+kana_ya+kana_i,
+        kanjiText: "早い",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Flat, Level, Smooth",
+        romaji: "Taira",
+        kanaText: kana_ta+kana_i+kana_ra,
+        kanjiText: "平ら",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Difficult",
+        romaji: "Muzukashi",
+        kanaText: kana_mu+kana_zu+kana_ka+kana_shi+kana_i,
+        kanjiText: "難しい",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Sweet",
+        romaji: "Amai",
+        kanaText: kana_a+kana_ma+kana_i,
+        kanjiText: "甘い",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Lightweight, minor, slight",
+        romaji: "Karui",
+        kanaText: kana_ka+kana_ru+kana_i,
+        kanjiText: "軽い",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Wide",
+        romaji: "Hiroi",
+        kanaText: kana_hi+kana_ro+kana_i,
+        kanjiText: "広い",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Spicy",
+        romaji: "Karai",
+        kanaText: kana_ka+kana_ra+kana_i,
+        kanjiText: "辛い",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Dirty",
+        romaji: "Kitanai",
+        kanaText: kana_ki+kana_ta+kana_na+kana_i,
+        kanjiText: "汚い",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Dangerous",
+        romaji: "Abunai",
+        kanaText: kana_a+kana_bu+kana_na+kana_i,
+        kanjiText: "危ない",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Hot (weather)",
+        romaji: "Atsui",
+        kanaText: kana_a+kana_tsu+kana_i,
+        kanjiText: "熱い",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Dark",
+        romaji: "Kurai",
+        kanaText: kana_ku+kana_ra+kana_i,
+        kanjiText: "暗い",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Cool (weather)",
+        romaji: "Suzushii",
+        kanaText: kana_su+kana_zu+kana_shi+kana_i,
+        kanjiText: "涼しい",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Small",
+        romaji: "Chiisai",
+        kanaText: kana_chi+kana_i+kana_sa+kana_i,
+        kanjiText: "小さい",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Busy",
+        romaji: "Isogashii",
+        kanaText: kana_i+kana_so+kana_ga+kana_shi+kana_i,
+        kanjiText: "忙しい",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Old",
+        romaji: "Furui",
+        kanaText: kana_fu+kana_ru+kana_i,
+        kanjiText: "古い",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Short",
+        romaji: "Mijikai",
+        kanaText: kana_mi+kana_ji+kana_ka+kana_i,
+        kanjiText: "短い",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Large, big",
+        romaji: "Ookii",
+        kanaText: kana_o+kana_o+kana_ki+kana_i,
+        kanjiText: "大きい",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Good at, Skillful at",
+        romaji: "Jouzu",
+        kanaText: kana_ji+kana_yo+kana_u+kana_zu,
+        kanjiText: "上手",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Bad at, Not Skilled at",
+        romaji: "Heta",
+        kanaText: kana_he+kana_ta,
+        kanjiText: "下手",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Okay / Fine",
+        romaji: "Daijoubu",
+        kanaText: kana_da+kana_i+kana_ji+kana_yo+kana_u+kana_bu,
+        kanjiText: "大丈夫",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Scary / Frightening",
+        romaji: "Kowai",
+        kanaText: kana_ko+kana_wa+kana_i,
+        kanjiText: "怖い",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Boring",
+        romaji: "Tsumaranai",
+        kanaText: kana_tsu+kana_ma+kana_ra+kana_na+kana_i,
+        kanjiText: "詰らない",
+        category: "Adjectives"
+    },    
+    {
+        englishText: "Popular",
+        romaji: "Ninki",
+        kanaText: kana_ni+kana_n+kana_ki,
+        kanjiText: "人気",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Famous",
+        romaji: "Yuumei",
+        kanaText: kana_yu+kana_u+kana_me+kana_i,
+        kanjiText: "有名",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Strange, Weird",
+        romaji: "Okashii",
+        kanaText: kana_o+kana_ka+kana_shi+kana_i,
+        kanjiText: "可笑しい",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Strange, Weird",
+        romaji: "Hen",
+        kanaText: kana_he+kana_n,
+        kanjiText: "変",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Mean",
+        romaji: "Hidoi",
+        kanaText: kana_hi+kana_do+kana_i,
+        kanjiText: "酷い",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Funny, Interesting",
+        romaji: "Omoshiroi",
+        kanaText: kana_o+kana_mo+kana_shi+kana_ro+kana_i,
+        kanjiText: "面白い",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Heavy, Weighty, Gloomy",
+        romaji: "Omoi",
+        kanaText: kana_o+kana_mo+kana_i,
+        kanjiText: "重い",
+        category: "Adjectives"
+    },
+    {
+        englishText: "New",
+        romaji: "Atarashii",
+        kanaText: kana_a+kana_ta+kana_ra+kana_shi+kana_i,
+        kanjiText: "新しい",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Slow, Late",
+        romaji: "Osoi",
+        kanaText: kana_o+kana_so+kana_i,
+        kanjiText: "遅い",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Bright",
+        romaji: "Akarui",
+        kanaText: kana_a+kana_ka+kana_ru+kana_i,
+        kanjiText: "明るい",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Many, Much",
+        romaji: "Ooi",
+        kanaText: kana_o+kana_o+kana_i,
+        kanjiText: "多い",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Salty",
+        romaji: "Shoppai",
+        kanaText: kana_shi+kana_yo+kana_small_tsu+kana_pa+kana_i,
+        kanjiText: "塩っぱい",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Cold (weather)",
+        romaji: "Samui",
+        kanaText: kana_sa+kana_mu+kana_i,
+        kanjiText: "寒い",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Thin, Slender",
+        romaji: "Hosoi",
+        kanaText: kana_ho+kana_so+kana_i,
+        kanjiText: "細い",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Sour",
+        romaji: "Suppai",
+        kanaText: kana_su+kana_small_tsu+kana_pa+kana_i,
+        kanjiText: "酸っぱい",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Bad (Taste), Unpleasant",
+        romaji: "Mazui",
+        kanaText: kana_ma+kana_zu+kana_i,
+        kanjiText: "不味い",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Strong, Powerful",
+        romaji: "Tsuyoi",
+        kanaText: kana_tsu+kana_yo+kana_i,
+        kanjiText: "強い",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Weak, Frail",
+        romaji: "Yowai",
+        kanaText: kana_yo+kana_wa+kana_i,
+        kanjiText: "弱い",
         category: "Adjectives"
     },
     {
         englishText: "Blue",
         romaji: "Aoi",
         kanaText: kana_a+kana_o+kana_i,
-        kanjiText: "",
+        kanjiText: "青い",
         category: "Adjectives"
     },
     {
         englishText: "Cloudy",
         romaji: "Kumori",
         kanaText: kana_ku+kana_mo+kana_ri,
-        kanjiText: "",
+        kanjiText: "曇り",
         category: "Adjectives"
     },
     {
         englishText: "Fun, Enjoyable",
         romaji: "Tanoshii",
         kanaText: kana_ta+kana_no+kana_shi+kana_i,
-        kanjiText: "",
+        kanjiText: "楽しい",
         category: "Adjectives"
     },
     {
-        englishText: "Far, Long distance",
+        englishText: "Far, distant",
         romaji: "Tooi",
         kanaText: kana_to+kana_o+kana_i,
-        kanjiText: "",
+        kanjiText: "遠い",
         category: "Adjectives"
     },
     {
         englishText: "Same",
-        romaji: "Onaji",
+        romaji: "Onajii",
         kanaText: kana_o+kana_na+kana_ji,
-        kanjiText: "",
+        kanjiText: "同じい",
         category: "Adjectives"
     },
     {
         englishText: "Sunny",
         romaji: "Hare",
         kanaText: kana_ha+kana_re,
-        kanjiText: "",
+        kanjiText: "晴れ",
         category: "Adjectives"
     },
     {
         englishText: "Important",
         romaji: "Taisetsu",
         kanaText: kana_ta+kana_i+kana_se+kana_tsu,
-        kanjiText: "",
+        kanjiText: "大切",
         category: "Adjectives"
     },
     {
         englishText: "Important",
         romaji: "Daiji",
         kanaText: kana_da+kana_i+kana_ji,
-        kanjiText: "",
+        kanjiText: "大事",
         category: "Adjectives"
     },
     {
         englishText: "Difficult, treacherous, greatly",
         romaji: "Taihen",
         kanaText: kana_ta+kana_i+kana_he+kana_n,
-        kanjiText: "",
+        kanjiText: "大変",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Regrettable, Close (not quite)",
+        romaji: "Oshii",
+        kanaText: kana_o+kana_shi+kana_i,
+        kanjiText: "惜しい",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Delicious",
+        romaji: "Oishii",
+        kanaText: kana_o+kana_i+kana_shi+kana_i,
+        kanjiText: "美味しい",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Sober",
+        romaji: "Shirafu",
+        kanaText: "シラフ",
+        kanjiText: "-",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Complex, Complicated",
+        romaji: "Fukuzatsu",
+        kanaText: kana_fu+kana_ku+kana_za+kana_tsu,
+        kanjiText: "複雑",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Humble, Modest",
+        romaji: "Kenkyo",
+        kanaText: kana_ke+kana_n+kana_ki+kana_yo,
+        kanjiText: "謙虚",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Tipsy, Buzzed",
+        romaji: "Horoyoi",
+        kanaText: kana_ho+kana_ro+kana_yo+kana_i,
+        kanjiText: "ほろ酔い",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Lonely",
+        romaji: "Sabishii",
+        kanaText: kana_sa+kana_bi+kana_shi+kana_i,
+        kanjiText: "寂しい",
+        category: "Adjectives"
+    },
+    {
+        englishText: "Uneven, Rough, Bumpy",
+        romaji: "Dekoboko",
+        kanaText: kana_de+kana_ko+'ぼ'+kana_ko,
+        kanjiText: "寂しい",
         category: "Adjectives"
     },
 
