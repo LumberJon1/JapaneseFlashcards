@@ -6,7 +6,7 @@ function VerbCard({ language, currentCard }) {
     return (
         <div className="flex flex-col items-center justify-center h-full w-full text-xl font-medium">
             {language === "English" ? (
-                <p className="my-3">{currentCard.englishText}</p>
+                <p className="my-3 text-3xl">{currentCard.englishText}</p>
             ) : (
                 <>
                     <div className="h-1/2 align-baseline flex justify-end text-6xl">

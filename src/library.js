@@ -872,43 +872,6 @@ const library = [
 
     // Category 4: verbs
 
-
-    /*
-        Verbs follow a different key-value structure, due to multiple conjugations,
-        and are loaded into their own components.  The following is the format:
-        {
-        kanjiText: "食べる", // Base form of the verb in kanji
-        kanaText: "たべる", // Base form in kana
-        romaji: "taberu", // Base form in romaji
-        englishText: "to eat", // English translation
-        category: "verb", // Indicates it's a verb
-        conjugations: {
-            regular: {
-                kanji: "食べる",
-                kana: "たべる",
-                romaji: "taberu"
-            },
-            polite: {
-                kanji: "食べます",
-                kana: "たべます",
-                romaji: "tabemasu"
-            },
-            pastRegular: {
-                kanji: "食べた",
-                kana: "たべた",
-                romaji: "tabeta"
-            },
-            teForm: {
-                kanji: "食べて",
-                kana: "たべて",
-                romaji: "tabete"
-            }
-        }
-    },
-    */
-
-    // "\u98f2"
-
     {
         englishText: "To Drink",
         romaji: "Nomu",
@@ -920,24 +883,160 @@ const library = [
         category: "Verbs",
         conjugations: {
             regular: {
-                kanji: "\u98f2"+middleDot+kana_mu,
-                kana: kana_no+middleDot+kana_mu,
+                kana: kana_no+kana_mu,
                 romaji: "nomu"
             },
             polite: {
-                kanji: "\u98f2"+middleDot+kana_mi+kana_ma+kana_su,
-                kana: kana_no+middleDot+kana_mi+kana_ma+kana_su,
+                kana: kana_no+kana_mi+kana_ma+kana_su,
                 romaji: "nomimasu"
             },
             pastRegular: {
-                kanji: "\u98f2"+kana_n+kana_da,
                 kana: kana_no+kana_n+kana_da,
                 romaji: "nonda"
             },
             teForm: {
-                kanji: "\u98f2"+kana_n+kana_de,
                 kana: kana_no+kana_n+kana_de,
                 romaji: "nonde"
+            }
+        }
+    },
+    {
+        englishText: "(to) Give up",
+        romaji: "akirameru",
+        kanjiText: "\u8ae6",
+        kanaText: kana_me+kana_ru,
+        furiganaPairs: [
+            { base: "\u8ae6", furigana: kana_a+kana_ki+kana_ra }, // Kanji with Furigana
+        ],
+        category: "Verbs",
+        conjugations: {
+            regular: {
+                kana: kana_a+kana_ki+kana_ra+kana_me+kana_ru,
+                romaji: "akirameru"
+            },
+            polite: {
+                kana: kana_a+kana_ki+kana_ra+kana_me+kana_ma+kana_su,
+                romaji: "akiramemasu"
+            },
+            pastRegular: {
+                kana: kana_a+kana_ki+kana_ra+kana_me+kana_n+kana_ta,
+                romaji: "akirameta"
+            },
+            teForm: {
+                kana: kana_a+kana_ki+kana_ra+kana_me+kana_te,
+                romaji: "akiramete"
+            }
+        }
+    },
+    {
+        englishText: "(to) Stop by somewhere, on the way to another place; (to) Make a short visit",
+        romaji: "yoru",
+        kanjiText: "\u5bc4",
+        kanaText: kana_ru, // The kana after tha kanji
+        furiganaPairs: [
+            { base: "\u5bc4", furigana: kana_yo }, // Kanji with Furigana
+        ],
+        category: "Verbs",
+        conjugations: {
+            regular: {
+                kana: kana_yo+kana_ru,
+                romaji: "yoru"
+            },
+            polite: {
+                kana: kana_yo+kana_ri+kana_ma+kana_su,
+                romaji: "yorimasu"
+            },
+            pastRegular: {
+                kana: kana_yo+kana_small_tsu+kana_ta,
+                romaji: "yotta"
+            },
+            teForm: {
+                kana: kana_yo+kana_small_tsu+kana_te,
+                romaji: "yotte"
+            }
+        }
+    },
+    {
+        englishText: "(to) Bring to a boil",
+        romaji: "wakasu",
+        kanjiText: "\u6cb8",
+        furiganaPairs: [
+            { base: "\u6cb8", furigana: kana_wa }, // Kanji and its Furigana
+        ],
+        kanaText: kana_ka+kana_su, // The kana after tha kanji
+        category: "Verbs",
+        conjugations: {
+            regular: {
+                kana: kana_wa+kana_ka+kana_su,
+                romaji: "wakasu"
+            },
+            polite: {
+                kana: kana_wa+kana_ka+kana_shi+kana_ma+kana_su,
+                romaji: "wakashimasu"
+            },
+            pastRegular: {
+                kana: kana_wa+kana_ka+kana_shi+kana_ta,
+                romaji: "wakashita"
+            },
+            teForm: {
+                kana: kana_wa+kana_ka+kana_shi+kana_te,
+                romaji: "wakashite"
+            }
+        }
+    },
+    {
+        englishText: "(to) Eat",
+        romaji: "taberu",
+        kanjiText: "\u98df",
+        furiganaPairs: [
+            { base: "\u98df", furigana: kana_ta }, // Kanji and its Furigana
+        ],
+        kanaText: kana_be+kana_ru, // The kana after tha kanji
+        category: "Verbs",
+        conjugations: {
+            regular: {
+                kana: kana_ta+kana_be+kana_ru,
+                romaji: "taberu"
+            },
+            polite: {
+                kana: kana_ta+kana_be+kana_ma+kana_su,
+                romaji: "tabemasu"
+            },
+            pastRegular: {
+                kana: kana_ta+kana_be+kana_ta,
+                romaji: "tabeta"
+            },
+            teForm: {
+                kana: kana_ta+kana_be+kana_te,
+                romaji: "tabete"
+            }
+        }
+    },
+    {
+        englishText: "(to) Gaze at, admire",
+        romaji: "nagameru",
+        kanjiText: "\u98df",
+        furiganaPairs: [
+            { base: "\u98df", furigana: kana_ta }, // Kanji and its Furigana
+        ],
+        kanaText: kana_be+kana_ru, // The kana after tha kanji
+        category: "Verbs",
+        conjugations: {
+            regular: {
+                kana: kana_ta+kana_be+kana_ru,
+                romaji: "nagameru"
+            },
+            polite: {
+                kana: kana_ta+kana_be+kana_ma+kana_su,
+                romaji: "tabemasu"
+            },
+            pastRegular: {
+                kana: kana_ta+kana_be+kana_ta,
+                romaji: "tabeta"
+            },
+            teForm: {
+                kana: kana_ta+kana_be+kana_te,
+                romaji: "tabete"
             }
         }
     },
@@ -1276,39 +1375,11 @@ const library = [
         category: "Nouns"
     },
     {
-        englishText: "To Wait",
-        romaji: "Matsu",
-        kanaText: kana_ma+kana_tsu,
-        kanjiText: "",
-        category: "Verbs"
-    },
-    {
-        englishText: "To Meet",
-        romaji: "Au",
-        kanaText: kana_a+kana_u,
-        kanjiText: "",
-        category: "Verbs"
-    },
-    {
-        englishText: "To Exit / Leave",
-        romaji: "Deru",
-        kanaText: kana_de+kana_ru,
-        kanjiText: "",
-        category: "Verbs"
-    },
-    {
         englishText: "Coat, Jacket",
         romaji: "Uwagi",
         kanaText: kana_u+kana_wa+kana_gi,
         kanjiText: "",
         category: "Nouns"
-    },
-    {
-        englishText: "To Open",
-        romaji: "Akeru",
-        kanaText: kana_a+kana_ke+kana_ru,
-        kanjiText: "",
-        category: "Verbs"
     },
     {
         englishText: "Important",
@@ -1337,13 +1408,6 @@ const library = [
         kanaText: kana_ki+kana_bu+kana_n,
         kanjiText: "",
         category: "Nouns"
-    },
-    {
-        englishText: "To be Surprised",
-        romaji: "Otosu",
-        kanaText: kana_o+kana_to+kana_su,
-        kanjiText: "",
-        category: "Verbs"
     },
     {
         englishText: "Fish Tank",
@@ -1421,13 +1485,6 @@ const library = [
         kanaText: kana_go,
         kanjiText: "",
         category: "Nouns"
-    },
-    {
-        englishText: "To Arrive",
-        romaji: "Tsuku",
-        kanaText: kana_tsu+kana_ku,
-        kanjiText: "",
-        category: "Verbs"
     },
     {
         englishText: "Kitchen",
@@ -1519,13 +1576,6 @@ const library = [
         kanaText: kana_fu+kana_ku,
         kanjiText: "",
         category: "Nouns"
-    },
-    {
-        englishText: "To Sleep",
-        romaji: "Neru",
-        kanaText: kana_ne+kana_ru,
-        kanjiText: "",
-        category: "Verbs"
     },
     {
         englishText: "Red",
@@ -1822,13 +1872,6 @@ const library = [
         category: "Nouns"
     },
     {
-        englishText: "To Look / See / Watch",
-        romaji: "Miru",
-        kanaText: kana_mi+kana_ru,
-        kanjiText: "",
-        category: "Verbs"
-    },
-    {
         englishText: "Movie",
         romaji: "Eiga",
         kanaText: kana_e+kana_i+kana_ga,
@@ -1862,13 +1905,6 @@ const library = [
         kanaText: kana_u+kana_so,
         kanjiText: "",
         category: "Nouns"
-    },
-    {
-        englishText: "To Lie",
-        romaji: "Uso tsuku",
-        kanaText: kana_u+kana_so+" "+kana_wo+" "+kana_tsu+kana_ku,
-        kanjiText: "",
-        category: "Verbs"
     },
     {
         englishText: "Teacher",
