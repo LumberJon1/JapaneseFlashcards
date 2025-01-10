@@ -22,6 +22,9 @@ function FlashcardsPage() {
     // State management for ongoing quiz
     const [quizActive, setQuizActive] = useState(false);
 
+    // State management for kanji study mode (defaults to false)
+    const [kanjiStudy, setKanjiStudy] = useState(false);
+
     return (
 
         <div
@@ -32,23 +35,37 @@ function FlashcardsPage() {
                     className="h-1/2"
                 >
                     <FlashcardCategories
+                        className='h-3/4'
                         availableCategories={availableCategories}
                         displayingCategories={displayingCategories}
                         setDisplayingCategories={setDisplayingCategories}
                         selectedCategories={selectedCategories}
                         setSelectedCategories={setSelectedCategories}
                     ></FlashcardCategories>
+
                 </div>
+
             : <></>    
         }
             <div
                 className={quizActive ? "h-5/6"  : "h-1/2"}
             >
+                <button
+                    onClick={() => setKanjiStudy(!kanjiStudy)}
+                    className={`mt-4 px-4 py-2 rounded ${
+                        kanjiStudy
+                            ? "bg-blue-500 text-white" // Active state
+                            : "bg-zinc-300 text-white" // Default state
+                    }`}
+                >
+                    Kanji Only
+                </button>
                 <FlashcardsDisplay
                     quizActive={quizActive}
                     setQuizActive={setQuizActive}
                     selectedCategories={selectedCategories}
                     setDisplayingCategories={setDisplayingCategories}
+                    kanjiStudy={kanjiStudy}
                 ></FlashcardsDisplay>
             </div>
 
