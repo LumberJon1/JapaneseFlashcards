@@ -10,7 +10,8 @@ function FlashcardsDisplay(props) {
         quizActive,
         setQuizActive,
         selectedCategories,
-        setDisplayingCategories
+        setDisplayingCategories,
+        kanjiStudy
     } = props;
 
     const [language, setLanguage] = useState("English");
@@ -91,6 +92,7 @@ function FlashcardsDisplay(props) {
                         setLanguage={setLanguage}
                         quizzingCards={quizzingCards}
                         currentCard={currentCard}
+                        kanjiStudy={kanjiStudy}
                     ></Card>
                     <FlashcardControls
                         setQuizActive={setQuizActive}
