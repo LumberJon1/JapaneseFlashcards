@@ -1886,7 +1886,7 @@ const library = [
                 romaji: "akiramemasu"
             },
             pastRegular: {
-                kana: kana_a+kana_ki+kana_ra+kana_me+kana_n+kana_ta,
+                kana: kana_a+kana_ki+kana_ra+kana_me+kana_ta,
                 romaji: "akirameta"
             },
             teForm: {

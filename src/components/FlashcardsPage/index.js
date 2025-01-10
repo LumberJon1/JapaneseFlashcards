@@ -28,20 +28,52 @@ function FlashcardsPage() {
     // State management for the flashcard deck limit
     const [limit, setLimit] = useState(10);
 
+    const [inputValue, setInputValue] = useState("10"); // Separate state for raw input
+
     // Increment and Decrement functions for limit
     const incrementLimit = () => {
-        if (limit < 100) setLimit(limit + 1);
+        if (limit < 100) {
+            const newLimit = limit + 1;
+            setLimit(newLimit);
+            setInputValue(newLimit.toString()); // Sync input field
+        }
     };
     
     const decrementLimit = () => {
-        if (limit > 3) setLimit(limit - 1);
+        if (limit > 3) {
+            const newLimit = limit - 1;
+            setLimit(newLimit);
+            setInputValue(newLimit.toString()); // Sync input field
+        }
     };
 
-    // Handle input change
-    const handleInputChange = (e) => {
-        const newLimit = Math.max(3, Math.min(100, parseInt(e.target.value) || 3));
-        setLimit(newLimit);
-    };
+    // Handles changes in the input field
+    function handleInputChange(event) {
+        const value = event.target.value;
+
+        // Allow only numbers and update inputValue
+        if (/^\d*$/.test(value)) {
+            setInputValue(value);
+        }
+    }
+
+    // Validates and updates the limit state when the user leaves the input field
+    function handleInputBlur() {
+        let numericValue = parseInt(inputValue, 10);
+
+        // Set limits if the input is empty or invalid
+        if (isNaN(numericValue)) {
+            numericValue = 10; // Default back to 10
+        } else if (numericValue < 3) {
+            numericValue = 3; // Enforce minimum
+        } else if (numericValue > 100) {
+            numericValue = 100; // Enforce maximum
+        }
+
+        setLimit(numericValue); // Update limit state
+        setInputValue(numericValue.toString()); // Synchronize input field
+    }
+
 
     return (
 
@@ -90,8 +122,9 @@ function FlashcardsPage() {
                             </button>
                             <input
                                 type="number"
-                                value={limit}
+                                value={inputValue}
                                 onChange={handleInputChange}
+                                onBlur={handleInputBlur}
                                 min="3"
                                 max="100"
                                 className="w-16 text-center px-2 py-1 border border-zinc-300 rounded-md mx-2"
