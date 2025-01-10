@@ -9,6 +9,8 @@ function FlashcardControls(props) {
         setCurrentCard
      } = props;
 
+     // State to track the last card index
+     const [lastCardIndex, setLastCardIndex] = useState(null);
 
     // click handler for stop button
     function handleStopClick() {
@@ -19,12 +21,22 @@ function FlashcardControls(props) {
     // Click handler for next button to randomize a new card
     // Randomize card function to take random card from quizzingCards array and render to VDOM
     function loadCard() {
-        let randomCardIndex = Math.floor(Math.random() * quizzingCards.length);
-        let chosenCard = quizzingCards[randomCardIndex];
-        
-        console.log("\nChose card "+chosenCard);
+        let randomCardIndex;
+        let chosenCard;
+
+        // Prevent choosing the same card as the last one
+        do {
+            randomCardIndex = Math.floor(Math.random() * quizzingCards.length);
+            chosenCard = quizzingCards[randomCardIndex];
+        } while (randomCardIndex === lastCardIndex); // If it's the same as the last card, try again
+
+        console.log("\nChose card " + chosenCard);
         setCurrentCard(chosenCard);
+
+        // Update lastCardIndex to the current card's index
+        setLastCardIndex(randomCardIndex);
     }
+
 
     return (
 

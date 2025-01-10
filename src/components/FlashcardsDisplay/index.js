@@ -11,7 +11,8 @@ function FlashcardsDisplay(props) {
         setQuizActive,
         selectedCategories,
         setDisplayingCategories,
-        kanjiStudy
+        kanjiStudy,
+        limit = 10
     } = props;
 
     const [language, setLanguage] = useState("English");
@@ -46,15 +47,27 @@ function FlashcardsDisplay(props) {
         }
         
         // CardLoader:
-        for (let i = 0; i < cardLoader.length; i++) {
-            setQuizzingCards([
-                ...quizzingCards,
-                cardLoader[i]
-            ])
+        // for (let i = 0; i < cardLoader.length; i++) {
+        //     setQuizzingCards([
+        //         ...quizzingCards,
+        //         cardLoader[i]
+        //     ])
+        // }
+
+        // Shuffle the cardLoader array randomly (Fisher-Yates shuffle)
+        for (let i = cardLoader.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1)); // Random index
+            [cardLoader[i], cardLoader[j]] = [cardLoader[j], cardLoader[i]]; // Swap elements
         }
+
+        const selectedCards = cardLoader.slice(0, limit);
     
-        const updatedQuizzingCards = [...quizzingCards, ...cardLoader];
-        setQuizzingCards(updatedQuizzingCards);
+        // const updatedQuizzingCards = [...quizzingCards, ...cardLoader];
+        // setQuizzingCards(updatedQuizzingCards);
+        // console.log('quizzing from', updatedQuizzingCards.length, 'cards')
+
+        setQuizzingCards(selectedCards)
+        console.log('quizzing from', selectedCards.length, 'cards')
     }
     
     // State to hold the currently chosen card that will be displayed in component
