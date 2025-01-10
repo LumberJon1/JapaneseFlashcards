@@ -853,7 +853,7 @@ const library = [
         englishText: "Money",
         romaji: "Kane",
         kanaText: kana_o+kana_ka+kana_ne,
-        kanjiText: "鐘",
+        kanjiText: "金",
         category: "Nouns"
     },
     {

@@ -25,6 +25,24 @@ function FlashcardsPage() {
     // State management for kanji study mode (defaults to false)
     const [kanjiStudy, setKanjiStudy] = useState(false);
 
+    // State management for the flashcard deck limit
+    const [limit, setLimit] = useState(10);
+
+    // Increment and Decrement functions for limit
+    const incrementLimit = () => {
+        if (limit < 100) setLimit(limit + 1);
+    };
+    
+    const decrementLimit = () => {
+        if (limit > 3) setLimit(limit - 1);
+    };
+
+    // Handle input change
+    const handleInputChange = (e) => {
+        const newLimit = Math.max(3, Math.min(100, parseInt(e.target.value) || 3));
+        setLimit(newLimit);
+    };
+
     return (
 
         <div
@@ -48,7 +66,7 @@ function FlashcardsPage() {
             : <></>    
         }
             <div
-                className={quizActive ? "h-5/6"  : "h-1/2"}
+                className={quizActive ? "h-5/6"  : "h-1/4"}
             >
                 <button
                     onClick={() => setKanjiStudy(!kanjiStudy)}
@@ -60,12 +78,43 @@ function FlashcardsPage() {
                 >
                     Kanji Only
                 </button>
+                {/* Flashcard limit control */}
+                {!quizActive && (
+                    <div className="mt-6 flex flex-col justify-center items-center">
+                        <div>
+                            <button
+                                onClick={decrementLimit}
+                                className="px-3 py-1 bg-zinc-300 text-black rounded-l-md"
+                            >
+                                -
+                            </button>
+                            <input
+                                type="number"
+                                value={limit}
+                                onChange={handleInputChange}
+                                min="3"
+                                max="100"
+                                className="w-16 text-center px-2 py-1 border border-zinc-300 rounded-md mx-2"
+                            />
+                            <button
+                                onClick={incrementLimit}
+                                className="px-3 py-1 bg-zinc-300 text-black rounded-r-md"
+                            >
+                                +
+                            </button>
+                        </div>
+                    <p className="text-center">
+                        Cards to Quiz
+                    </p>
+                </div>
+                )}
                 <FlashcardsDisplay
                     quizActive={quizActive}
                     setQuizActive={setQuizActive}
                     selectedCategories={selectedCategories}
                     setDisplayingCategories={setDisplayingCategories}
                     kanjiStudy={kanjiStudy}
+                    limit={limit}
                 ></FlashcardsDisplay>
             </div>
 

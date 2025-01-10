@@ -12,7 +12,7 @@ function FlashcardsDisplay(props) {
         selectedCategories,
         setDisplayingCategories,
         kanjiStudy,
-        limit = 10
+        limit
     } = props;
 
     const [language, setLanguage] = useState("English");
@@ -118,18 +118,13 @@ function FlashcardsDisplay(props) {
                 :
                 
                 <div
-                    className="h-full"
+                    className="h-1/4"
                 >
-                    <p
-                        className="mt-12 text-lg"
-                    >
-                        Select Categories to Include in Flashcard Study
-                    </p>
                     <button
                         onClick={handleStartClick}
                         className={selectedCategories.length >= 1 ?
-                            `rounded mt-24 p-2 border border-emerald-200 text-lg font-bold text-emerald-200 shadow-lg bg-emerald-500`
-                            : `rounded mt-24 p-2 border text-zinc-400 border-slate-400 text-lg font-bold bg-zinc-300 shadow-lg`
+                            `rounded p-2 border border-emerald-200 text-lg font-bold text-emerald-200 shadow-lg bg-emerald-500`
+                            : `rounded p-2 border text-zinc-400 border-slate-400 text-lg font-bold bg-zinc-300 shadow-lg`
                         }
                     >
                         Start

@@ -4,22 +4,22 @@ function VerbCard({ language, currentCard }) {
     const conjugations = currentCard.conjugations;
 
     return (
-        <div className="flex flex-col items-center justify-center h-full w-full text-xl font-medium">
+        <div className="flex flex-col items-center justify-center h-full w-full text-xl font-noto">
             {language === "English" ? (
                 <p className="my-3 text-3xl">{currentCard.englishText}</p>
             ) : (
                 <>
-                    <div className="h-1/2 align-baseline flex justify-end text-6xl">
+                    <div className="h-1/2 font-noto align-baseline flex justify-end text-6xl">
                        {/* Use ruby for Kanji and Furigana */}
                        {currentCard.furiganaPairs.map((pair, index) => (
-                        <ruby className="self-center" key={index}>
+                        <ruby className="self-center font-noto" key={index}>
                             {pair.base}
                             {pair.furigana && (
-                                <rt className="text-md mb-1">{pair.furigana}</rt>
+                                <rt className="text-md font-noto mb-1">{pair.furigana}</rt>
                             )}
                         </ruby>
                         ))}
-                        <ruby className="self-center text-6xl pt-10">
+                        <ruby className="self-center text-6xl font-noto pt-10">
                             {currentCard.kanaText}
                         </ruby>
                     </div>
