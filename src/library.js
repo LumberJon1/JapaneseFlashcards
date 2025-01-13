@@ -915,7 +915,7 @@ const library = [
         kanaText: kana_ku+kana_ru+kana_ma,
         kanjiText: "車",
         category: "Nouns",
-        topics: []
+        topics: ['Travel/Directions', 'Transportation']
     },
     {
         englishText: "Wallet",
@@ -923,7 +923,7 @@ const library = [
         kanaText: kana_sa+kana_i+kana_fu,
         kanjiText: "財布",
         category: "Nouns",
-        topics: []
+        topics: ['Clothing', 'Shopping']
     },
     {
         englishText: "Dream",
@@ -939,7 +939,7 @@ const library = [
         kanaText: kana_ka+kana_zo+kana_ku,
         kanjiText: "家族",
         category: "Nouns",
-        topics: []
+        topics: ['Family']
     },
     {
         englishText: "Animal",
@@ -947,7 +947,7 @@ const library = [
         kanaText: kana_do+kana_u+kana_bu+kana_tsu,
         kanjiText: "動物",
         category: "Nouns",
-        topics: []
+        topics: ['Animals', 'Nature']
     },
     {
         englishText: "Address",
@@ -955,7 +955,7 @@ const library = [
         kanaText: kana_ji+kana_yu+kana_u+kana_shi+kana_yo,
         kanjiText: "住所",
         category: "Nouns",
-        topics: []
+        topics: ['Travel/Directions', 'Buildings', 'Household', 'Shopping']
     },
     {
         englishText: "Name",
@@ -963,7 +963,7 @@ const library = [
         kanaText: kana_na+kana_ma+kana_e,
         kanjiText: "名前",
         category: "Nouns",
-        topics: []
+        topics: ['Family', 'Relationships']
     },
     {
         englishText: "Cash",
@@ -971,7 +971,7 @@ const library = [
         kanaText: kana_ge+kana_n+kana_ki+kana_n,
         kanjiText: "現金",
         category: "Nouns",
-        topics: []
+        topics: ['Shopping']
     },
     {
         englishText: "Money",
@@ -979,7 +979,7 @@ const library = [
         kanaText: kana_o+kana_ka+kana_ne,
         kanjiText: "金",
         category: "Nouns",
-        topics: []
+        topics: ['Shopping']
     },
     {
         englishText: "Leather",
@@ -987,7 +987,7 @@ const library = [
         kanaText: kana_ka+kana_wa,
         kanjiText: "革",
         category: "Nouns",
-        topics: []
+        topics: ['Shopping', 'Clothing']
     },
     {
         englishText: "Hide, Pelt, Fur, Bark, Shell, Wrapping",
@@ -995,7 +995,7 @@ const library = [
         kanaText: kana_ka+kana_wa,
         kanjiText: "皮",
         category: "Nouns",
-        topics: []
+        topics: ['Animals']
     },
     {
         englishText: "Train Station",
@@ -1003,7 +1003,7 @@ const library = [
         kanaText: kana_e+kana_ki,
         kanjiText: "駅",
         category: "Nouns",
-        topics: []
+        topics: ['Travel/Directions', 'Transportation']
     },
     {
         englishText: "Umbrella",
@@ -1011,7 +1011,7 @@ const library = [
         kanaText: kana_ka+kana_sa,
         kanjiText: "傘",
         category: "Nouns",
-        topics: []
+        topics: ['Weather', 'Clothing']
     },
     {
         englishText: "Entrance",
@@ -1019,7 +1019,7 @@ const library = [
         kanaText: kana_i+kana_ri+kana_gu+kana_chi,
         kanjiText: "入り口",
         category: "Nouns",
-        topics: []
+        topics: ['Travel/Directions', 'Buildings']
     },
     {
         englishText: "Exit",
@@ -1027,7 +1027,7 @@ const library = [
         kanaText: kana_de+kana_gu+kana_chi,
         kanjiText: "出口",
         category: "Nouns",
-        topics: []
+        topics: ['Travel/Directions', 'Buildings']
     },
     {
         englishText: "This (here)",
@@ -1035,7 +1035,7 @@ const library = [
         kanaText: kana_ko+kana_re,
         kanjiText: "-",
         category: "Nouns",
-        topics: []
+        topics: ['Travel/Directions']
     },
     {
         englishText: "That (near speaker)",
@@ -1043,7 +1043,7 @@ const library = [
         kanaText: kana_so+kana_re,
         kanjiText: "-",
         category: "Nouns",
-        topics: []
+        topics: ['Travel/Directions']
     },
     {
         englishText: "That (over there)",
@@ -1051,7 +1051,7 @@ const library = [
         kanaText: kana_a+kana_re,
         kanjiText: "-",
         category: "Nouns",
-        topics: []
+        topics: ['Travel/Directions']
     },
     {
         englishText: "Medical Exam",
@@ -1059,7 +1059,7 @@ const library = [
         kanaText: kana_shi+kana_n+kana_sa+kana_tsu,
         kanjiText: "診察",
         category: "Nouns",
-        topics: []
+        topics: ['Health']
     },
     {
         englishText: "Coat, Jacket",
@@ -1067,7 +1067,7 @@ const library = [
         kanaText: kana_u+kana_wa+kana_gi,
         kanjiText: "診察",
         category: "Nouns",
-        topics: []
+        topics: ['Weather', 'Clothing', 'Shopping']
     },
     {
         englishText: "Physical Condition",
@@ -1075,7 +1075,7 @@ const library = [
         kanaText: kana_ta+kana_i+kana_chi+kana_yo+kana_u,
         kanjiText: "体調",
         category: "Nouns",
-        topics: []
+        topics: ['Health']
     },
     {
         englishText: "Condition, State",
@@ -1083,7 +1083,7 @@ const library = [
         kanaText: kana_gu+kana_a+kana_i,
         kanjiText: "具合",
         category: "Nouns",
-        topics: []
+        topics: ['Health']
     },
     {
         englishText: "Mental / Emotional Condition, Mood",
@@ -1091,7 +1091,7 @@ const library = [
         kanaText: kana_ki+kana_bu+kana_n,
         kanjiText: "気分",
         category: "Nouns",
-        topics: []
+        topics: ['Health', 'Relationships']
     },
     {
         englishText: "Fish Tank",
@@ -1099,7 +1099,7 @@ const library = [
         kanaText: kana_su+kana_i+kana_so+kana_u,
         kanjiText: "水槽",
         category: "Nouns",
-        topics: []
+        topics: ['Household', 'Animals']
     },
     {
         englishText: "Lid / Cap / Cover",
@@ -1107,7 +1107,7 @@ const library = [
         kanaText: kana_fu+kana_ta,
         kanjiText: "蓋",
         category: "Nouns",
-        topics: []
+        topics: ['Food']
     },
     {
         englishText: "Weather",
@@ -1115,7 +1115,7 @@ const library = [
         kanaText: kana_te+kana_n+kana_ki,
         kanjiText: "天気",
         category: "Nouns",
-        topics: []
+        topics: ['Weather']
     },
     {
         englishText: "Shoes",
@@ -1123,7 +1123,7 @@ const library = [
         kanaText: kana_ku+kana_tsu,
         kanjiText: "靴",
         category: "Nouns",
-        topics: []
+        topics: ['Clothing']
     },
     {
         englishText: "Socks, Stockings",
@@ -1131,7 +1131,7 @@ const library = [
         kanaText: kana_ku+kana_tsu,
         kanjiText: "靴下",
         category: "Nouns",
-        topics: []
+        topics: ['Clothing']
     },
     {
         englishText: "Corner",
@@ -1139,7 +1139,7 @@ const library = [
         kanaText: kana_ka+kana_do,
         kanjiText: "角",
         category: "Nouns",
-        topics: []
+        topics: ['Travel/Directions', 'Colors/Shapes']
     },
     {
         englishText: "Intersection",
@@ -1147,7 +1147,7 @@ const library = [
         kanaText: kana_ko+kana_u+kana_sa+kana_te+kana_n,
         kanjiText: "交差点",
         category: "Nouns",
-        topics: []
+        topics: ['Travel/Directions']
     },
     {
         englishText: "Traffic Signal",
@@ -1155,7 +1155,7 @@ const library = [
         kanaText: kana_shi+kana_n+kana_go+kana_u,
         kanjiText: "信号",
         category: "Nouns",
-        topics: []
+        topics: ['Travel/Directions']
     },
     {
         englishText: "Police",
@@ -1163,7 +1163,7 @@ const library = [
         kanaText: kana_ke+kana_i+kana_sa+kana_tsu,
         kanjiText: "警察",
         category: "Nouns",
-        topics: []
+        topics: ['Culture', 'Travel/Directions']
     },
     {
         englishText: "Kitchen (Japanese)",
@@ -1171,7 +1171,7 @@ const library = [
         kanaText: kana_da+kana_i+kana_do+kana_ko+kana_ro,
         kanjiText: "台所",
         category: "Nouns",
-        topics: []
+        topics: ['Household', 'Food']
     },
     {
         englishText: "Picture",
@@ -1179,7 +1179,7 @@ const library = [
         kanaText: kana_shi+kana_ya+kana_shi+kana_n,
         kanjiText: "写真",
         category: "Nouns",
-        topics: []
+        topics: ['Travel/Directions', 'Hobbies']
     },
     {
         englishText: "Photographer",
@@ -1187,7 +1187,7 @@ const library = [
         kanaText: kana_shi+kana_ya+kana_shi+kana_n+kana_ka,
         kanjiText: "写真家",
         category: "Nouns",
-        topics: []
+        topics: ['Work']
     },
     {
         englishText: "Chair",
@@ -1195,7 +1195,7 @@ const library = [
         kanaText: kana_i+kana_su,
         kanjiText: "椅子",
         category: "Nouns",
-        topics: []
+        topics: ['Household']
     },
     {
         englishText: "Happiness",
@@ -1203,7 +1203,7 @@ const library = [
         kanaText: kana_shi+kana_a+kana_wa+kana_se,
         kanjiText: "幸せ",
         category: "Nouns",
-        topics: []
+        topics: ['Relationships']
     },
     {
         englishText: "Front Desk / Reception",
@@ -1211,7 +1211,7 @@ const library = [
         kanaText: kana_u+kana_ke+kana_tsu+kana_ke,
         kanjiText: "受付",
         category: "Nouns",
-        topics: []
+        topics: ['Travel/Directions', 'Buildings']
     },
     {
         englishText: "Letter / Mail",
@@ -1219,7 +1219,7 @@ const library = [
         kanaText: kana_te+kana_ga+kana_mi,
         kanjiText: "手紙",
         category: "Nouns",
-        topics: []
+        topics: ['Household']
     },
     {
         englishText: "Boss",
@@ -1227,7 +1227,7 @@ const library = [
         kanaText: kana_bu+kana_chi+kana_yo+kana_u,
         kanjiText: "部長",
         category: "Nouns",
-        topics: []
+        topics: ['Work']
     },
     {
         englishText: "Heat / Temperature / Fever",
@@ -1235,7 +1235,7 @@ const library = [
         kanaText: kana_ne+kana_tsu,
         kanjiText: "熱",
         category: "Nouns",
-        topics: []
+        topics: ['Health']
     },
     {
         englishText: "Temperature (in general, or indoors)",
@@ -1243,7 +1243,7 @@ const library = [
         kanaText: kana_o+kana_n+kana_do,
         kanjiText: "温度",
         category: "Nouns",
-        topics: []
+        topics: ['Household']
     },
     {
         englishText: "Air Temperature (outdoors, weather)",
@@ -1251,7 +1251,15 @@ const library = [
         kanaText: kana_ki+kana_o+kana_n,
         kanjiText: "気温",
         category: "Nouns",
-        topics: []
+        topics: ['Weather', 'Nature']
+    },
+    {
+        englishText: "Air, Atmosphere",
+        romaji: "Kuuki",
+        kanaText: kana_ku+kana_u+kana_ki,
+        kanjiText: "空気",
+        category: "Nouns",
+        topics: ['Weather', 'Nature']
     },
     {
         englishText: "Doctor",
@@ -1259,7 +1267,15 @@ const library = [
         kanaText: kana_i+kana_shi+kana_ya,
         kanjiText: "医者",
         category: "Nouns",
-        topics: []
+        topics: ['Work', 'Health']
+    },
+    {
+        englishText: "Pharmacy",
+        romaji: "Yakkyoku",
+        kanaText: kana_ya+kana_small_tsu+kana_ki+kana_yo+kana_ku,
+        kanjiText: "薬局",
+        category: "Nouns",
+        topics: ['Health']
     },
     {
         englishText: "Clothing",
@@ -1267,7 +1283,7 @@ const library = [
         kanaText: kana_fu+kana_ku,
         kanjiText: "服",
         category: "Nouns",
-        topics: []
+        topics: ['Clothing', 'Shopping']
     },
     {
         englishText: "Road / Path",
@@ -1275,7 +1291,7 @@ const library = [
         kanaText: kana_mi+kana_chi,
         kanjiText: "道",
         category: "Nouns",
-        topics: []
+        topics: ['Travel/Directions', 'Transportation']
     },
     {
         englishText: "Freeway, Highway",
@@ -1283,7 +1299,7 @@ const library = [
         kanaText: kana_do+kana_u+kana_ro,
         kanjiText: "道路",
         category: "Nouns",
-        topics: []
+        topics: ['Travel/Directions', 'Transportation']
     },
     {
         englishText: "Sky",
@@ -1291,7 +1307,7 @@ const library = [
         kanaText: kana_so+kana_ra,
         kanjiText: "空",
         category: "Nouns",
-        topics: []
+        topics: ['Nature', 'Weather']
     },
     {
         englishText: "Friend",
@@ -1299,7 +1315,7 @@ const library = [
         kanaText: kana_to+kana_mo+kana_da+kana_chi,
         kanjiText: "友達",
         category: "Nouns",
-        topics: []
+        topics: ['Relationships']
     },
     {
         englishText: "Colleague, Associate",
@@ -1307,7 +1323,7 @@ const library = [
         kanaText: kana_na+kana_ka+kana_ma,
         kanjiText: "仲間",
         category: "Nouns",
-        topics: []
+        topics: ['Work', 'Relationships', 'School']
     },
     {
         englishText: "Close friend, Best friend",
@@ -1315,7 +1331,7 @@ const library = [
         kanaText: kana_shi+kana_n+kana_yu+kana_u,
         kanjiText: "親友",
         category: "Nouns",
-        topics: []
+        topics: ['Relationships', 'School']
     },
     {
         englishText: "Co-worker",
@@ -1323,7 +1339,7 @@ const library = [
         kanaText: kana_do+kana_u+kana_ri+kana_yo+kana_u,
         kanjiText: "同僚",
         category: "Nouns",
-        topics: []
+        topics: ['Work', 'Relationships']
     },
     {
         englishText: "Neighbor",
@@ -1331,7 +1347,7 @@ const library = [
         kanaText: kana_to+kana_na+kana_ri,
         kanjiText: "隣",
         category: "Nouns",
-        topics: []
+        topics: ['Relationships']
     },
     {
         englishText: "Neighborhood",
@@ -1339,7 +1355,7 @@ const library = [
         kanaText: kana_ki+kana_n+kana_ji+kana_yo,
         kanjiText: "近所",
         category: "Nouns",
-        topics: []
+        topics: ['Travel/Directions', 'Household']
     },
     {
         englishText: "Seasons",
@@ -1347,7 +1363,7 @@ const library = [
         kanaText: kana_ki+kana_se+kana_tsu,
         kanjiText: "季節",
         category: "Nouns",
-        topics: []
+        topics: ['Weather', 'Time']
     },
     {
         englishText: "Autumn",
@@ -1355,7 +1371,7 @@ const library = [
         kanaText: kana_a+kana_ki,
         kanjiText: "秋",
         category: "Nouns",
-        topics: []
+        topics: ['Weather', 'Time']
     },
     {
         englishText: "Autumn colors, Autumn leaves",
@@ -1363,7 +1379,7 @@ const library = [
         kanaText: kana_ko+kana_u+kana_yo+kana_u,
         kanjiText: "紅葉",
         category: "Nouns",
-        topics: []
+        topics: ['Weather', 'Time', 'Nature']
     },
     {
         englishText: "Winter",
@@ -1371,7 +1387,7 @@ const library = [
         kanaText: kana_fu+kana_yu,
         kanjiText: "冬",
         category: "Nouns",
-        topics: []
+        topics: ['Weather', 'Time']
     },
     {
         englishText: "Spring",
@@ -1379,7 +1395,7 @@ const library = [
         kanaText: kana_ha+kana_ru,
         kanjiText: "春",
         category: "Nouns",
-        topics: []
+        topics: ['Weather', 'Time']
     },
     {
         englishText: "Summer",
@@ -1387,7 +1403,7 @@ const library = [
         kanaText: kana_na+kana_tsu,
         kanjiText: "夏",
         category: "Nouns",
-        topics: []
+        topics: ['Weather', 'Time']
     },
     {
         englishText: "Both",
@@ -1395,7 +1411,7 @@ const library = [
         kanaText: kana_ri+kana_yo+kana_u+kana_ho+kana_u,
         kanjiText: "両方",
         category: "Nouns",
-        topics: []
+        topics: ['Shopping']
     },
     {
         englishText: "Electricity",
@@ -1403,7 +1419,7 @@ const library = [
         kanaText: kana_de+kana_n+kana_ki,
         kanjiText: "電気",
         category: "Nouns",
-        topics: []
+        topics: ['STEM', 'Household']
     },
     {
         englishText: "Phone",
@@ -1411,7 +1427,7 @@ const library = [
         kanaText: kana_de+kana_n+kana_wa,
         kanjiText: "電話",
         category: "Nouns",
-        topics: []
+        topics: ['Household', 'Clothing']
     },
     {
         englishText: "(Electrical) Power",
@@ -1419,7 +1435,7 @@ const library = [
         kanaText: kana_de+kana_n+kana_ge+kana_n,
         kanjiText: "電源",
         category: "Nouns",
-        topics: []
+        topics: ['Household', 'Transportation']
     },
     {
         englishText: "Lightning, Thunder",
@@ -1427,7 +1443,7 @@ const library = [
         kanaText: kana_ka+kana_mi+kana_na+kana_ri,
         kanjiText: "雷",
         category: "Nouns",
-        topics: []
+        topics: ['Weather']
     },
     {
         englishText: "Right (direction)",
@@ -1435,7 +1451,7 @@ const library = [
         kanaText: kana_mi+kana_gi,
         kanjiText: "右",
         category: "Nouns",
-        topics: []
+        topics: ['Travel/Directions']
     },
     {
         englishText: "Left (direction)",
@@ -1443,7 +1459,7 @@ const library = [
         kanaText: kana_hi+kana_da+kana_ri,
         kanjiText: "左",
         category: "Nouns",
-        topics: []
+        topics: ['Travel/Directions']
     },
     {
         englishText: "North",
@@ -1451,7 +1467,7 @@ const library = [
         kanaText: kana_ki+kana_ta,
         kanjiText: "北",
         category: "Nouns",
-        topics: []
+        topics: ['Travel/Directions']
     },
     {
         englishText: "East",
@@ -1459,7 +1475,7 @@ const library = [
         kanaText: kana_hi+kana_ga+kana_shi,
         kanjiText: "東",
         category: "Nouns",
-        topics: []
+        topics: ['Travel/Directions']
     },
     {
         englishText: "South",
@@ -1467,7 +1483,7 @@ const library = [
         kanaText: kana_mi+kana_na+kana_mi,
         kanjiText: "南",
         category: "Nouns",
-        topics: []
+        topics: ['Travel/Directions']
     },
     {
         englishText: "West",
@@ -1475,7 +1491,7 @@ const library = [
         kanaText: kana_ni+kana_shi,
         kanjiText: "西",
         category: "Nouns",
-        topics: []
+        topics: ['Travel/Directions']
     },
     {
         englishText: "Correct answer, Solution",
@@ -1491,7 +1507,7 @@ const library = [
         kanaText: kana_go+kana_ha+kana_n,
         kanjiText: "ご飯",
         category: "Nouns",
-        topics: []
+        topics: ['Food']
     },
     {
         englishText: "Meat",
@@ -1499,7 +1515,7 @@ const library = [
         kanaText: kana_ni+kana_ku,
         kanjiText: "肉",
         category: "Nouns",
-        topics: []
+        topics: ['Food']
     },
     {
         englishText: "Fish",
@@ -1507,7 +1523,7 @@ const library = [
         kanaText: kana_sa+kana_ka+kana_na,
         kanjiText: "魚",
         category: "Nouns",
-        topics: []
+        topics: ['Animals', 'Food']
     },
     {
         englishText: "Noon",
@@ -1515,7 +1531,7 @@ const library = [
         kanaText: kana_hi+kana_ru,
         kanjiText: "昼",
         category: "Nouns",
-        topics: []
+        topics: ['Time']
     },
     {
         englishText: "Afteroon",
@@ -1523,7 +1539,7 @@ const library = [
         kanaText: kana_go+kana_go,
         kanjiText: "午後",
         category: "Nouns",
-        topics: []
+        topics: ['Time']
     },
     {
         englishText: "Country",
@@ -1531,7 +1547,7 @@ const library = [
         kanaText: kana_ku+kana_ni,
         kanjiText: "国",
         category: "Nouns",
-        topics: []
+        topics: ['Travel/Directions']
     },
     {
         englishText: "Airplane",
@@ -1539,7 +1555,7 @@ const library = [
         kanaText: kana_hi+kana_ko+kana_u+kana_ki,
         kanjiText: "飛行機",
         category: "Nouns",
-        topics: []
+        topics: ['Transportation']
     },
     {
         englishText: "Train Platform",
@@ -1547,7 +1563,7 @@ const library = [
         kanaText: kana_ba+kana_n+kana_se+kana_n,
         kanjiText: "番線",
         category: "Nouns",
-        topics: []
+        topics: ['Transportation', 'Travel/Directions']
     },
     {
         englishText: "Last Month",
@@ -1555,7 +1571,7 @@ const library = [
         kanaText: kana_se+kana_n+kana_ge+kana_tsu,
         kanjiText: "先月",
         category: "Nouns",
-        topics: []
+        topics: ['Time']
     },
     {
         englishText: "Movie",
@@ -1563,7 +1579,7 @@ const library = [
         kanaText: kana_e+kana_i+kana_ga,
         kanjiText: "映画",
         category: "Nouns",
-        topics: []
+        topics: ['Hobbies', 'Shopping', 'Culture', 'Household']
     },
     {
         englishText: "Evening / Night",
@@ -1571,7 +1587,7 @@ const library = [
         kanaText: kana_yo+kana_ru,
         kanjiText: "夜",
         category: "Nouns",
-        topics: []
+        topics: ['Time']
     },
     {
         englishText: "Tonight, This evening",
@@ -1579,7 +1595,7 @@ const library = [
         kanaText: kana_ko+kana_n+kana_ya,
         kanjiText: "今夜",
         category: "Nouns",
-        topics: []
+        topics: ['Time']
     },
     {
         englishText: "Lies",
@@ -1595,7 +1611,7 @@ const library = [
         kanaText: kana_se+kana_n+kana_se+kana_i,
         kanjiText: "先生",
         category: "Nouns",
-        topics: []
+        topics: ['School', 'Work']
     },
     {
         englishText: "Heart",
@@ -1603,7 +1619,7 @@ const library = [
         kanaText: kana_ko+kana_ko+kana_ro,
         kanjiText: "心",
         category: "Nouns",
-        topics: []
+        topics: ['Body', 'Relationships', 'Health']
     },
     {
         englishText: "Glasses",
@@ -1611,7 +1627,7 @@ const library = [
         kanaText: 'メガネ',
         kanjiText: "-",
         category: "Nouns",
-        topics: []
+        topics: ['Clothing', 'Health']
     },
     {
         englishText: "Side (i.e. left side, side of something)",
@@ -1619,7 +1635,7 @@ const library = [
         kanaText: kana_ga+kana_wa,
         kanjiText: "側",
         category: "Nouns",
-        topics: []
+        topics: ['Travel/Directions']
     },
     {
         englishText: "Wind",
@@ -1627,7 +1643,7 @@ const library = [
         kanaText: kana_ka+kana_ze,
         kanjiText: "風",
         category: "Nouns",
-        topics: []
+        topics: ['Weather', 'Nature']
     },
     {
         englishText: "Water",
@@ -1635,7 +1651,7 @@ const library = [
         kanaText: kana_mi+kana_zu,
         kanjiText: "水",
         category: "Nouns",
-        topics: []
+        topics: ['Nature', 'Food']
     },
     {
         englishText: "Lake",
@@ -1643,7 +1659,7 @@ const library = [
         kanaText: kana_mi+kana_zu+kana_u+kana_mi,
         kanjiText: "湖",
         category: "Nouns",
-        topics: []
+        topics: ['Nature']
     },
     {
         englishText: "Bank",
@@ -1651,7 +1667,7 @@ const library = [
         kanaText: kana_gi+kana_n+kana_ko+kana_u,
         kanjiText: "銀行",
         category: "Nouns",
-        topics: []
+        topics: ['Culture', 'Buildings', 'Shopping']
     },
     {
         englishText: "Ice",
@@ -1659,7 +1675,7 @@ const library = [
         kanaText: kana_ko+kana_o+kana_ri,
         kanjiText: "氷",
         category: "Nouns",
-        topics: []
+        topics: ['Nature', 'Food']
     },
     {
         englishText: "Seat",
@@ -1667,7 +1683,7 @@ const library = [
         kanaText: kana_se+kana_ki,
         kanjiText: "席",
         category: "Nouns",
-        topics: []
+        topics: ['Transportation', 'Household']
     },
     {
         englishText: "Plum",
@@ -1675,7 +1691,7 @@ const library = [
         kanaText: kana_u+kana_me,
         kanjiText: "梅",
         category: "Nouns",
-        topics: []
+        topics: ['Food', 'Nature']
     },
     {
         englishText: "Peach",
@@ -1683,7 +1699,7 @@ const library = [
         kanaText: kana_mo+kana_mo,
         kanjiText: "桃",
         category: "Nouns",
-        topics: []
+        topics: ['Food', 'Nature']
     },
     {
         englishText: "Strawberry",
@@ -1691,7 +1707,7 @@ const library = [
         kanaText: kana_i+kana_chi+kana_go,
         kanjiText: "-",
         category: "Nouns",
-        topics: []
+        topics: ['Food', 'Nature']
     },
     {
         englishText: "Eel",
@@ -1699,7 +1715,7 @@ const library = [
         kanaText: kana_u+kana_na+kana_gi,
         kanjiText: "-",
         category: "Nouns",
-        topics: []
+        topics: ['Nature', 'Animals', 'Food']
     },
     {
         englishText: "Bird",
@@ -1707,7 +1723,7 @@ const library = [
         kanaText: kana_to+kana_ri,
         kanjiText: "鳥",
         category: "Nouns",
-        topics: []
+        topics: ['Animals']
     },
     {
         englishText: "Apple",
@@ -1715,7 +1731,7 @@ const library = [
         kanaText: kana_ri+kana_n+kana_go,
         kanjiText: "-",
         category: "Nouns",
-        topics: []
+        topics: ['Food', 'Nature']
     },
     {
         englishText: "Dog",
@@ -1723,7 +1739,7 @@ const library = [
         kanaText: kana_i+kana_nu,
         kanjiText: "犬",
         category: "Nouns",
-        topics: []
+        topics: ['Animals', 'Household', 'Family']
     },
     {
         englishText: "Cat",
@@ -1731,7 +1747,7 @@ const library = [
         kanaText: kana_ne+kana_ko,
         kanjiText: "猫",
         category: "Nouns",
-        topics: []
+        topics: ['Animals', 'Household', 'Family']
     },
     {
         englishText: "Room, Bedroom",
@@ -1739,7 +1755,7 @@ const library = [
         kanaText: kana_he+kana_ya,
         kanjiText: "部屋",
         category: "Nouns",
-        topics: []
+        topics: ['Household', 'Buildings']
     },
     {
         englishText: "Stairs, Stairway, Staircase",
@@ -1747,7 +1763,7 @@ const library = [
         kanaText: kana_ka+kana_i+kana_da+kana_n,
         kanjiText: "階段",
         category: "Nouns",
-        topics: []
+        topics: ['Household', 'Buildings']
     },
     {
         englishText: "Rural area, Countryside",
@@ -1755,7 +1771,7 @@ const library = [
         kanaText: kana_i+kana_na+kana_ka,
         kanjiText: "田舎",
         category: "Nouns",
-        topics: []
+        topics: ['Culture', 'Travel/Directions']
     },
     {
         englishText: "Word, Speech, Phrase, Term",
@@ -1771,7 +1787,7 @@ const library = [
         kanaText: kana_o+kana_yu,
         kanjiText: "お湯",
         category: "Nouns",
-        topics: []
+        topics: ['Hobbies', 'Travel/Directions', 'Food', 'Culture']
     },
     {
         englishText: "Situation, Case, Circumstance",
@@ -1787,7 +1803,7 @@ const library = [
         kanaText: kana_to+kana_shi+kana_yo+kana_ka+kana_n,
         kanjiText: "図書館",
         category: "Nouns",
-        topics: []
+        topics: ['Buildings', 'School']
     },
     {
         englishText: "Movie Theater",
@@ -1795,7 +1811,7 @@ const library = [
         kanaText: kana_e+kana_i+kana_ga+kana_ka+kana_n,
         kanjiText: "映画館",
         category: "Nouns",
-        topics: []
+        topics: ['Culture', 'Hobbies', 'Buildings', 'Shopping']
     },
     {
         englishText: "Bathtub",
@@ -1803,7 +1819,7 @@ const library = [
         kanaText: kana_o+kana_fu+kana_ro,
         kanjiText: "お風呂",
         category: "Nouns",
-        topics: []
+        topics: ['Household']
     },
     {
         englishText: "House",
@@ -1811,7 +1827,7 @@ const library = [
         kanaText: kana_i+kana_e,
         kanjiText: "家",
         category: "Nouns",
-        topics: []
+        topics: ['Household', 'Buildings']
     },
     {
         englishText: "Home, Inside, Within",
@@ -1819,7 +1835,7 @@ const library = [
         kanaText: kana_u+kana_chi,
         kanjiText: "内",
         category: "Nouns",
-        topics: []
+        topics: ['Household', 'Relationships', 'Travel/Directions']
     },
     {
         englishText: "Outside",
@@ -1827,7 +1843,7 @@ const library = [
         kanaText: kana_so+kana_to,
         kanjiText: "外",
         category: "Nouns",
-        topics: []
+        topics: ['Travel/Directions']
     },
     {
         englishText: "Clock, Watch",
@@ -1835,7 +1851,7 @@ const library = [
         kanaText: kana_to+kana_ke+kana_i,
         kanjiText: "時計",
         category: "Nouns",
-        topics: []
+        topics: ['Time', 'Clothing']
     },
     {
         englishText: "Late night, Middle of the night",
@@ -1843,7 +1859,7 @@ const library = [
         kanaText: kana_yo+kana_na+kana_ka,
         kanjiText: "夜中",
         category: "Nouns",
-        topics: []
+        topics: ['Time']
     },
     {
         englishText: "Luggage",
@@ -1851,7 +1867,7 @@ const library = [
         kanaText: kana_ni+kana_mo+kana_tsu,
         kanjiText: "荷物",
         category: "Nouns",
-        topics: []
+        topics: ['Travel/Directions']
     },
     {
         englishText: "Store, Shop",
@@ -1859,7 +1875,7 @@ const library = [
         kanaText: kana_mi+kana_se,
         kanjiText: "店",
         category: "Nouns",
-        topics: []
+        topics: ['Shopping', 'Buildings']
     },
     {
         englishText: "Evening",
@@ -1867,7 +1883,7 @@ const library = [
         kanaText: kana_ba+kana_n,
         kanjiText: "晩",
         category: "Nouns",
-        topics: []
+        topics: ['Time']
     },
     {
         englishText: "Morning",
@@ -1875,7 +1891,7 @@ const library = [
         kanaText: kana_a+kana_sa,
         kanjiText: "朝",
         category: "Nouns",
-        topics: []
+        topics: ['Time']
     },
     {
         englishText: "This morning",
@@ -1883,7 +1899,7 @@ const library = [
         kanaText: kana_ke+kana_sa,
         kanjiText: "今朝",
         category: "Nouns",
-        topics: []
+        topics: ['Time']
     },
     {
         englishText: "Ocean, Beach",
@@ -1891,7 +1907,7 @@ const library = [
         kanaText: kana_u+kana_mi,
         kanjiText: "海",
         category: "Nouns",
-        topics: []
+        topics: ['Nature', 'Hobbies', 'Travel/Directions']
     },
     {
         englishText: "Summertime clothing similar to Kimono",
@@ -1899,7 +1915,7 @@ const library = [
         kanaText: kana_yu+kana_ka+kana_ta,
         kanjiText: "浴衣",
         category: "Nouns",
-        topics: []
+        topics: ['Clothing', 'Shopping', 'Culture']
     },
     {
         englishText: "Voice",
@@ -1907,7 +1923,7 @@ const library = [
         kanaText: kana_ko+kana_e,
         kanjiText: "声",
         category: "Nouns",
-        topics: []
+        topics: ['Music', 'Body', 'Hobbies']
     },
     {
         englishText: "Woman",
@@ -1915,7 +1931,7 @@ const library = [
         kanaText: kana_o+kana_n+kana_na+" "+kana_no+" "+kana_hi+kana_to,
         kanjiText: "女の人",
         category: "Nouns",
-        topics: []
+        topics: ['Family', 'Relationships']
     },
     {
         englishText: "Train",
@@ -1923,7 +1939,7 @@ const library = [
         kanaText: kana_de+kana_n+kana_shi+kana_ya,
         kanjiText: "電車",
         category: "Nouns",
-        topics: []
+        topics: ['Transportation']
     },
     {
         englishText: "Subway",
@@ -1931,7 +1947,7 @@ const library = [
         kanaText: kana_chi+kana_ka+kana_te+kana_tsu,
         kanjiText: "地下鉄",
         category: "Nouns",
-        topics: []
+        topics: ['Transportation']
     },
     {
         englishText: "Vegetables",
@@ -1939,7 +1955,7 @@ const library = [
         kanaText: kana_ya+kana_sa+kana_i,
         kanjiText: "野菜",
         category: "Nouns",
-        topics: []
+        topics: ['Food']
     },
     {
         englishText: "Work, Job",
@@ -1947,7 +1963,7 @@ const library = [
         kanaText: kana_shi+kana_go+kana_to,
         kanjiText: "仕事",
         category: "Nouns",
-        topics: []
+        topics: ['Work']
     },
     {
         englishText: "Vacation",
@@ -1955,7 +1971,7 @@ const library = [
         kanaText: kana_ya+kana_su+kana_mi,
         kanjiText: "休み",
         category: "Nouns",
-        topics: []
+        topics: ['Travel/Directions', 'School']
     },
     {
         englishText: "Forest",
@@ -1963,7 +1979,7 @@ const library = [
         kanaText: kana_mo+kana_ri,
         kanjiText: "森",
         category: "Nouns",
-        topics: []
+        topics: ['Nature']
     },
     {
         englishText: "Everyone",
@@ -1971,7 +1987,7 @@ const library = [
         kanaText: kana_mi+kana_n+kana_na,
         kanjiText: "-",
         category: "Nouns",
-        topics: []
+        topics: ['Relationships']
     },
     {
         englishText: "Arrival",
@@ -1979,7 +1995,7 @@ const library = [
         kanaText: kana_to+kana_u+kana_chi+kana_ya+kana_ku,
         kanjiText: "到着",
         category: "Nouns",
-        topics: []
+        topics: ['Travel/Directions']
     },
     {
         englishText: "Airport",
@@ -1987,7 +2003,7 @@ const library = [
         kanaText: kana_ku+kana_u+kana_ko+kana_u,
         kanjiText: "空港",
         category: "Nouns",
-        topics: []
+        topics: ['Travel/Directions', 'Buildings']
     },
     {
         englishText: "Park",
@@ -1995,7 +2011,7 @@ const library = [
         kanaText: kana_ko+kana_u+kana_e+kana_n,
         kanjiText: "公園",
         category: "Nouns",
-        topics: []
+        topics: ['Hobbies', 'Nature', 'Travel/Directions']
     },
     {
         englishText: "License",
@@ -2003,7 +2019,7 @@ const library = [
         kanaText: kana_me+kana_n+kana_ki+kana_yo,
         kanjiText: "免許",
         category: "Nouns",
-        topics: []
+        topics: ['Travel/Directions', 'Transportation']
     },
     {
         englishText: "Tomorrow",
@@ -2011,7 +2027,7 @@ const library = [
         kanaText: kana_a+kana_shi+kana_ta,
         kanjiText: "明日",
         category: "Nouns",
-        topics: []
+        topics: ['Time']
     },
     {
         englishText: "Yesterday",
@@ -2019,7 +2035,7 @@ const library = [
         kanaText: kana_ki+kana_no+kana_u,
         kanjiText: "昨日",
         category: "Nouns",
-        topics: []
+        topics: ['Time']
     },
     {
         englishText: "Departure",
@@ -2027,7 +2043,7 @@ const library = [
         kanaText: kana_shi+kana_yu+kana_small_tsu+kana_pa+kana_tsu,
         kanjiText: "出発",
         category: "Nouns",
-        topics: []
+        topics: ['Travel/Directions', 'Transportation']
     },
     {
         englishText: "Today",
@@ -2035,7 +2051,7 @@ const library = [
         kanaText: kana_ki+kana_yo+kana_u,
         kanjiText: "今日",
         category: "Nouns",
-        topics: []
+        topics: ['Time']
     },
     {
         englishText: "Rain",
@@ -2043,7 +2059,7 @@ const library = [
         kanaText: kana_a+kana_me,
         kanjiText: "雨",
         category: "Nouns",
-        topics: []
+        topics: ['Weather', 'Nature']
     },
     {
         englishText: "Customer",
@@ -2051,7 +2067,7 @@ const library = [
         kanaText: "("+kana_o+") "+kana_ki+kana_ya+kana_ku,
         kanjiText: "("+kana_o+") 客",
         category: "Nouns",
-        topics: []
+        topics: ['Shopping', 'Relationships', 'Food']
     },
     {
         englishText: "Now",
@@ -2059,7 +2075,7 @@ const library = [
         kanaText: kana_i+kana_ma,
         kanjiText: "今",
         category: "Nouns",
-        topics: []
+        topics: ['Time']
     },
     {
         englishText: "Crab",
@@ -2067,7 +2083,7 @@ const library = [
         kanaText: 'カニ',
         kanjiText: "-",
         category: "Nouns",
-        topics: []
+        topics: ['Food', 'Animals']
     },
     {
         englishText: "Bag",
@@ -2075,7 +2091,7 @@ const library = [
         kanaText: kana_ka+kana_ba+kana_n,
         kanjiText: "鞄",
         category: "Nouns",
-        topics: []
+        topics: ['Shopping', 'Clothing']
     },
     {
         englishText: "Tea",
@@ -2083,7 +2099,7 @@ const library = [
         kanaText: kana_o+kana_chi+kana_ya,
         kanjiText: "茶",
         category: "Nouns",
-        topics: []
+        topics: ['Food']
     },
     {
         englishText: "Medicine",
@@ -2091,7 +2107,7 @@ const library = [
         kanaText: kana_ku+kana_su+kana_ri,
         kanjiText: "薬",
         category: "Nouns",
-        topics: []
+        topics: ['Health']
     },
     {
         englishText: "Snow",
@@ -2099,7 +2115,7 @@ const library = [
         kanaText: kana_yu+kana_ki,
         kanjiText: "雪",
         category: "Nouns",
-        topics: []
+        topics: ['Weather', 'Nature']
     },
 
     // Category 3: verbs
