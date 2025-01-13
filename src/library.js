@@ -2117,6 +2117,190 @@ const library = [
         category: "Nouns",
         topics: ['Weather', 'Nature']
     },
+    {
+        englishText: "Book",
+        romaji: "Hon",
+        kanaText: kana_ho+kana_n,
+        kanjiText: "本",
+        category: "Nouns",
+        topics: ['Hobbies', 'Shopping']
+    },
+    {
+        englishText: "City",
+        romaji: "Tokai",
+        kanaText: kana_to+kana_ka+kana_i,
+        kanjiText: "都会",
+        category: "Nouns",
+        topics: ['Travel/Directions', 'Culture', 'Buildings']
+    },
+    {
+        englishText: "Grass",
+        romaji: "Kusa",
+        kanaText: kana_ku+kana_sa,
+        kanjiText: "草",
+        category: "Nouns",
+        topics: ['Nature']
+    },
+    {
+        englishText: "Bill, Check",
+        romaji: "Okaikei",
+        kanaText: kana_o+kana_ka+kana_i+kana_ke+kana_i,
+        kanjiText: "お会計",
+        category: "Nouns",
+        topics: ['Shopping', 'Food']
+    },
+    {
+        englishText: "Chopsticks",
+        romaji: "Hashi",
+        kanaText: kana_ha+kana_shi,
+        kanjiText: "箸",
+        category: "Nouns",
+        topics: ['Shopping', 'Food']
+    },
+    {
+        englishText: "Bridge",
+        romaji: "Hashi",
+        kanaText: kana_ha+kana_shi,
+        kanjiText: "橋",
+        category: "Nouns",
+        topics: ['Buildings', 'Travel/Directions']
+    },
+    {
+        englishText: "Perfume",
+        romaji: "Kousui",
+        kanaText: kana_ko+kana_u+kana_su+kana_i,
+        kanjiText: "香水",
+        category: "Nouns",
+        topics: ['Shopping', 'Clothing']
+    },
+    {
+        englishText: "Potato",
+        romaji: "Jagaimo",
+        kanaText: 'じゃがいも',
+        kanjiText: "",
+        category: "Nouns",
+        topics: ['Food']
+    },
+    {
+        englishText: "(to go) Sightseeing, Tourism",
+        romaji: "Kankou (suru)",
+        kanaText: kana_ka+kana_n+kana_ko+kana_u+' ('+kana_su+kana_ru+')',
+        kanjiText: "観光 "+"("+kana_su+kana_ru+")",
+        category: "Nouns",
+        topics: ['Travel/Directions', 'Hobbies', 'Culture']
+    },
+    {
+        englishText: "Weekday",
+        romaji: "Heijitsu",
+        kanaText: kana_he+kana_i+kana_ji+kana_tsu,
+        kanjiText: "平日",
+        category: "Nouns",
+        topics: ['Time', 'Work', 'School']
+    },
+    {
+        englishText: "Weekend",
+        romaji: "Shuumatsu",
+        kanaText: kana_shi+kana_yu+kana_u+kana_ma+kana_tsu,
+        kanjiText: "週末",
+        category: "Nouns",
+        topics: ['Time', 'Work', 'School']
+    },
+    {
+        englishText: "Rent",
+        romaji: "Yachin",
+        kanaText: kana_ya+kana_chi+kana_n,
+        kanjiText: "家賃",
+        category: "Nouns",
+        topics: ['Household']
+    },
+    {
+        englishText: "Garlic",
+        romaji: "Ninniku",
+        kanaText: kana_ni+kana_n+kana_ni+kana_ku,
+        kanjiText: "",
+        category: "Nouns",
+        topics: ['Food']
+    },
+    {
+        englishText: "Carrot",
+        romaji: "Ninjin",
+        kanaText: kana_ni+kana_n+kana_ji+kana_n,
+        kanjiText: "",
+        category: "Nouns",
+        topics: ['Food']
+    },
+    {
+        englishText: "Textbook, Schoolbook",
+        romaji: "Kyoukashou",
+        kanaText: kana_ki+kana_yo+kana_u+kana_ka+kana_shi+kana_yo,
+        kanjiText: "教科書",
+        category: "Nouns",
+        topics: ['School']
+    },
+    {
+        englishText: "Seafood",
+        romaji: "Kaisen",
+        kanaText: kana_ka+kana_i+kana_se+kana_n,
+        kanjiText: "海鮮",
+        category: "Nouns",
+        topics: ['Food']
+    },
+    {
+        englishText: "Mud",
+        romaji: "Doro",
+        kanaText: kana_do+kana_ro,
+        kanjiText: "泥",
+        category: "Nouns",
+        topics: ['Nature']
+    },
+    {
+        englishText: "Price (of an item), Cost",
+        romaji: "Nedan",
+        kanaText: kana_ne+kana_da+kana_n,
+        kanjiText: "値段",
+        category: "Nouns",
+        topics: ['Shopping']
+    },
+    {
+        englishText: "Charge, Payment, Fee, Cost",
+        romaji: "Daikin",
+        kanaText: kana_da+kana_i+kana_ki+kana_n,
+        kanjiText: "代金",
+        category: "Nouns",
+        topics: ['Shopping']
+    },
+    {
+        englishText: "Nurse",
+        romaji: "Kangoshi",
+        kanaText: kana_ka+kana_n+kana_go+kana_shi,
+        kanjiText: "看護師",
+        category: "Nouns",
+        topics: ['Health', 'Work']
+    },
+    {
+        englishText: "Shape, Form (of an object)",
+        romaji: "Katachi",
+        kanaText: kana_ka+kana_ta+kana_chi,
+        kanjiText: "形",
+        category: "Nouns",
+        topics: ['Colors/Shapes']
+    },
+    {
+        englishText: "Medicine cabinet",
+        romaji: "Kusuribako",
+        kanaText: kana_ku+kana_su+kana_ri+kana_ba+kana_ko,
+        kanjiText: "薬箱",
+        category: "Nouns",
+        topics: ['Health', 'Household']
+    },
+    {
+        englishText: "Overtime (work)",
+        romaji: "Zangyou",
+        kanaText: kana_za+kana_n+kana_gi+kana_yo+kana_u,
+        kanjiText: "残業",
+        category: "Nouns",
+        topics: ['Work']
+    },
 
     // Category 3: verbs
 
