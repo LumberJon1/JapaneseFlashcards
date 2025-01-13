@@ -63,19 +63,20 @@ function FlashcardsDisplay(props) {
         
         for (let i = 0; i < library.length; i++) {
             
-            // 
-            if (selectedCategories.includes(library[i].category)) {
-                cardLoader.push({...library[i]});
+            // Depending on whether the quiz mode is set to grammar or topic, filter for the matching
+            // category
+            if (categoryMode === 'grammar') {
+                if (selectedCategories.includes(library[i].category)) {
+                    cardLoader.push({...library[i]});
+                }
+            }
+            else if (categoryMode === "topic") {
+                // If even one of the topic tags matches any of the selectedTopics, add it                
+                if (library[i].topics?.some(topic => selectedTopics.includes(topic))) {
+                    cardLoader.push({ ...library[i] });
+                }
             }
         }
-        
-        // CardLoader:
-        // for (let i = 0; i < cardLoader.length; i++) {
-        //     setQuizzingCards([
-        //         ...quizzingCards,
-        //         cardLoader[i]
-        //     ])
-        // }
 
         // Shuffle the cardLoader array randomly (Fisher-Yates shuffle)
         for (let i = cardLoader.length - 1; i > 0; i--) {
@@ -84,10 +85,6 @@ function FlashcardsDisplay(props) {
         }
 
         const selectedCards = cardLoader.slice(0, limit);
-    
-        // const updatedQuizzingCards = [...quizzingCards, ...cardLoader];
-        // setQuizzingCards(updatedQuizzingCards);
-        // console.log('quizzing from', updatedQuizzingCards.length, 'cards')
 
         setQuizzingCards(selectedCards)
         console.log('quizzing from', selectedCards.length, 'cards')
