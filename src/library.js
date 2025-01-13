@@ -2802,7 +2802,6 @@ const library = [
         kanjiText: "",
         category: "Days of the Week",
         topics: ['time'],
-        topics: []
     },
     {
         englishText: "Tuesday",
@@ -2811,7 +2810,6 @@ const library = [
         kanjiText: "",
         category: "Days of the Week",
         topics: ['time'],
-        topics: []
     },
     {
         englishText: "Wednesday",
@@ -2820,7 +2818,6 @@ const library = [
         kanjiText: "",
         category: "Days of the Week",
         topics: ['time'],
-        topics: []
     },
     {
         englishText: "Thursday",
@@ -2829,7 +2826,6 @@ const library = [
         kanjiText: "",
         category: "Days of the Week",
         topics: ['time'],
-        topics: []
     },
     {
         englishText: "Friday",
@@ -2838,7 +2834,6 @@ const library = [
         kanjiText: "",
         category: "Days of the Week",
         topics: ['time'],
-        topics: []
     },
     {
         englishText: "Saturday",
@@ -2847,7 +2842,6 @@ const library = [
         kanjiText: "",
         category: "Days of the Week",
         topics: ['time'],
-        topics: []
     },
     {
         englishText: "Sunday",
@@ -2856,7 +2850,6 @@ const library = [
         kanjiText: "",
         category: "Days of the Week",
         topics: ['time'],
-        topics: []
     },
 
     
