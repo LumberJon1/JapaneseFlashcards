@@ -123,7 +123,10 @@ function FlashcardsPage() {
                     {/* Toggle Switch */}
                     <div className="flex justify-center mb-4">
                         <button
-                            onClick={() => setCategoryMode("grammar")}
+                            onClick={() => {
+                                setCategoryMode("grammar");
+                                setSelectedTopics([]);
+                            }}
                             className={`px-4 py-2 mx-2 rounded ${
                                 categoryMode === "grammar"
                                     ? "bg-blue-500 text-white"
@@ -133,7 +136,10 @@ function FlashcardsPage() {
                             Grammar
                         </button>
                         <button
-                            onClick={() => setCategoryMode("topic")}
+                            onClick={() => {
+                                setCategoryMode("topic");
+                                setSelectedCategories([]);
+                            }}
                             className={`px-4 py-2 mx-2 rounded ${
                                 categoryMode === "topic"
                                     ? "bg-blue-500 text-white"
@@ -214,7 +220,10 @@ function FlashcardsPage() {
                     quizActive={quizActive}
                     setQuizActive={setQuizActive}
                     selectedCategories={selectedCategories}
+                    selectedTopics={selectedTopics}
                     setDisplayingCategories={setDisplayingCategories}
+                    setDisplayingTopics={setDisplayingTopics}
+                    categoryMode={categoryMode}
                     kanjiStudy={kanjiStudy}
                     limit={limit}
                 ></FlashcardsDisplay>

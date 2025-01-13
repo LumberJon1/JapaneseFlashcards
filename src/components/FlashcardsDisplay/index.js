@@ -11,6 +11,9 @@ function FlashcardsDisplay(props) {
         setQuizActive,
         selectedCategories,
         setDisplayingCategories,
+        selectedTopics,
+        setDisplayingTopics,
+        categoryMode,
         kanjiStudy,
         limit
     } = props;
@@ -19,13 +22,32 @@ function FlashcardsDisplay(props) {
 
     // click handler for start button
     function handleStartClick() {
-        if (selectedCategories.length >= 1) {
-            setQuizActive(true);
-            setDisplayingCategories(false);
-            generateCards();
+
+        console.log('Active category mode: ', categoryMode);
+
+        // Depending on the category mode selected, check the array length and
+        // load cards
+        if (categoryMode === 'grammar') {
+            if (selectedCategories.length >= 1) {
+                setQuizActive(true);
+                setDisplayingCategories(false);
+                generateCards();
+            }
+            else {
+                console.log("No selected categories");
+            }
+            
         }
-        else {
-            console.log("No selected categories");
+        else if (categoryMode === 'topic') {
+            if (selectedTopics.length >= 1) {
+                setQuizActive(true);
+                setDisplayingTopics(false);
+                generateCards();
+            }
+            else {
+                console.log("No selected topics");
+            }
+
         }
     }
     
@@ -41,6 +63,7 @@ function FlashcardsDisplay(props) {
         
         for (let i = 0; i < library.length; i++) {
             
+            // 
             if (selectedCategories.includes(library[i].category)) {
                 cardLoader.push({...library[i]});
             }
@@ -122,7 +145,7 @@ function FlashcardsDisplay(props) {
                 >
                     <button
                         onClick={handleStartClick}
-                        className={selectedCategories.length >= 1 ?
+                        className={(selectedCategories.length >= 1) | (selectedTopics.length >= 1) ?
                             `rounded p-2 border border-emerald-200 text-lg font-bold text-emerald-200 shadow-lg bg-emerald-500`
                             : `rounded p-2 border text-zinc-400 border-slate-400 text-lg font-bold bg-zinc-300 shadow-lg`
                         }
