@@ -2290,49 +2290,56 @@ const library = [
         romaji: "Getsuyoubi",
         kanaText: kana_ge+kana_tsu+kana_yo+kana_u+kana_bi,
         kanjiText: "",
-        category: "Days of the Week"
+        category: "Days of the Week",
+        topics: ['time']
     },
     {
         englishText: "Tuesday",
         romaji: "Kayoubi",
         kanaText: kana_ka+kana_yo+kana_u+kana_bi,
         kanjiText: "",
-        category: "Days of the Week"
+        category: "Days of the Week",
+        topics: ['time']
     },
     {
         englishText: "Wednesday",
         romaji: "Suiyoubi",
         kanaText: kana_su+kana_i+kana_yo+kana_u+kana_bi,
         kanjiText: "",
-        category: "Days of the Week"
+        category: "Days of the Week",
+        topics: ['time']
     },
     {
         englishText: "Thursday",
         romaji: "Mokuyoubi",
         kanaText: kana_mo+kana_ku+kana_yo+kana_u+kana_bi,
         kanjiText: "",
-        category: "Days of the Week"
+        category: "Days of the Week",
+        topics: ['time']
     },
     {
         englishText: "Friday",
         romaji: "Kinyoubi",
         kanaText: kana_ki+kana_n+kana_yo+kana_u+kana_bi,
         kanjiText: "",
-        category: "Days of the Week"
+        category: "Days of the Week",
+        topics: ['time']
     },
     {
         englishText: "Saturday",
         romaji: "Doyoubi",
         kanaText: kana_do+kana_yo+kana_u+kana_bi,
         kanjiText: "",
-        category: "Days of the Week"
+        category: "Days of the Week",
+        topics: ['time']
     },
     {
         englishText: "Sunday",
         romaji: "Nichiyoubi",
         kanaText: kana_ni+kana_chi+kana_yo+kana_u+kana_bi,
         kanjiText: "",
-        category: "Days of the Week"
+        category: "Days of the Week",
+        topics: ['time']
     },
 
     

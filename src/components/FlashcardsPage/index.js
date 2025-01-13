@@ -2,21 +2,45 @@ import React, {useState} from "react";
 import library from "../../library";
 import FlashcardCategories from "../FlashcardCategories";
 import FlashcardsDisplay from "../FlashcardsDisplay";
+import TopicCategories from "../TopicCategories";
 
 function FlashcardsPage() {
 
     // State management for FlashcardCategories
     const [selectedCategories, setSelectedCategories] = useState([]);
-
+    
     // Separate loop to gather unique categories and map through them to display as buttons
     let availableCategories = [];
     for (let i = 0; i < library.library.length; i++) {
         if (!availableCategories.includes(library.library[i].category)) {
+            console.log('Adding '+library.library[i].category+' to available categories...');
             availableCategories.push(library.library[i].category);
+        }
+    }
+    
+    // Similar loops and arrays for topics - first, loop through the library
+    // and append each unique topic
+    const [selectedTopics, setSelectedTopics] = useState([]);
+
+    let availableTopics = [];
+    for (let i = 0; i < library.library.length; i++) {
+        let topicsArray = library.library[i].topics ?? [];
+
+        for (let j = 0; j < topicsArray.length; j++) {
+            let topic = topicsArray[j];
+            console.log('topic: ', topic);
+
+            // Add to availableTopics only if it's not already present
+            if (!availableTopics.includes(topic)) {
+                availableTopics.push(topic);
+            }
         }
     }
 
     // State management for shown/hidden categories
+    const [displayingTopics, setDisplayingTopics] = useState(true);
+
+    // State management for shown/hidden topics
     const [displayingCategories, setDisplayingCategories] = useState(true);
 
     // State management for ongoing quiz
@@ -29,6 +53,9 @@ function FlashcardsPage() {
     const [limit, setLimit] = useState(10);
 
     const [inputValue, setInputValue] = useState("10"); // Separate state for raw input
+
+    // State management for quiz category mode (grammar mode or topic mode)
+    const [categoryMode, setCategoryMode] = useState('grammar');
 
     // Increment and Decrement functions for limit
     const incrementLimit = () => {
@@ -75,28 +102,70 @@ function FlashcardsPage() {
     }
 
 
+    /*
+    <FlashcardCategories
+        className='h-3/4'
+        availableCategories={availableCategories}
+        displayingCategories={displayingCategories}
+        setDisplayingCategories={setDisplayingCategories}
+        selectedCategories={selectedCategories}
+        setSelectedCategories={setSelectedCategories}
+    ></FlashcardCategories>
+    */
+
     return (
 
         <div
             className="w-full h-full"
         >
-            {!quizActive ?
-                <div
-                    className="h-1/2"
-                >
-                    <FlashcardCategories
+            {!quizActive ? (
+                <div className="h-1/2">
+                    {/* Toggle Switch */}
+                    <div className="flex justify-center mb-4">
+                        <button
+                            onClick={() => setCategoryMode("grammar")}
+                            className={`px-4 py-2 mx-2 rounded ${
+                                categoryMode === "grammar"
+                                    ? "bg-blue-500 text-white"
+                                    : "bg-zinc-300 text-black"
+                            }`}
+                        >
+                            Grammar
+                        </button>
+                        <button
+                            onClick={() => setCategoryMode("topic")}
+                            className={`px-4 py-2 mx-2 rounded ${
+                                categoryMode === "topic"
+                                    ? "bg-blue-500 text-white"
+                                    : "bg-zinc-300 text-black"
+                            }`}
+                        >
+                            Topic
+                        </button>
+                    </div>
+
+                    {/* Conditionally Render Categories */}
+                    {categoryMode === "grammar" ? (
+                        <FlashcardCategories
                         className='h-3/4'
                         availableCategories={availableCategories}
                         displayingCategories={displayingCategories}
                         setDisplayingCategories={setDisplayingCategories}
                         selectedCategories={selectedCategories}
                         setSelectedCategories={setSelectedCategories}
-                    ></FlashcardCategories>
-
+                        />
+                    ) : (
+                        <TopicCategories
+                        className="h-3/4"
+                            availableTopics={availableTopics}
+                            displayingTopics={displayingTopics}
+                            setDisplayingTopics={setDisplayingTopics}
+                            selectedTopics={selectedTopics}
+                            setSelectedTopics={setSelectedTopics}
+                        />
+                    )}
                 </div>
-
-            : <></>    
-        }
+            ) : null}
             <div
                 className={quizActive ? "h-5/6"  : "h-1/4"}
             >
